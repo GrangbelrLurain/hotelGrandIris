@@ -1,0 +1,36 @@
+#subNav {
+  position: fixed;
+  top: 50%;
+}
+
+main section {
+  height: 1000px;
+}
+
+main section .container {
+  width: 1280px;
+}
+
+main section .container .raw {
+  padding: 0 28px;
+}
+
+#offer {
+  background: #eaff2c;
+}
+
+#wedding {
+  background: #79ff2c;
+}
+
+#dining {
+  background: #2cffd1;
+}
+
+#casino {
+  background: #2cceff;
+}
+
+#facilities {
+  background: #2c76ff;
+}

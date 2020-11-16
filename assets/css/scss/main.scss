@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#subNav {
+  position: fixed;
+  top: 50%;
+}
+
+main {
+  section {
+    height: 1000px;
+    .container {
+      width: 1280px;
+      .raw {
+        padding: 0 28px;
+        article {
+        }
+      }
+    }
+  }
+}
+
+#offer {
+  background: rgb(234, 255, 44);
+}
+
+#wedding {
+  background: rgb(121, 255, 44);
+}
+
+#dining {
+  background: rgb(44, 255, 209);
+}
+
+#casino {
+  background: rgb(44, 206, 255);
+}
+
+#facilities {
+  background: rgb(44, 118, 255);
+}
