@@ -3,31 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>"pagename" : Grand Iris Hotel</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <title>main : Grand Iris Hotel</title>
   <!-- 페이지 이름 넣고 뒤에 ": Grand Iris Hotel" 을 붙여주시면 됩니다.-->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/mainHeader.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <header>
-
+  <header id="header">
+    <div class="header clearfix">
+        <div class="ham"></div>
+        <div class="language"><a href="#">Language</a></div>
+        <div class="logo">
+            <a href="#" class="iris_logo1">
+                <img src="assets/img/H_logo_W.png" alt="로고w">
+            </a>
+            <a href="#" class="iris_logo2">
+                <img src="assets/img/H_logo_P.png" alt="로고p">
+            </a>
+        </div>
+        <div class="login">
+            <ul class="clearfix">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">예약확인</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav">
+          <ul class="clearfix">
+            <li>
+              <div class="submenu"><a href="#">ROOMS</a>
+                <ul>
+                  <li><a href="#">수페리어</a></li>
+                  <li><a href="#">디럭스</a></li>
+                  <li><a href="#">프리미어</a></li>
+                    <li><a href="#">스위트</a></li>
+                </ul>
+              </div>
+            </li>
+              <li>
+                <div class="submenu"><a href="#">WEDDING</a>
+                  <ul>
+                    <li><a href="#">홀투어</a></li>
+                    <li><a href="#">연회장</a></li>
+                    <li><a href="#">가이드</a></li>
+                    <li><a href="#">예약 및 상담</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="submenu"><a href="#">CASINO</a>
+                  <ul>
+                    <li><a href="#">카지노안내</a></li>
+                    <li><a href="#">잭팟스토리</a></li>
+                    <li><a href="#">멤버십</a></li>
+                    <li><a href="#">이벤트</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="submenu"><a href="#">DINING</a> 
+                  <ul>
+                    <li><a href="#">레스토랑</a></li>
+                    <li><a href="#">루프탑바</a></li>
+                    <li><a href="#">룸서비스</a></li>
+                    <li><a href="#">이벤트</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="submenu"><a href="facilities/index.html">FACILITIES</a>
+                  <ul>
+                    <li><a href="facilities/pool/index.html">수영장</a></li>
+                    <li><a href="facilities/sauna/index.html">사우나</a></li>
+                    <li><a href="facilities/fitness/index.html">피트니스</a></li>
+                    <li><a href="facilities/landing/index.html">물품대여</a></li>
+                  </ul>
+                </div>
+              </li>
+          </ul>              
+      </div>
+    </div>
   </header>
   <aside id="aside">
     <ul>
       <li class="offerBtn">
-        <a href="#offer">offer</a>
+        offer
       </li>
       <li class="weddingBtn">
-        <a href="#wedding">wedding</a>
+        wedding
       </li>
       <li class="diningBtn">
-        <a href="#dining">dining</a>
+        dining
       </li>
       <li class="casinoBtn">
-        <a href="#casino">casino</a>
+        casino
       </li>
       <li class="facilitiesBtn">
-        <a href="#facilities">facilities</a>
+        facilities
       </li>
     </ul>
   </aside>
@@ -79,10 +155,57 @@
       </div>
     </section>
   </main>
-  <footer class="slides">
-
+  <footer id="footer" class="slides">
+    <div class="container">
+      <div class="row">
+        <div class="footer">
+          <div class="f_left">
+            <div class="f_logo">
+              <a href="#"><img src="assets/img/F_logo.png" alt="하단로고"></a>
+            </div>
+          </div>
+          <div class="f_center">
+            <div class="f_nav">
+              <ul>
+                <li><a href="#">오시는길</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">영상정보처리기기운영,관리방침</a></li>
+                <li class="last"><a href="#">이용약관</a></li>
+              </ul>
+            </div>
+            <div class="f_copy">
+              <p>인천시 부평구 부평1동 534-48</p>
+              <p>사업자 등록번호 104-81-27386 통신판매신고번호 부평구0623호</p>
+              <p>© 2020 GRAND IRIS HOTEL Co. All rights reserved.</p>
+            </div>
+          </div>
+          <div class="f_right">
+            <div class="family">
+              <select id="family" onchange="if(this.value) window.open(this.value);">
+                <option value="">패밀리사이트</option>
+                <option value="https://www.josunhotel.com/intro.do">조선호텔</option>
+                <option value="https://hotel-hongdan.com/html/00_main/">호텔홍단</option>
+                <option value="https://www.lescapehotel.com/dining#tab3"> 레스케이프호텔</option>
+                <option value="https://kangwonland.high1.com/casino/index.do">강원랜드</option>
+              </select>
+            </div>
+            <div class="f_sns">
+              <ul>
+                <li><a href="#"><img src="assets/img/f_sns1.png" alt="페이스북"></a></li>
+                <li><a href="#"><img src="assets/img/f_sns2.png" alt="트위터"></a></li>
+                <li class="last"><a href="#"><img src="assets/img/f_sns3.png" alt="인스타"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="assets/js/pageSlide.js"></script>
 <script src="assets/js/wheelEvent.js"></script>
+<script src="assets/js/footer.js"></script>
+<script src="assets/js/headerEvent.js"></script>
 </body>
 </html>

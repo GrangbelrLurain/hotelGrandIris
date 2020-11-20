@@ -1,0 +1,217 @@
+main {
+  overflow: hidden;
+}
+
+main .container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+main .container .row {
+  padding: 0 28px;
+}
+
+#banner {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 900px;
+  background: url(../img/banner.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 140px;
+}
+
+#banner .scrollDown {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: scrollDown 1.5s ease-in-out infinite;
+          animation: scrollDown 1.5s ease-in-out infinite;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0.5;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+#banner .scrollDown:hover {
+  opacity: 1;
+}
+
+#banner .scrollDown .icon {
+  width: 15px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#banner .scrollDown .cont {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+#contents h2 {
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 100px;
+  color: white;
+}
+
+#contents .text {
+  font-size: 40px;
+  white-space: pre-line;
+  line-height: 40px;
+  color: white;
+}
+
+#contents figure {
+  position: relative;
+}
+
+#contents figure figcaption a {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  padding: 10px 50px;
+  border: 5px solid white;
+  font-size: 50px;
+  color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#contents figure figcaption a:hover {
+  border: 5px solid #5b30be;
+  color: #5b30be;
+}
+
+#contents .cont1 {
+  margin-bottom: 250px;
+}
+
+#contents .cont1 h2 {
+  color: #5b30be;
+}
+
+#contents .cont1 .text {
+  color: #282828;
+}
+
+#contents .cont1 .text span {
+  color: #5b30be;
+}
+
+#contents .cont2 {
+  position: relative;
+  margin-bottom: 240px;
+}
+
+#contents .cont2::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  width: 100vw;
+  height: 800px;
+  background-color: #282828;
+  overflow: hidden;
+}
+
+#contents .cont2 h2 {
+  padding-top: 30px;
+}
+
+#contents .cont2 .text {
+  padding-bottom: 30px;
+}
+
+#contents .cont3 {
+  position: relative;
+  margin-bottom: 240px;
+}
+
+#contents .cont3::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 800px;
+  background-color: #352e1a;
+  overflow: hidden;
+}
+
+#contents .cont3 h2 {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+#contents .cont3 .text {
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+#contents .cont4 {
+  position: relative;
+  margin-bottom: 240px;
+}
+
+#contents .cont4::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  width: 100vw;
+  height: 800px;
+  background-color: #d9ccb9;
+  overflow: hidden;
+}
+
+#contents .cont4 h2 {
+  padding-top: 30px;
+}
+
+#contents .cont4 .text {
+  padding-bottom: 30px;
+}
+
+#contents .cont5 {
+  position: relative;
+  margin-bottom: 240px;
+}
+
+#contents .cont5::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 800px;
+  background-color: #5b30be;
+  overflow: hidden;
+}
+
+#contents .cont5 h2 {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+#contents .cont5 .text {
+  padding-bottom: 30px;
+  padding-left: 30px;
+}

@@ -33,3 +33,32 @@
 
 //   /*window.scrollTo({top:weddingLocation, behavior:'smooth'});*/
 // }
+window.addEventListener("wheel", contentsScroll)
+
+function contentsScroll (events){
+  window.removeEventListener("wheel", contentsScroll);
+
+  const activeElem = document.querySelectorAll(".slidesActive");
+  const everyElem = document.querySelectorAll(".slides");
+
+  if(events.deltaY < 0){
+    everyElem.forEach(function(elem, index){
+        if(elem == activeElem[activeElem.length -1] && index > 0){
+        elem.classList.remove("slidesActive");
+
+        everyElem[index - 1].classList.add("slidesActive");
+        console.log("hi");
+      }
+    })
+  } else if (events.deltaY > 0){
+    everyElem.forEach(function(elem, index){
+      if(elem == activeElem[activeElem.length -1] && index < everyElem.length-1){
+
+      everyElem[index + 1].classList.add("slidesActive");
+    }
+  })
+}
+	setTimeout(function(){
+		window.addEventListener("wheel", contentsScroll);
+	}, 400);
+}

@@ -1,18 +1,24 @@
+body {
+  overflow: hidden;
+}
+
 #aside {
   z-index: 10;
   position: fixed;
   top: 50%;
+  left: 5vw;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 main {
   z-index: 0;
-  height: 100vh;
   width: 100vw;
-  overflow: hidden;
 }
 
 main section {
-  height: 1000px;
+  height: 100vh;
+  width: 100vw;
 }
 
 main section .container {
@@ -26,24 +32,40 @@ main section .container .raw {
 .slides {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  position: absolute;
+  bottom: -100vh;
+}
+
+.slides.slidesActive {
+  bottom: 0;
 }
 
 #offer {
-  background: #eaff2c;
+  background: url(../img/rooms.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #wedding {
-  background: #79ff2c;
+  background: url(../img/wedding.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #dining {
-  background: #2cffd1;
+  background: url(../img/dining.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #casino {
-  background: #2cceff;
+  background: url(../img/casino.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #facilities {
-  background: #2c76ff;
+  background: url(../img/facilities.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }

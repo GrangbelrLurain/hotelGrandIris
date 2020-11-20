@@ -1,18 +1,23 @@
 @charset "UTF-8";
 
+body {
+  overflow: hidden;
+}
+
 #aside {
   z-index: 10;
   position: fixed;
   top: 50%;
+  left: 5vw;
+  transform: translate(0, -50%);
 }
 
 main {
   z-index: 0;
-  height: 100vh;
   width: 100vw;
-  overflow: hidden;
   section {
-    height: 1000px;
+    height: 100vh;
+    width: 100vw;
     .container {
       width: 1280px;
       .raw {
@@ -26,24 +31,39 @@ main {
 
 .slides {
   transition: all 0.4s;
+  position: absolute;
+  bottom: -100vh;
+  &.slidesActive {
+    bottom: 0;
+  }
 }
 
 #offer {
-  background: rgb(234, 255, 44);
+  background: url(../img/rooms.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #wedding {
-  background: rgb(121, 255, 44);
+  background: url(../img/wedding.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #dining {
-  background: rgb(44, 255, 209);
+  background: url(../img/dining.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #casino {
-  background: rgb(44, 206, 255);
+  background: url(../img/casino.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #facilities {
-  background: rgb(44, 118, 255);
+  background: url(../img/facilities.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }

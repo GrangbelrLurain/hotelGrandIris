@@ -1,0 +1,131 @@
+main .container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+main .container .row {
+  padding: 0 28px;
+}
+
+#banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 1000px;
+  background: url(../img/banner.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 160px;
+}
+
+#banner h1 {
+  color: white;
+  font-size: 300px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 300px;
+}
+
+#banner p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+#contents .cont1 {
+  margin-bottom: 150px;
+  position: relative;
+}
+
+#contents .cont1 h2 {
+  font-size: 35px;
+}
+
+#contents .cont1 .list h3 {
+  position: absolute;
+  top: 50px;
+  display: block;
+  border: 1px solid #282828;
+  width: 305px;
+  height: 75px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 75px;
+}
+
+#contents .cont1 .list ul {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px 140px;
+  border: 1px solid #282828;
+}
+
+#contents .cont1 .list ul li {
+  width: 33.3%;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#contents .cont1 .list.li1 h3 {
+  left: 0;
+}
+
+#contents .cont1 .list.li2 h3 {
+  left: 50%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+#contents .cont1 .list.li3 h3 {
+  right: 50%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+#contents .cont1 .list.li4 h3 {
+  right: 0;
+}
+
+#contents .cont1 .list.active {
+  padding-top: 75px;
+}
+
+#contents .cont1 .list.active h3 {
+  background: #282828;
+  color: white;
+}
+
+#contents .cont1 .list.active ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contents .cont2 {
+  margin-bottom: 195px;
+}
+
+#contents .cont2 h2 {
+  font-size: 35px;
+}
+
+#contents .cont2 .text {
+  font-size: 20px;
+  white-space: pre-line;
+}

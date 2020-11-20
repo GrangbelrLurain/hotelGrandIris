@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+#header {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.header {
+  position: relative;
+}
+
+.header .logo {
+  float: left;
+  width: 260;
+  height: 65px;
+  padding: 25px;
+  margin-left: 35px;
+}
+
+.header .logo a {
+}
+
+.header .logo a img {
+}
+
+.header .nav_left {
+  float: left;
+}
+
+.header .nav_left ul {
+  margin: 25px 50px 0 30px;
+}
+
+.header .nav_left ul li {
+  position: relative;
+  padding: 10px 38px;
+  float: left;
+}
+
+.header .nav_left ul li.expand a {
+  color: white;
+}
+
+.header .nav_left ul li a {
+  font-family: "NanumSquare", sans-serif !important;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 26px;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+.header .nav_left ul li a:hover {
+  color: white;
+}
+
+.header .nav_left ul li ul.submenu {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  display: none;
+  width: 500px;
+}
+.header .nav_left ul li.expand ul.submenu {
+  display: block;
+}
+
+.header .nav_left ul li ul.submenu li {
+}
+
+.header .nav_left ul li ul.submenu li a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header .nav_left ul li ul.submenu li a:hover {
+  color: white;
+}
+
+.header .nav_left ul li ul.submenu li.expand a {
+  color: white;
+}
+
+.header .nav_left ul li ul li {
+  float: left;
+  padding: 10px 20px;
+}
+
+.header .nav_left ul li ul li a {
+  font-family: "NanumSquare", sans-serif !important;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header .nav_right {
+  float: right;
+  margin-right: 60px;
+}
+
+.header .nav_right ul {
+  margin-top: 25px;
+}
+
+.header .nav_right ul li {
+  margin: 15px;
+  float: left;
+  transition: all 0.3s;
+}
+
+.header .nav_right ul li.line {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 5px 10px;
+  margin: 8px;
+}
+
+.header .nav_right ul li a {
+  font-family: "NanumSquare", sans-serif !important;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+}
+.header .nav_right ul li:nth-child(3):hover {
+  border: 1px solid white;
+}
+.header .nav_right ul li:nth-child(4):hover {
+  border: 1px solid white;
+}
+.header .nav_right ul li:hover a {
+  color: white;
+}
