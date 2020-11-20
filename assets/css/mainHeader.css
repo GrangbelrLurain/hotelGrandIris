@@ -195,12 +195,16 @@
 @-webkit-keyframes rooms {
   0% {
     width: 0;
+    height: 1000px;
     background-position: -15vw 0;
+    background-image: cover;
     left: 15vw;
   }
   100% {
-    width: 100%;
+    width: 100vw;
+    height: 1000px;
     background-position: 0 0;
+    background-image: cover;
     left: 0;
   }
 }
@@ -208,12 +212,16 @@
 @keyframes rooms {
   0% {
     width: 0;
+    height: 1000px;
     background-position: -15vw 0;
+    background-image: cover;
     left: 15vw;
   }
   100% {
-    width: 100%;
+    width: 100vw;
+    height: 1000px;
     background-position: 0 0;
+    background-image: cover;
     left: 0;
   }
 }
@@ -221,11 +229,13 @@
 @-webkit-keyframes wedding {
   0% {
     width: 0;
+    height: 1000px;
     background-position: -32.5vw 0;
     left: 32.5vw;
   }
   100% {
-    width: 100%;
+    width: 100vw;
+    height: 1000px;
     background-position: 0 0;
     left: 0;
   }
@@ -234,11 +244,13 @@
 @keyframes wedding {
   0% {
     width: 0;
+    height: 1000px;
     background-position: -32.5vw 0;
     left: 32.5vw;
   }
   100% {
-    width: 100%;
+    width: 100vw;
+    height: 1000px;
     background-position: 0 0;
     left: 0;
   }
@@ -246,38 +258,44 @@
 
 @-webkit-keyframes casino {
   0% {
-    width: 0;
-    background-position: -50vw 0;
     left: 50vw;
+    width: 0;
+    height: 1000px;
+    background-position: -50vw 0;
   }
   100% {
-    width: 100%;
-    background-position: 0 0;
     left: 0;
+    width: 100vw;
+    height: 1000px;
+    background-position: 0 0;
   }
 }
 
 @keyframes casino {
   0% {
-    width: 0;
-    background-position: -50vw 0;
     left: 50vw;
+    width: 0;
+    height: 1000px;
+    background-position: -50vw 0;
   }
   100% {
-    width: 100%;
-    background-position: 0 0;
     left: 0;
+    width: 100vw;
+    height: 1000px;
+    background-position: 0 0;
   }
 }
 
 @-webkit-keyframes dining {
   0% {
     width: 0;
+    height: 1000px;
     background-position: -67.5vw 0;
     left: 67.5vw;
   }
   100% {
-    width: 100%;
+    width: 100vw;
+    height: 1000px;
     background-position: 0 0;
     left: 0;
   }
@@ -286,11 +304,13 @@
 @keyframes dining {
   0% {
     width: 0;
+    height: 1000px;
     background-position: -67.5vw 0;
     left: 67.5vw;
   }
   100% {
-    width: 100%;
+    width: 100vw;
+    height: 1000px;
     background-position: 0 0;
     left: 0;
   }
@@ -299,11 +319,13 @@
 @-webkit-keyframes facilities {
   0% {
     width: 0;
+    height: 1000px;
     background-position: -85vw 0;
     left: 85vw;
   }
   100% {
-    width: 100%;
+    width: 100vw;
+    height: 1000px;
     background-position: 0 0;
     left: 0;
   }
@@ -312,11 +334,13 @@
 @keyframes facilities {
   0% {
     width: 0;
+    height: 1000px;
     background-position: -85vw 0;
     left: 85vw;
   }
   100% {
-    width: 100%;
+    width: 100vw;
+    height: 1000px;
     background-position: 0 0;
     left: 0;
   }
@@ -363,19 +387,20 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   opacity: 0;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
   pointer-events: none;
-  background-size: 100vw 100vh;
+  background-size: 100vw;
 }
 
 .nav.active.rooms::before {
-  background: url(../img/header/offer.png);
-  -webkit-animation: rooms 1s 1;
-          animation: rooms 1s 1;
+  background: url(../img/header/offer.png) no-repeat;
+  background-size: cover;
+  -webkit-animation: rooms 1s ease-in 1;
+          animation: rooms 1s ease-in 1;
   opacity: 0.2;
   z-index: 0;
 }
@@ -391,7 +416,8 @@
 }
 
 .nav.active.wedding::before {
-  background: url(../img/header/wedding.png);
+  background: url(../img/header/wedding.png) no-repeat;
+  background-size: cover;
   -webkit-animation: wedding 1s ease-out 1;
           animation: wedding 1s ease-out 1;
   opacity: 0.2;
@@ -409,7 +435,8 @@
 }
 
 .nav.active.casino::before {
-  background: url(../img/header/casino.png);
+  background: url(../img/header/casino.png) no-repeat;
+  background-size: cover;
   -webkit-animation: casino 1s ease-out 1;
           animation: casino 1s ease-out 1;
   opacity: 0.2;
@@ -427,7 +454,8 @@
 }
 
 .nav.active.dining::before {
-  background: url(../img/header/dining.png);
+  background: url(../img/header/dining.png) no-repeat;
+  background-size: cover;
   -webkit-animation: dining 1s ease-out 1;
           animation: dining 1s ease-out 1;
   opacity: 0.2;
@@ -445,7 +473,8 @@
 }
 
 .nav.active.facilities::before {
-  background: url(../img/header/facilities.png);
+  background: url(../img/header/facilities.png) no-repeat;
+  background-size: cover;
   -webkit-animation: facilities 1s ease-out 1;
           animation: facilities 1s ease-out 1;
   opacity: 0.2;
