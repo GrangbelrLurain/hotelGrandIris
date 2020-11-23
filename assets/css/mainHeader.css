@@ -388,7 +388,7 @@
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100%;
+  height: 1000px;
   opacity: 0;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
