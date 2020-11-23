@@ -37,6 +37,7 @@ main {
     position: relative;
     transition: opacity 0.4s;
     text-transform: capitalize;
+    cursor: pointer;
     &::before {
       content: "";
       position: absolute;

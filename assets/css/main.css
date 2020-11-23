@@ -37,6 +37,7 @@ main section .container .raw {
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 #aside ul li::before {
