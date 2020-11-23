@@ -10,7 +10,7 @@
 .header {
   height: 100px;
   position: relative;
-  z-index: 1;
+  z-index: 100;
   background: rgba(40, 40, 40, 0);
 }
 
@@ -377,13 +377,13 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   position: relative;
-  z-index: 1;
+  z-index: 99;
   overflow: hidden;
 }
 
 .nav.active::before {
   content: "";
-  z-index: 0;
+  z-index: 98;
   position: absolute;
   left: 0;
   top: 0;
@@ -402,7 +402,7 @@
   -webkit-animation: rooms 1s ease-in 1;
           animation: rooms 1s ease-in 1;
   opacity: 0.2;
-  z-index: 0;
+  z-index: 98;
 }
 
 .nav.active.rooms > ul > li {
@@ -411,7 +411,7 @@
 
 .nav.active.rooms > ul > li:nth-child(1) {
   opacity: 1;
-  z-index: 3;
+  z-index: 101;
   position: relative;
 }
 
@@ -421,7 +421,7 @@
   -webkit-animation: wedding 1s ease-out 1;
           animation: wedding 1s ease-out 1;
   opacity: 0.2;
-  z-index: 0;
+  z-index: 98;
 }
 
 .nav.active.wedding > ul > li {
@@ -430,7 +430,7 @@
 
 .nav.active.wedding > ul > li:nth-child(2) {
   opacity: 1;
-  z-index: 3;
+  z-index: 101;
   position: relative;
 }
 
@@ -440,7 +440,7 @@
   -webkit-animation: casino 1s ease-out 1;
           animation: casino 1s ease-out 1;
   opacity: 0.2;
-  z-index: 0;
+  z-index: 98;
 }
 
 .nav.active.casino > ul > li {
@@ -449,7 +449,7 @@
 
 .nav.active.casino > ul > li:nth-child(3) {
   opacity: 1;
-  z-index: 3;
+  z-index: 101;
   position: relative;
 }
 
@@ -459,7 +459,7 @@
   -webkit-animation: dining 1s ease-out 1;
           animation: dining 1s ease-out 1;
   opacity: 0.2;
-  z-index: 0;
+  z-index: 98;
 }
 
 .nav.active.dining > ul > li {
@@ -468,7 +468,7 @@
 
 .nav.active.dining > ul > li:nth-child(4) {
   opacity: 1;
-  z-index: 3;
+  z-index: 101;
   position: relative;
 }
 
@@ -478,7 +478,7 @@
   -webkit-animation: facilities 1s ease-out 1;
           animation: facilities 1s ease-out 1;
   opacity: 0.2;
-  z-index: 0;
+  z-index: 98;
 }
 
 .nav.active.facilities > ul > li {
@@ -487,7 +487,7 @@
 
 .nav.active.facilities > ul > li:nth-child(5) {
   opacity: 1;
-  z-index: 3;
+  z-index: 101;
   position: relative;
 }
 

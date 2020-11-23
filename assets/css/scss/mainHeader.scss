@@ -9,7 +9,7 @@
 .header {
   height: 100px;
   position: relative;
-  z-index: 1;
+  z-index: 100;
   background: rgba(40, 40, 40, 0);
   &.active {
     background: #282828;
@@ -255,11 +255,11 @@
     transition: all 1s ease;
     transition: 0.4s;
     position: relative;
-    z-index: 1;
+    z-index: 99;
     overflow: hidden;
     &::before {
       content: "";
-      z-index: 0;
+      z-index: 98;
       position: absolute;
       left: 0;
       top: 0;
@@ -276,13 +276,13 @@
         background-size: cover;
         animation: rooms 1s ease-in 1;
         opacity: 0.2;
-        z-index: 0;
+        z-index: 98;
       }
       > ul > li {
         opacity: 0.3;
         &:nth-child(1) {
           opacity: 1;
-          z-index: 3;
+          z-index: 101;
           position: relative;
         }
       }
@@ -293,13 +293,13 @@
         background-size: cover;
         animation: wedding 1s ease-out 1;
         opacity: 0.2;
-        z-index: 0;
+        z-index: 98;
       }
       > ul > li {
         opacity: 0.3;
         &:nth-child(2) {
           opacity: 1;
-          z-index: 3;
+          z-index: 101;
           position: relative;
         }
       }
@@ -310,13 +310,13 @@
         background-size: cover;
         animation: casino 1s ease-out 1;
         opacity: 0.2;
-        z-index: 0;
+        z-index: 98;
       }
       > ul > li {
         opacity: 0.3;
         &:nth-child(3) {
           opacity: 1;
-          z-index: 3;
+          z-index: 101;
           position: relative;
         }
       }
@@ -327,13 +327,13 @@
         background-size: cover;
         animation: dining 1s ease-out 1;
         opacity: 0.2;
-        z-index: 0;
+        z-index: 98;
       }
       > ul > li {
         opacity: 0.3;
         &:nth-child(4) {
           opacity: 1;
-          z-index: 3;
+          z-index: 101;
           position: relative;
         }
       }
@@ -344,13 +344,13 @@
         background-size: cover;
         animation: facilities 1s ease-out 1;
         opacity: 0.2;
-        z-index: 0;
+        z-index: 98;
       }
       > ul > li {
         opacity: 0.3;
         &:nth-child(5) {
           opacity: 1;
-          z-index: 3;
+          z-index: 101;
           position: relative;
         }
       }
