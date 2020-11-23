@@ -2,6 +2,109 @@ body {
   overflow: hidden;
 }
 
+@-webkit-keyframes opening {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opening {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#opening {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+#opening .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#opening .wrap .logo {
+  width: 100px;
+  opacity: 0;
+}
+
+#opening .wrap .logo.active {
+  -webkit-animation: opening 1s ease 1;
+          animation: opening 1s ease 1;
+  opacity: 1;
+}
+
+#opening .wrap .desc {
+  text-align: center;
+}
+
+#opening .wrap .desc .title_K {
+  font-size: 30px;
+  opacity: 0;
+}
+
+#opening .wrap .desc .title_K.active {
+  -webkit-animation: opening 1s ease 1;
+          animation: opening 1s ease 1;
+  opacity: 1;
+}
+
+#opening .wrap .desc .title_E {
+  font-size: 20px;
+  opacity: 0;
+}
+
+#opening .wrap .desc .title_E.active {
+  -webkit-animation: opening 1s ease 1;
+          animation: opening 1s ease 1;
+  opacity: 1;
+}
+
+#opening .wrap .desc .hotel_name {
+  margin-top: 30px;
+  font-size: 25px;
+  color: #aaa;
+  opacity: 0;
+}
+
+#opening .wrap .desc .hotel_name.active {
+  -webkit-animation: opening 1s ease 1;
+          animation: opening 1s ease 1;
+  opacity: 1;
+}
+
 #aside {
   z-index: 1;
   position: fixed;
