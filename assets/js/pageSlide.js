@@ -1,52 +1,19 @@
-// addScrollEvent();
-
-// function addScrollEvent(){
-//   window.addEventListener("scroll", function(events){
-
-//     moveContents(events);
-//   })
-// }
-
-// window.beforeScroll = document.documentElement.scrollTop || 0;
-// // 처음 스크롤 위치를 잡아주고, 변수를 전역변수로 지정해줌
-
-// function scrollDirectFind(){
-  
-//   let documentY = document.documentElement.scrollTop;
-//   let direction = documentY - window.beforeScroll >= 0 ? 1 : -1;
-
-//   window.beforeScroll = documentY; // 이전에 스크롤했던 위치를 다시 저장해줌
-
-//   return direct = direction;
-// }
-
-// function moveContents(events){
-//   scrollDirectFind();
-
-//   console.log(direct);
-//   const offerLocation = document.querySelector("#offer").offsetTop;
-//   const weddingLocation = document.querySelector("#wedding").offsetTop;
-//   const diningLocation = document.querySelector("#dining").offsetTop;
-//   const casinoLocation = document.querySelector("#dining").offsetTop;
-//   const facilitiesLocation = document.querySelector("#facilities").offsetTop;
-
-
-//   /*window.scrollTo({top:weddingLocation, behavior:'smooth'});*/
-// }
-
-
 // Mouse Wheel Event
+// 마우스 휠 이벤트 관리
 window.addEventListener("wheel", function(events){
   contentsScroll(events);
   asideActive();
 })
 
+// 마우스 스크롤 작동 함수
 function contentsScroll (events){
+  // 마우스 휠 이벤트 잠시 멈춤
   window.removeEventListener("wheel", contentsScroll);
 
   const activeElem = document.querySelectorAll(".slidesActive");
   const everyElem = document.querySelectorAll(".slides");
 
+  // 마우스 휠 하향 시 작동
   if(events.deltaY < 0){
     everyElem.forEach(function(elem, index){
         if(elem == activeElem[activeElem.length -1] && index > 0){
@@ -56,6 +23,8 @@ function contentsScroll (events){
         console.log("hi");
       }
     })
+
+    // 마우스 휠 상향 시 작동
   } else if (events.deltaY > 0){
     everyElem.forEach(function(elem, index){
       if(elem == activeElem[activeElem.length -1] && index < everyElem.length-1){
@@ -64,12 +33,14 @@ function contentsScroll (events){
     }
   })
 }
+  // 마우스 휠 이벤트 재작동
 	setTimeout(function(){
 		window.addEventListener("wheel", contentsScroll);
 	}, 400);
 }
 
 // Aside Click Event
+// 클릭 이벤트 관리
 document.querySelectorAll("aside > ul > li").forEach(
   (elem, index) => {
     const timeSet = 30;
@@ -79,6 +50,8 @@ document.querySelectorAll("aside > ul > li").forEach(
     }, false);
   })
 
+  
+// 클릭시 스크롤 작동 함수
 function asideClickScroll (clickElem, clickIndex, timeSet){
   const scrollPage = document.querySelectorAll(".slides");
 
@@ -118,7 +91,7 @@ function asideClickScroll (clickElem, clickIndex, timeSet){
 }
 
 // Aside Active Event
-
+// 클릭&마우스 휠 작동 시 어사이드 Active 관리
 function asideActive (){
   const scrollPage = document.querySelectorAll(".slides");
   const asideList = document.querySelectorAll("aside > ul > li");
