@@ -11,14 +11,13 @@ main {
   }
 }
 #banner {
-  position: relative;
-  z-index: 0;
+  position: fixed;
+  z-index: -1;
   width: 100%;
   height: 900px;
   background: url(../img/banner.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 140px;
   .scrollDown {
     position: absolute;
     left: 50%;
@@ -49,6 +48,9 @@ main {
 }
 
 #contents {
+  background-color: white;
+  margin-top: 900px;
+  padding-top: 140px;
   h2 {
     font-size: 100px;
     font-weight: bold;
