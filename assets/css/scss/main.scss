@@ -65,6 +65,21 @@ body {
         }
       }
     }
+    button.op_skip {
+      margin-top: 30px;
+      padding: 15px 30px;
+      border-radius: 10px;
+      border: 2px solid #282828;
+      background: none;
+      opacity: 0.05;
+      transition: opacity 0.4s;
+      font-size: 20px;
+      font-weight: bold;
+      color: #282828;
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 }
 

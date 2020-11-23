@@ -105,6 +105,24 @@ body {
   opacity: 1;
 }
 
+#opening .wrap button.op_skip {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 2px solid #282828;
+  background: none;
+  opacity: 0.05;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  font-size: 20px;
+  font-weight: bold;
+  color: #282828;
+}
+
+#opening .wrap button.op_skip:hover {
+  opacity: 1;
+}
+
 #aside {
   z-index: 1;
   position: fixed;
