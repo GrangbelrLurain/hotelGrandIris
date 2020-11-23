@@ -29,6 +29,29 @@ main section .container .raw {
   padding: 0 28px;
 }
 
+#aside ul li {
+  font-size: 24px;
+  color: white;
+  opacity: 0.5;
+  position: relative;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  text-transform: capitalize;
+}
+
+#aside ul li::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  width: 10px;
+  height: 100%;
+  background-color: white;
+}
+
+#aside ul li.active {
+  opacity: 1;
+}
+
 .slides {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;

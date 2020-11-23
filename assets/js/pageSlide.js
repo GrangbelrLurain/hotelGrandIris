@@ -33,7 +33,13 @@
 
 //   /*window.scrollTo({top:weddingLocation, behavior:'smooth'});*/
 // }
-window.addEventListener("wheel", contentsScroll)
+
+
+// Mouse Wheel Event
+window.addEventListener("wheel", function(events){
+  contentsScroll(events);
+  asideActive();
+})
 
 function contentsScroll (events){
   window.removeEventListener("wheel", contentsScroll);
@@ -61,4 +67,70 @@ function contentsScroll (events){
 	setTimeout(function(){
 		window.addEventListener("wheel", contentsScroll);
 	}, 400);
+}
+
+// Aside Click Event
+document.querySelectorAll("aside > ul > li").forEach(
+  (elem, index) => {
+    const timeSet = 30;
+
+    elem.addEventListener("click", function(){
+      asideClickScroll(elem, index, timeSet)
+    }, false);
+  })
+
+function asideClickScroll (clickElem, clickIndex, timeSet){
+  const scrollPage = document.querySelectorAll(".slides");
+
+  let slidesActiveIndex = 0;
+  scrollPage.forEach( (elem) => {
+    if(elem.classList.contains("slidesActive")){
+    slidesActiveIndex++
+  }
+  });
+  
+  if(slidesActiveIndex > clickIndex){
+    let i = slidesActiveIndex;
+    console.log(i)
+    const interval = setInterval(function(){
+      if(i-- > clickIndex){
+        scrollPage[i+1].classList.remove("slidesActive");
+        console.log(i);
+      }else{
+        clearInterval(interval);
+        asideActive()
+      }
+    }, timeSet)
+  }else if(slidesActiveIndex <= clickIndex){
+    let i = 0;
+    console.log(i)
+    const interval = setInterval(function(){
+      if(i++ < clickIndex){
+        scrollPage[i].classList.add("slidesActive");
+        console.log(i);
+      }else{
+        clearInterval(interval);
+        asideActive()
+      }
+    }, timeSet)
+
+  }
+}
+
+// Aside Active Event
+
+function asideActive (){
+  const scrollPage = document.querySelectorAll(".slides");
+  const asideList = document.querySelectorAll("aside > ul > li");
+
+  let slidesActiveIndex = 0;
+  scrollPage.forEach( (elem) => {
+    if(elem.classList.contains("slidesActive")){
+    slidesActiveIndex++
+  }
+  });
+
+
+  asideList.forEach((elem) => elem.classList.remove("active"));
+  asideList[slidesActiveIndex-1].classList.add("active");
 }
