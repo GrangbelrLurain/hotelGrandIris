@@ -4,7 +4,9 @@ function openingAnimate(){
   const openingAnimation = setInterval(function(){
     const aniElems = document.querySelectorAll(".op_ani");
     const aniWrap = document.querySelector("#opening")
-    if(i < aniElems.length){
+    if(!aniElems.length){
+      clearInterval(openingAnimation);
+    }else if(i < aniElems.length){
       console.log(i);
       aniElems[i].classList.add("active");
       i = i + 1
