@@ -11,6 +11,10 @@ main {
 }
 
 #banner {
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +41,10 @@ main {
 }
 
 #contents {
+  margin-top: 1000px;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background: white;
   .guid_wrap {
     display: flex;
     flex-wrap: wrap;

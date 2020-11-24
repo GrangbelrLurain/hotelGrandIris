@@ -8,6 +8,10 @@ main .container .row {
 }
 
 #banner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,6 +46,13 @@ main .container .row {
   font-size: 30px;
   text-align: center;
   white-space: pre-line;
+}
+
+#contents {
+  margin-top: 1000px;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background: white;
 }
 
 #contents .guid_wrap {

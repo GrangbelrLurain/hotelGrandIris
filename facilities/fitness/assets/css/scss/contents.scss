@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 main {
+  z-index: 0;
   .container {
     width: 1280px;
     margin: 0 auto;
@@ -11,6 +12,10 @@ main {
 }
 
 #banner {
+  z-index: -1;
+  top:0;
+  left:0;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,6 +41,10 @@ main {
 }
 
 #contents {
+  margin-top: 1000px;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  background: white;
   .guid_wrap {
     display: flex;
     flex-wrap: wrap;
