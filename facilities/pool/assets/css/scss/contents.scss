@@ -37,6 +37,33 @@ main {
     font-size: 30px;
     text-align: center;
   }
+  .scrollDown {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: scrollDown 1.5s ease-in-out infinite;
+    transform: translateX(-50%);
+    opacity: 0.5;
+    transition: opacity 1s;
+    &:hover {
+      opacity: 1;
+    }
+    .icon {
+      width: 15px;
+      height: 60px;
+      border-radius: 10px;
+      background-color: white;
+    }
+    .cont {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+    }
+  }
 }
 
 #contents {

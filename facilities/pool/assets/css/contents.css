@@ -11,20 +11,11 @@ main .container .row {
   position: fixed;
   left: 0;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   z-index: -1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 1000px;
   background: url(../img/banner.jpg) no-repeat;
@@ -47,6 +38,37 @@ main .container .row {
   text-align: center;
 }
 
+#banner .scrollDown {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: scrollDown 1.5s ease-in-out infinite;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+
+#banner .scrollDown:hover {
+  opacity: 1;
+}
+
+#banner .scrollDown .icon {
+  width: 15px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#banner .scrollDown .cont {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
 #contents {
   padding-top: 150px;
   padding-bottom: 50px;
@@ -55,14 +77,9 @@ main .container .row {
 }
 
 #contents .guid_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 #contents .guid_wrap .guid {
@@ -92,12 +109,8 @@ main .container .row {
 }
 
 #contents .cont2 .gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 #contents .cont2 .gallery figure {

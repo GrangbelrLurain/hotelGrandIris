@@ -12,19 +12,10 @@ main .container .row {
   top: 0;
   left: 0;
   z-index: -1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 1000px;
   background: url(../img/banner.jpg) no-repeat;
@@ -45,6 +36,37 @@ main .container .row {
   color: white;
   font-size: 30px;
   text-align: center;
+}
+
+#banner .scrollDown {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: scrollDown 1.5s ease-in-out infinite;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+
+#banner .scrollDown:hover {
+  opacity: 1;
+}
+
+#banner .scrollDown .icon {
+  width: 15px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#banner .scrollDown .cont {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
 }
 
 #contents {
@@ -77,11 +99,9 @@ main .container .row {
 
 #contents .cont1 .list ul {
   display: none;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 40px 140px;
   border: 1px solid #282828;
 }
@@ -99,14 +119,12 @@ main .container .row {
 
 #contents .cont1 .list.li2 h3 {
   left: 50%;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 #contents .cont1 .list.li3 h3 {
   right: 50%;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 #contents .cont1 .list.li4 h3 {
@@ -123,8 +141,6 @@ main .container .row {
 }
 
 #contents .cont1 .list.active ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
