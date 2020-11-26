@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media (max-width: 1300px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  main .container {
+    width: 100%;
+  }
+}

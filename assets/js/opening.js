@@ -24,6 +24,7 @@ document.querySelector(".op_skip").addEventListener("click", () => {
   const aniWrap = document.querySelector("#opening")
 
   aniWrap.style.opacity = 0;
+  window.scrollTo(0, 0);
   setTimeout(() => {
     document.querySelector("body").removeChild(aniWrap);
   }, 1000)

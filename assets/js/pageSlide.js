@@ -3,6 +3,7 @@
 const contentsScrollHandler = function(events){
   contentsScroll(events);
   asideActive();
+  window.scrollTo(0, 0);
 }
 
 // 마우스 휠 이벤트 추가
