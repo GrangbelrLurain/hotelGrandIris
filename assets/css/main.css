@@ -2,15 +2,6 @@ body {
   overflow: hidden;
 }
 
-@-webkit-keyframes opening {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes opening {
   0% {
     opacity: 0;
@@ -26,33 +17,17 @@ body {
   position: fixed;
   z-index: 1000;
   background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: opacity 1s;
+  justify-content: center;
+  align-items: center;
   transition: opacity 1s;
 }
 
 #opening .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #opening .wrap .logo {
@@ -61,8 +36,7 @@ body {
 }
 
 #opening .wrap .logo.active {
-  -webkit-animation: opening 1s ease 1;
-          animation: opening 1s ease 1;
+  animation: opening 1s ease 1;
   opacity: 1;
 }
 
@@ -76,8 +50,7 @@ body {
 }
 
 #opening .wrap .desc .title_K.active {
-  -webkit-animation: opening 1s ease 1;
-          animation: opening 1s ease 1;
+  animation: opening 1s ease 1;
   opacity: 1;
 }
 
@@ -87,8 +60,7 @@ body {
 }
 
 #opening .wrap .desc .title_E.active {
-  -webkit-animation: opening 1s ease 1;
-          animation: opening 1s ease 1;
+  animation: opening 1s ease 1;
   opacity: 1;
 }
 
@@ -100,8 +72,7 @@ body {
 }
 
 #opening .wrap .desc .hotel_name.active {
-  -webkit-animation: opening 1s ease 1;
-          animation: opening 1s ease 1;
+  animation: opening 1s ease 1;
   opacity: 1;
 }
 
@@ -112,7 +83,6 @@ body {
   border: 2px solid #282828;
   background: none;
   opacity: 0.05;
-  -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   font-size: 20px;
   font-weight: bold;
@@ -128,8 +98,7 @@ body {
   position: fixed;
   top: 50%;
   left: 5vw;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 main {
@@ -155,7 +124,6 @@ main section .container .raw {
   color: white;
   opacity: 0.5;
   position: relative;
-  -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   text-transform: capitalize;
   cursor: pointer;
@@ -175,7 +143,6 @@ main section .container .raw {
 }
 
 .slides {
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   position: absolute;
   bottom: -100vh;
@@ -213,4 +180,44 @@ main section .container .raw {
   background: url(../img/facilities.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+/* CONTENTS */
+#facilities .facilities {
+  padding-top: 150px;
+  position: relative;
+}
+
+#facilities .facilities p {
+  font-size: 150px;
+  font-weight: bold;
+  line-height: 150px;
+  white-space: pre-line;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#facilities .facilities .title_right {
+  margin-top: 100px;
+  text-align: right;
+}
+
+#facilities .facilities .link {
+  position: absolute;
+  right: 0;
+  bottom: -80px;
+  width: 300px;
+  height: 80px;
+  font-size: 50px;
+  font-weight: bold;
+  -webkit-mask: url(../img/faicilities/mask.png) no-repeat;
+  mask-size: 100%;
+  background: white;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+#facilities.slidesActive .facilities .ani {
+  opacity: 1;
 }

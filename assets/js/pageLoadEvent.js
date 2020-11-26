@@ -7,8 +7,6 @@ function pageLoad(){
   const name = url.substring(nameLocation, nameEndLocation)
   const aniWrap = document.querySelector("#opening")
 
-  console.log(name);
-
   if(name == "main"){
     document.querySelector("body").removeChild(aniWrap);
 }

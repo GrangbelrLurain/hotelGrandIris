@@ -1,14 +1,17 @@
 // Mouse Wheel Event
 // 마우스 휠 이벤트 관리
-window.addEventListener("wheel", function(events){
+const contentsScrollHandler = function(events){
   contentsScroll(events);
   asideActive();
-})
+}
+
+// 마우스 휠 이벤트 추가
+window.addEventListener("wheel", contentsScrollHandler);
 
 // 마우스 스크롤 작동 함수
 function contentsScroll (events){
   // 마우스 휠 이벤트 잠시 멈춤
-  window.removeEventListener("wheel", contentsScroll);
+  window.removeEventListener("wheel", contentsScrollHandler);
 
   const activeElem = document.querySelectorAll(".slidesActive");
   const everyElem = document.querySelectorAll(".slides");
@@ -20,7 +23,6 @@ function contentsScroll (events){
         elem.classList.remove("slidesActive");
 
         everyElem[index - 1].classList.add("slidesActive");
-        console.log("hi");
       }
     })
 
@@ -32,11 +34,21 @@ function contentsScroll (events){
       everyElem[index + 1].classList.add("slidesActive");
     }
   })
-}
+}  
+  //facilitiesAnimation 불러오기
+    const checkSlide = document.querySelectorAll(".slidesActive")[document.querySelectorAll(".slidesActive").length-1]
+    const everySlides = everyElem
+
+    if(checkSlide == everySlides[4]){
+      facilitiesAnimation();
+    } else {
+      facilitiesAnimationReset();
+    }
+
   // 마우스 휠 이벤트 재작동
-	setTimeout(function(){
-		window.addEventListener("wheel", contentsScroll);
-	}, 400);
+  setTimeout(function(){
+    window.addEventListener("wheel", contentsScrollHandler);
+  }, 200);
 }
 
 // Aside Click Event
@@ -86,8 +98,16 @@ function asideClickScroll (clickElem, clickIndex, timeSet){
         asideActive()
       }
     }, timeSet)
-
   }
+  //facilitiesAnimation 불러오기
+
+  setTimeout(function(){
+    if(scrollPage[scrollPage.length-2] == document.querySelector("#facilities")){
+      facilitiesAnimation();
+    } else {
+      facilitiesAnimationReset();
+    }
+  },400)
 }
 
 // Aside Active Event
@@ -105,5 +125,35 @@ function asideActive (){
 
 
   asideList.forEach((elem) => elem.classList.remove("active"));
-  asideList[slidesActiveIndex-1].classList.add("active");
+  if(asideList[slidesActiveIndex-1]){
+    asideList[slidesActiveIndex-1].classList.add("active");
+  }
 }
+
+// FACILITY ACTIVE EVENT
+
+function facilitiesAnimation(){
+  const facilitiesElem = document.querySelector("#facilities");
+
+  let i = 0;
+  const faciitiesAnimate = setInterval(function(){
+    const targets = document.querySelectorAll(".facilities .target");
+    const slides = document.querySelectorAll(".slidesActive");
+    const lastActiveElem = slides[slides.length-1];
+    if(facilitiesElem != lastActiveElem){
+      clearInterval(faciitiesAnimate);
+      facilitiesAnimationReset();
+    }
+    else if (i < targets.length){
+      targets[i].classList.add("ani");
+      i = i + 1;
+    } else {
+      clearInterval(faciitiesAnimate);
+    }
+  }, 800)
+}
+
+function facilitiesAnimationReset(){
+  const targets = document.querySelectorAll(".facilities .target");
+  targets.forEach((elem) => elem.classList.remove("ani"));
+} 

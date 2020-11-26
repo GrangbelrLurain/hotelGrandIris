@@ -7,11 +7,9 @@ function openingAnimate(){
     if(!aniElems.length){
       clearInterval(openingAnimation);
     }else if(i < aniElems.length){
-      console.log(i);
       aniElems[i].classList.add("active");
       i = i + 1
     }else if(i < aniElems.length + 1){
-      console.log("hello")
       aniWrap.style.opacity = 0;
       i = i + 1
     }else{
