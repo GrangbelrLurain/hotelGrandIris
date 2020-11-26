@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"wedding" : Grand Iris Hotel</title><!-- 페이지 이름 넣고 뒤에 ": Grand Iris Hotel" 을 붙여주시면 됩니다.-->
+    <title>"submenu" : Grand Iris Hotel</title><!-- 페이지 이름 넣고 뒤에 ": Grand Iris Hotel" 을 붙여주시면 됩니다.-->
     <!--RESET-->
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
-    <!--폰트어썸/슬릭-->
-    <link rel="stylesheet" href="assets/css/slick.css" type="text/css">
+    <!--폰트어썸-->
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <!--폰트링크-->
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
-    <!--style-->
-    <link rel="stylesheet" href="assets/css/contents.css" type="text/css">
+    <!--기본 설정 (헤더, 푸터)-->
+    <link rel="stylesheet" href="assets/css/header.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/footer.css" type="text/css">
     <!--파비콘-->
     <!--Chrome, Safari, IE -->
     <link rel="shortcut icon" href="assets/icon/I.png" type="image/x-icon">
@@ -22,14 +20,15 @@
     <link rel="icon" href="assets/icon/I.png" type="image/x-icon">
     <link rel="apple-touch-icon-percomposed" href="assets/icon/I.png">
     <!--//파비콘-->
-
+    <!-- 서브페이지 컨텐츠 CSS -->
+    <link rel="stylesheet" href="assets/css/contents.css" type="text/css">
 </head>
 
 <body>
     <header id="header">
         <div class="header clearfix">
             <div class="logo">
-                <a href="/?main"><img src="assets/img/sublogofff.PNG" alt="서브로고"></a>
+                <a href="#"><img src="assets/img/sublogofff-80.png" alt="서브로고"></a>
             </div>
             <div class="nav_left">
                 <ul class="clearfix menu">
@@ -42,7 +41,7 @@
                             <li><a href="#">스위트</a></li>
                         </ul>
                     </li>
-                    <li><a href="/wedding/">WEDDING</a>
+                    <li><a href="#">WEDDING</a>
                         <ul class="submenu">
                             <li><a href="#">홀투어</a></li>
                             <li><a href="#">연회장</a></li>
@@ -58,18 +57,18 @@
                             <li><a href="#">이벤트</a></li>
                         </ul>
                     </li>
-                    <li><a href="/dining/">DINING</a>
+                    <li><a href="#">DINING</a>
                         <ul class="submenu">
-                            <li><a href="/dining/">레스토랑</a></li>
+                            <li><a href="#">레스토랑</a></li>
                             <li><a href="#">루프탑</a></li>
                         </ul>
                     </li>
-                    <li><a href="/facilities/">FACILITIES</a>
+                    <li><a href="#">FACILITIES</a>
                         <ul class="submenu">
-                            <li><a href="/facilities/pool/">수영장</a></li>
-                            <li><a href="/facilities/sauna/">사우나</a></li>
-                            <li><a href="/facilities/fitness/">피트니스</a></li>
-                            <li><a href="/facilities/landing/">물품대여</a></li>
+                            <li><a href="#">수영장</a></li>
+                            <li><a href="#">사우나</a></li>
+                            <li><a href="#">피트니스</a></li>
+                            <li><a href="#">물품대여</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -83,34 +82,53 @@
                 </ul>
             </div>
         </div>
+        <div class="bom"></div>
         <!--//header-->
     </header>
     <main>
-<!--
         <section id="banner">
-            <div class="banner">
-            </div>
+            <article class="banner">
+                <ul>
+                    <li><a href="#"><img src="assets/img/banner1.jpg" alt="슬라이드1"></a></li>
+                    <li><a href="#"><img src="assets/img/banner2.jpg" alt="슬라이드2"></a></li>
+                    <li><a href="#"><img src="assets/img/banner3.jpg" alt="슬라이드3"></a></li>
+                    <li><a href="#"><img src="assets/img/banner4.jpg" alt="슬라이드4"></a></li>
+                </ul>
+            </article>
+            <article class="b_text">
+                <div>
+                    <p>Grand Iris</p>
+                    <p>Wedding</p><br><br>
+                    <span>그랜드 아이리스 호텔에서 특별한 예식을 진행 해 보세요.</span>
+                </div>
+            </article>
         </section>
--->
         <section id="contents">
             <article id="cont_1">
                 <div class="container">
                     <div class="row">
                         <div class="cont_1">
-                            <h2>GRAND IRIS WEDDING</h2>
-                            <p class="halltour">Hall Tour &lt; Grand Hall</p>
-                            <h3>Grand Hall <span>&nbsp;&nbsp;(그랜드 홀)</span></h3>
-                            <div class="grand_slick">
-                                <div><a href="#"><img src="assets/img/slick1.jpg" alt=""></a></div>
-                                <div><a href="#"><img src="assets/img/slick2.jpg" alt=""></a></div>
-                                <div><a href="#"><img src="assets/img/slick3.jpg" alt=""></a></div>
-                                <div><a href="#"><img src="assets/img/slick4.jpg" alt=""></a></div>
-                                <div><a href="#"><img src="assets/img/slick5.jpg" alt=""></a></div>
-                                <div><a href="#"><img src="assets/img/slick6.jpg" alt=""></a></div>
+                            <h3>WEDDING HALL</h3>
+                            <div class="grand_hall">
+                                <a href="#"><img src="assets/img/grandhall.jpg" alt="그랜드홀"></a>
+                                <div>
+                                    <p>그랜드 홀 <span>Grand Hall</span></p>
+                                    <p class="g_text">호텔의 고급스러움과 프라이빗함을 접목시킨 웨딩홀</p>
+                                </div>
+                                <div class="g_plus">
+                                    <a href="#">자세히보기</a>
+                                </div>
                             </div>
-                            <p class="g">Grand Hall</p><br>
-                            <p class="h">그랜드 홀</p>
-                            <p class="info">4000㎡의 대규모 넓이에 웅장한 분위기를 더해주는 8m 천고를 자랑하는 그랜드 홀<br>동시 수용 1,000명이 가능한 최신 웨딩트렌드 대명사</p>
+                            <div class="iris_hall">
+                                <a href="#"><img src="assets/img/irishall.JPG" alt="아이리스홀"></a>
+                                <div>
+                                    <p>아이리스 홀 <span>Iris Hall</span></p>
+                                    <p class="i_text">호텔의 고급스러움과 프라이빗함을 접목시킨 웨딩홀</p>
+                                </div>
+                                <div class="i_plus">
+                                    <a href="#">자세히보기</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,31 +137,33 @@
                 <div class="container">
                     <div class="row">
                         <div class="cont_2">
-                            <h2>그랜드 신부대기실</h2>
-                            <h3>Grand Bride Room</h3>
-                            <div class="b_img">
+                            <h3>BANQUET</h3>
+                            <div class="banquet">
+                                <a href="#"><img src="assets/img/banquet.jpg" alt="연회장"></a>
                                 <div>
-                                    <img src="assets/img/b_bride1.jpg" alt="">
+                                    <p>연회장<span> (Banquet)</span></p>
                                 </div>
-                                 <div>
-                                    <img src="assets/img/b_bride2.jpg" alt="">
-                                </div>
-                                 <div>
-                                    <img src="assets/img/b_bride3.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="assets/img/b_lobby.jpg" alt="">
-                                </div>
-                                <div>
-                                    <img src="assets/img/b_lobby2.jpg" alt="">
+                                <div class="b_plus1">
+                                    <a href="#">자세히보기</a>
                                 </div>
                             </div>
-                            <div class="brideroom">
-                                <div><a href="#"><img src="assets/img/bride1.JPG" alt=""></a></div>
-                                <div><a href="#"><img src="assets/img/bride2.JPG" alt=""></a></div>
-                                <div><a href="#"><img src="assets/img/bride3.jpg" alt=""></a></div>
-                                <div><a href="#"><img src="assets/img/lobby1.jpg" alt=""></a></div>
-                                <div><a href="#"><img src="assets/img/lobby2.jpg" alt=""></a></div>
+                            <div class="birthday">
+                                <a href="#"><img src="assets/img/birthday.JPG" alt="돌잔치"></a>
+                                <div>
+                                    <p>생일파티<span> (Birthday Party)</span></p>
+                                </div>
+                                <div class="b_plus1">
+                                    <a href="#">자세히보기</a>
+                                </div>
+                            </div>
+                            <div class="business">
+                                <a href="#"><img src="assets/img/business.jpg" alt="비즈니스회의"></a>
+                                <div>
+                                    <p>비즈니스회의<span> (Business)</span></p>
+                                </div>
+                                <div class="b_plus1">
+                                    <a href="#">자세히보기</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -153,46 +173,48 @@
                 <div class="container">
                     <div class="row">
                         <div class="cont_3">
-                            <h2>그랜드 아이리스 웨딩의 혜택</h2>
-                            <div class="room">
-                                <div class="image">
-                                    <img src="assets/img/room.JPG" alt="룸">
+                                <div class="reservation">
+                                    <strong>Reservation</strong>
+                                    <p>예약 및 상담신청</p>
+                                    <a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                                    <p class="r_text">웨딩 전문 컨설턴트가 예약을 도와드립니다.</p>
                                 </div>
-                                <div class="r_text">
-                                    <h3>Room Pakage</h3>
-                                    <p>그랜드 아이리스 호텔에서 결혼식을 예약하신 분들께 웨딩패키지 1박 무료 숙박권을 드립니다.<br>
-                                     (결혼식 전일이나 당일에 한함)</p>
+                                <div class="location">
+                                    <strong>Location</strong>
+                                    <p>찾아 오시는 길</p>
+                                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                                    <p class="l_text">찾아 오시는 길 주차공간을 안내드립니다.</p>
                                 </div>
-                            </div>
-                            <div class="weddingcar">
-                                <div class="image">
-                                    <img src="assets/img/weddingcar.JPG" alt="웨딩카">
+                                <div class="gallery">
+                                    <strong>Iris Gallery</strong>
+                                    <p>아이리스 갤러리</p>
+                                    <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                                    <p class="g_text">아이리스의 생생한 후기를 만나보세요.</p>
                                 </div>
-                                <div class="w_text">
-                                    <h3>Wedding Car Service</h3>
-                                    <p>그랜드 아이리스 호텔에서는 결혼식을 치르신 신랑신부님의 품격과
-                                        편의를 위해 신혼여행을 떠나시는 공항까지 차량으로 배웅해 드리는
-                                        서비스를 제공하고 있습니다.
-                                        </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="cont_4">
+                <div class="container">
+                    <div class="row">
+                        <div class="cont_4">
+                            <h3>EVENT</h3>
+                            <div class="sns">
+                                <div class="event">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <p>그랜드 아이리스 호텔 <br>SNS 후기이벤트</p>
                                 </div>
-                            </div>
-                            <div class="tasting">
-                                <div class="image">
-                                    <img src="assets/img/tasting.JPG" alt="테이스팅">
+                                <div class="e_text">
+                                    <p class="e_title">그랜드 아이리스 호텔 SNS후기 이벤트</p>
+                                    <p class="e_gift">그랜드 아이리스 호텔의 웨딩 후기를 남겨주시면 소정의 상품을 전달 해 드립니다.</p>
+                                    <p class="e_date"> <span>이벤트기간</span> 2021.01.01 ~ 2021.12.31</p>
                                 </div>
-                                <div class="t_text">
-                                    <h3>Tasting Service</h3>
-                                    <p>그랜드 아이리스 호텔에서 웨딩을 예약하신 고객님께
-                                        해당 메뉴에 대한 시식 서비스를 제공하고 있습니다.
-
-                                        그랜드 아이리스 웨딩의 최고 메뉴를 미리 점검해 보시기 바랍니다.</p>
+                                <div class="icon">
+                                    <a href="#" class="plus">
+                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="reservation">
-                                <a href="#">
-                                    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
-                                    <span>&nbsp;예약문의</span>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -228,11 +250,11 @@
                     <div class="f_right">
                         <div class="family">
                             <select id="family" onchange="if(this.value) window.open(this.value);">
-                                <option value="">패밀리사이트</option>
-                                <option value="https://www.josunhotel.com/intro.do">조선호텔</option>
-                                <option value="https://hotel-hongdan.com/html/00_main/">호텔홍단</option>
-                                <option value="https://www.lescapehotel.com/dining#tab3"> 레스케이프호텔</option>
-                                <option value="https://kangwonland.high1.com/casino/index.do">강원랜드</option>
+                                <option value="">패밀리사이트
+                                <option value="https://www.josunhotel.com/intro.do">조선호텔
+                                <option value="https://hotel-hongdan.com/html/00_main/">호텔홍단
+                                <option value="https://www.lescapehotel.com/dining#tab3"> 레스케이프호텔
+                                <option value="https://kangwonland.high1.com/casino/index.do">강원랜드
                             </select>
                         </div>
                         <div class="f_sns">
@@ -246,42 +268,19 @@
                 </div>
             </div>
         </div>
-    </footer>
-
+    </footer><!--footer-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/header.js"></script>
     <script src="assets/js/footer.js"></script>
     <script>
-        /*홀투어 슬릭*/
-        $(".grand_slick").slick({
-              infinite: true,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              autoplay:true,
-              autoplaySpeed:3000,
-              dots:true,
-        });  
-        
-        
-        /*대기실 슬릭*/
-        $('.b_img').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          fade: true,
-          asNavFor: '.brideroom'
-        });
-        $('.brideroom').slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          asNavFor: '.b_img',
-          dots: true,
-          centerMode: true,
-          focusOnSelect: true,
-          autoplay:true,
-          autoplaySpeed:3000,
-        });
+        /*배너 페이드 인아웃 효과*/
+
+        $(".banner>ul>li").hide();
+        $(".banner>ul>li:first-child").show();
+
+        setInterval(function() {
+            $(".banner>ul>li:first-child").fadeOut(2000).next().fadeIn(2000).end().appendTo(".banner>ul");
+        }, 6000);
     </script>
 </body></html>
 

@@ -7,7 +7,7 @@ $(document).mouseup(function(e) {
 });
 
 
-$(".menu li>a").mouseover(function() {
+$(".menu li>a").click(function() {
     var li = $(this).parent();
     var ul = li.parent()
     ul.find('li').removeClass('expand');
