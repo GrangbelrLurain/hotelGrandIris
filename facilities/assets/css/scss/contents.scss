@@ -12,8 +12,8 @@ main {
 }
 #banner {
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: -1;
   width: 100%;
   height: 900px;
@@ -53,6 +53,7 @@ main {
   background-color: white;
   margin-top: 900px;
   padding-top: 140px;
+  padding-bottom: 50px;
   h2 {
     font-size: 100px;
     font-weight: bold;
@@ -96,6 +97,7 @@ main {
   }
   .cont2 {
     position: relative;
+    z-index: 0;
     margin-bottom: 240px;
     &::before {
       content: "";
@@ -116,6 +118,7 @@ main {
   }
   .cont3 {
     position: relative;
+    z-index: 0;
     margin-bottom: 240px;
     &::before {
       content: "";
@@ -138,6 +141,7 @@ main {
   }
   .cont4 {
     position: relative;
+    z-index: 0;
     margin-bottom: 240px;
     &::before {
       content: "";
@@ -158,6 +162,7 @@ main {
   }
   .cont5 {
     position: relative;
+    z-index: 0;
     margin-bottom: 240px;
     &::before {
       content: "";
