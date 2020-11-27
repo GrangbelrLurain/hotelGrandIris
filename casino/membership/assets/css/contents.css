@@ -1,0 +1,337 @@
+main {
+  height: 1800px;
+}
+
+#banner{
+	background: url(../img/s_banner.png)no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+}
+
+/*container*/
+main .container{
+	width: 1280px;
+	height: inherit;
+	margin: 0 auto;
+	/*background: rgba(0,0,0,0.2);*/
+
+}
+main .container .row {
+    padding: 0 28px;
+}
+.banner{}
+.banner span{
+    color: #fff;
+    font-size: 70px; 
+    text-transform: uppercase;
+    line-height: 650px;
+    font-family: 'Italianno', cursive;
+}
+
+
+
+/*cont1*/
+.cont1{
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.cont1 .con1{
+    text-align: center;
+    margin-top: 50px;
+}
+.cont1 .con1 h2{
+    font-size: 45px;
+    font-weight: bold;
+}
+.cont1 .con1 em{
+    font-size: 14px;
+}
+.cont1 .con2{
+    margin-top: 80px;
+}
+.cont1 .con2 p{
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
+}
+.cont1 .con3{
+    margin-top: 40px;
+}
+.cont1 .con3 span{
+    font-size: 16px;
+    font-weight: 6400;
+}
+
+
+
+
+
+/*cont2*/
+.cont2{
+    height: 600px;
+    padding: 20px;
+}
+
+.member{}
+.m_btn{}
+.m_btn ul{
+    overflow: hidden;
+    border-bottom: 1px solid #282828;
+}
+.m_btn ul li{
+    float: left;
+    padding: 10px 70px;
+    border: 1px solid #282828;
+    border-bottom: 0;
+    font-size: 18px;
+}
+.m_btn ul li.active{
+    background: #282828;
+}
+.m_btn ul li.active a{
+    color: #fff;
+}
+
+.m_cont{}
+
+
+/*div1*/
+/*m_cont1*/
+.m_cont .m_cont1{
+    margin-top: 30px;
+    overflow: hidden;
+}
+.m_cont .m_cont1 .left{
+    float: left;
+    margin-top: 20px;
+}
+.m_cont .m_cont1 .left img{
+    width: 80px;
+    height: 78px;
+}
+.m_cont .m_cont1 .right{
+    float: left;
+    margin-left: 30px;
+}
+.m_cont .m_cont1 .right strong{
+    font-size: 18px;
+    font-weight: 900;
+}
+.m_cont .m_cont1 .right p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+/*m_cont2*/
+.m_cont .m_cont2{
+    margin-top: 60px;
+}
+.m_cont .m_cont2 h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.m_cont .m_cont2 .card{
+    margin-top: 20px;
+    border: 1px solid #282828;
+    padding: 10px;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+}
+.m_cont .m_cont2 .card ul{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m_cont .m_cont2 .card ul li{
+    float: left;
+    margin-right: 130px;
+    margin-top: 60px;
+}
+.m_cont .m_cont2 .card ul li.last{
+    margin-right: 0;
+}
+.m_cont .m_cont2 .card ul li img{
+    width: 250px;
+    height: 170px;
+}
+.m_cont .m_cont2 .card ul li p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*m_cont3*/
+.m_cont .m_cont3{
+    margin-top: 40px;
+}
+.m_cont .m_cont3 table{
+    width: 100%;
+    border-top: 1px solid #000;
+    border-collapse: collapse;
+}
+.m_cont .m_cont3 table th{
+    border-bottom: 1px solid #000;
+    background: #c7b299;
+    font-size: 18px;
+    padding: 6px 0;
+}
+.m_cont .m_cont3 table tr{
+    font-size: 16px;
+}
+.m_cont .m_cont3 table tr td{
+    border-bottom: 1px solid #000;
+    padding: 8px 10px;
+    text-align: center;
+}
+.m_cont .m_cont3 table tr td.left{
+    text-align: left;
+}
+
+/*m_cont4*/
+.m_cont .m_cont4{
+    margin-top: 40px;
+    overflow: hidden;
+    width: 100%;
+    background: #e4d9ca;
+    padding: 20px 5px;
+    box-sizing: border-box;
+}
+.m_cont .m_cont4 .left_4{
+    float: left;
+}
+.m_cont .m_cont4 .left_4 img{
+    width: 90px;
+    height: 74px;
+}
+.m_cont .m_cont4 .right_4{
+    float: left;
+    margin-left: 30px;
+    margin-top: 3px;
+}
+.m_cont .m_cont4 .right_4 p{
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+
+/*m_cont5*/
+.m_cont .m_cont5{
+    margin-top: 15px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.m_cont .m_cont5 .left_5{
+    float: left;
+}
+.m_cont .m_cont5 .left_5 img{
+    width: 20px;
+    height: 20px;
+}
+.m_cont .m_cont5 .right_5{
+    float: left;
+    margin-left: 10px;
+}
+.m_cont .m_cont5 .right_5 p{
+    font-size: 12px;
+}
+
+/*div2*/
+/*m_cont6*/
+.m_cont .m_cont6{
+    margin-top: 40px;
+}
+.m_cont .m_cont6 strong{
+    font-weight: bold;
+    font-size: 18px;
+}
+.m_cont .m_cont6 p{
+    font-size: 15px;
+    margin-top: 5px;
+    padding-left: 3px;
+}
+
+/*m_cont7*/
+.m_cont .m_cont7{
+    margin-top: 60px;
+}
+.m_cont .m_cont7 h5{
+    font-size: 22px;
+    font-weight: bold;
+}
+.m_cont .m_cont7 span{
+    font-size: 18px;
+    color: #9d9a56;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.m_cont .m_cont7 p{
+    font-size: 15px;
+    padding-left: 3px;
+}
+.m_cont .m_cont7 table{
+    width: 100%;
+    border-top: 3px solid #9d9a56;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+.m_cont .m_cont7 table tr{
+    font-size: 16px;
+}
+.m_cont .m_cont7 table tr.last{
+    height: 65px;
+}
+.m_cont .m_cont7 table tr th, td{
+    border-bottom: 1px solid #e8e8dd;
+    padding: 10px 30px;
+}
+.m_cont .m_cont7 table tr th{
+    background: #e2e1c9;
+}
+
+
+/*m_cont8*/
+.m_cont .m_cont8{
+    margin-top: 90px;
+}
+.m_cont .m_cont8 h5{
+    font-size: 22px;
+    font-weight: bold;
+}
+.m_cont .m_cont8 span{
+    font-size: 18px;
+    color: #9d9a56;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.m_cont .m_cont8 p{
+    font-size: 15px;
+    padding-left: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
