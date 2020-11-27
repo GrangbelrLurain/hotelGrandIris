@@ -125,62 +125,83 @@
       <div class="container">
         <div class="raw">
           <article class="offer">
-            <div class="search">
-              <select name="roomSelect" id="roomSelect" class="roomSelect">
-                <option value="">ROOM</option>
-                <option value="수페리어">수페리어</option>
-                <option value="디럭스">디럭스</option>
-                <option value="프리미어">프리미어</option>
-                <option value="스위트">스위트</option>
-              </select>
+            <div class="selectWrap">
+              <button class="roomSelectBtn">
+                ROOM
+                <div class="roomSelect open">
+                  <ul>
+                    <li>수페리어</li>
+                    <li>디럭스</li>
+                    <li>프리미어</li>
+                    <li>스위트</li>
+                  </ul>
+                </div>
+              </button>
               <p class="check">Check In Out</p>
-              <button class="dateSelect"></button>
-              <div class="dateOption">
-                <div class="now"></div>
-                <div class="next"></div>
+              <div class="dateSelectWrap">
+                <button class="dateSelect">
+                </button>
+                <div class="dateOption">
+                  <div class="now"></div>
+                  <div class="next"></div>
+                </div>
               </div>
-              <div class="roomIndex">ROOM
-                <select name="roomIndexS" id="roomIndexS" class="selectOption">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </select>
+              <div class="etcSelectWrap">
+                <div class="roomIndex">ROOM
+                <button class="selectOption">
+                  1
+                </button>
+                </div>
+                <div class="adultIndex">ADULT
+                  <button class="selectOption">
+                    1
+                  </button>
+                </div>
+                <div class="childIndex">CHILD
+                  <button class="selectOption">
+                    0
+                  </button>
+                </div>
+                <div class="etcOption">
+                  <ul class="roomSelectOpt">
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                  </ul>
+                  <ul class="adultSelectOpt">
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                  </ul>
+                  <ul class="childSelectOpt">
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                  </ul>
+                </div>
               </div>
-              <div class="adultIndex">ADULT
-                <select name="adultIndexS" id="adultIndexS" class="selectOption">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </select>
-              </div>
-              <div class="childIndex">CHILD
-                <select name="childIndexS" id="childIndexS" class="selectOption">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </select>
-              </div>
+              <button class="search"></button>
             </div>
           </article>
         </div>

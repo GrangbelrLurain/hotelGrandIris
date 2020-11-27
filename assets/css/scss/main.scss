@@ -176,73 +176,173 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  .search {
+  .selectWrap {
     display: flex;
+    position: relative;
     align-items: flex-end;
     border: 5px solid white;
     padding: 8px 10px 12px 10px;
     border-radius: 5px;
     line-height: 30px;
     color: white;
-    .roomSelect {
-      width: 90px;
+    margin-right: 25px;
+    .roomSelectBtn {
       background: none;
       border: none;
       color: white;
       font-size: 30px;
+      font-weight: bold;
+      text-align: right;
       appearance: none;
       &:hover {
         color: #5b2fbd;
       }
-      option {
-        background: black;
-        width: 200px;
-        color: white;
+      .roomSelect {
+        position: absolute;
+        overflow: hidden;
+        height: 0;
+        top: 50px;
+        left: 0;
+        transition: height 0.4s;
+        ul {
+          background: white;
+          padding: 5px;
+          border-radius: 5px;
+          li {
+            padding: 5px 15px;
+            font-size: 20px;
+            text-align: center;
+            color: #282828;
+            transition: transform 0.4s;
+            &:hover {
+              color: #5b2fbd;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+
+      &:hover .roomSelect {
+        height: 180px;
+        display: block;
       }
     }
     .check {
       font-size: 25px;
       margin-left: 10px;
     }
-    .dateSelect {
-      margin-left: 10px;
-      background: none;
-      font-size: 25px;
-      font-weight: bold;
-      color: white;
-      &:hover {
-        color: #5b2fbd;
-      }
-    }
-    .dateOption {
-      font-size: 25px;
-      margin-left: 10px;
-    }
-    .selectOption {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 30px;
-      appearance: none;
-      &:hover {
-        color: #5b2fbd;
-      }
-      option {
+    .dateSelectWrap {
+      position: relative;
+      .dateSelect {
+        margin-left: 10px;
         background: none;
-        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+      }
+      &:hover .dateSelect {
+        color: #5b2fbd;
+      }
+      .dateOption {
+        position: absolute;
+        overflow: hidden;
+        left: -20px;
+        top: 40px;
+        height: 0;
+        width: 484px;
+        border-radius: 10px;
+        background: white;
+        transition: height 0.4s;
+      }
+      &:hover .dateOption {
+        height: 200px;
       }
     }
-    .roomIndex {
-      font-size: 20px;
-      margin-left: 10px;
+    .etcSelectWrap {
+      display: flex;
+      position: relative;
+      .selectOption {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 30px;
+        appearance: none;
+        &:hover {
+          color: #5b2fbd;
+        }
+        option {
+          background: none;
+          color: black;
+        }
+      }
+      .roomIndex {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      .adultIndex {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      .childIndex {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      .etcOption {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        left: 35px;
+        top: 45px;
+        height: 0;
+        transition: height 0.4s;
+        ul {
+          margin: 0 20px;
+          padding: 5px 10px;
+          border-radius: 10px;
+          background: white;
+          li {
+            color: #282828;
+            margin: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            transition: all 0.4s;
+            cursor: pointer;
+            &:hover {
+              background: #5b2fbd;
+              color: white;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+      &:hover .etcOption {
+        height: 310px;
+      }
     }
-    .adultIndex {
-      font-size: 20px;
-      margin-left: 10px;
-    }
-    .childIndex {
-      font-size: 20px;
-      margin-left: 10px;
+    .search {
+      position: absolute;
+      top: -5px;
+      right: -73px;
+      height: 50px;
+      width: 50px;
+      background: white;
+      border: 12px solid white;
+      border-radius: 5px;
+      box-sizing: content-box;
+      -webkit-mask: url(../img/offer/ico_mask.png) no-repeat;
+      transition: all 0.4s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      &:focus,
+      &:active {
+        transform: scale(1);
+        background: #5b2fbd;
+        border: 12px solid #5b2fbd;
+      }
     }
   }
 }
