@@ -68,11 +68,11 @@
                 </div>
               </li>
               <li>
-                <div class="submenu"><a href="#">CASINO</a>
+                <div class="submenu"><a href="casino/membership/">CASINO</a>
                   <ul>
                     <li><a href="#">카지노안내</a></li>
                     <li><a href="#">잭팟스토리</a></li>
-                    <li><a href="#">멤버십</a></li>
+                    <li><a href="casino/membership/">멤버십</a></li>
                     <li><a href="#">이벤트</a></li>
                   </ul>
                 </div>
@@ -125,7 +125,63 @@
       <div class="container">
         <div class="raw">
           <article class="offer">
-
+            <div class="search">
+              <select name="roomSelect" id="roomSelect" class="roomSelect">
+                <option value="">ROOM</option>
+                <option value="수페리어">수페리어</option>
+                <option value="디럭스">디럭스</option>
+                <option value="프리미어">프리미어</option>
+                <option value="스위트">스위트</option>
+              </select>
+              <p class="check">Check In Out</p>
+              <button class="dateSelect"></button>
+              <div class="dateOption">
+                <div class="now"></div>
+                <div class="next"></div>
+              </div>
+              <div class="roomIndex">ROOM
+                <select name="roomIndexS" id="roomIndexS" class="selectOption">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+              </div>
+              <div class="adultIndex">ADULT
+                <select name="adultIndexS" id="adultIndexS" class="selectOption">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+              </div>
+              <div class="childIndex">CHILD
+                <select name="childIndexS" id="childIndexS" class="selectOption">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+              </div>
+            </div>
           </article>
         </div>
       </div>
@@ -225,5 +281,6 @@
 <script src="assets/js/headerEvent.js"></script>
 <script src="assets/js/opening.js"></script>
 <script src="assets/js/pageLoadEvent.js"></script>
+<script src="assets/js/offer.js"></script>
 </body>
 </html>

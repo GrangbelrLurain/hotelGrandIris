@@ -183,6 +183,96 @@ main section .container .raw {
 }
 
 /* CONTENTS */
+#offer .offer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#offer .offer .search {
+  display: flex;
+  align-items: flex-end;
+  border: 5px solid white;
+  padding: 8px 10px 12px 10px;
+  border-radius: 5px;
+  line-height: 30px;
+  color: white;
+}
+
+#offer .offer .search .roomSelect {
+  width: 90px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  appearance: none;
+}
+
+#offer .offer .search .roomSelect:hover {
+  color: #5b2fbd;
+}
+
+#offer .offer .search .roomSelect option {
+  background: black;
+  width: 200px;
+  color: white;
+}
+
+#offer .offer .search .check {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+#offer .offer .search .dateSelect {
+  margin-left: 10px;
+  background: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+#offer .offer .search .dateSelect:hover {
+  color: #5b2fbd;
+}
+
+#offer .offer .search .dateOption {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+#offer .offer .search .selectOption {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  appearance: none;
+}
+
+#offer .offer .search .selectOption:hover {
+  color: #5b2fbd;
+}
+
+#offer .offer .search .selectOption option {
+  background: none;
+  color: black;
+}
+
+#offer .offer .search .roomIndex {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#offer .offer .search .adultIndex {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#offer .offer .search .childIndex {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
 #facilities .facilities {
   padding-top: 150px;
   position: relative;

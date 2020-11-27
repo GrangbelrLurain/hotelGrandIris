@@ -52,30 +52,6 @@ function contentsScroll (events){
   }, 200);
 }
 
-// 터치 반응 이벤트
-
-window.addEventListener("touchstart", handleStart,false);
-window.addEventListener("touchmove", handleMove, false);
-window.addEventListener("touchend", handleEnd, false);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Aside Click Event
 // 클릭 이벤트 관리

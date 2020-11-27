@@ -171,44 +171,118 @@ main {
 }
 
 /* CONTENTS */
-
-
-#facilities{
-.facilities{
-  padding-top: 150px;
-  position: relative;
-  p{
-    font-size: 150px;
-    font-weight: bold;
-    line-height: 150px;
-    white-space: pre-line;
+#offer .offer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .search {
+    display: flex;
+    align-items: flex-end;
+    border: 5px solid white;
+    padding: 8px 10px 12px 10px;
+    border-radius: 5px;
+    line-height: 30px;
     color: white;
-    opacity: 0;
-    transition: opacity 1s;
-  }
-  .title_right{
-    margin-top: 100px;
-    text-align: right;
-  }
-  .link{
-    position: absolute;
-    right: 0;
-    bottom: -80px;
-    width: 300px;
-    height: 80px;
-    font-size: 50px;
-    font-weight: bold;
-    -webkit-mask: url(../img/faicilities/mask.png) no-repeat;
-    mask-size: 100%;
-    background: white;
-    opacity: 0;
-    transition: opacity 0.8s;
+    .roomSelect {
+      width: 90px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      appearance: none;
+      &:hover {
+        color: #5b2fbd;
+      }
+      option {
+        background: black;
+        width: 200px;
+        color: white;
+      }
+    }
+    .check {
+      font-size: 25px;
+      margin-left: 10px;
+    }
+    .dateSelect {
+      margin-left: 10px;
+      background: none;
+      font-size: 25px;
+      font-weight: bold;
+      color: white;
+      &:hover {
+        color: #5b2fbd;
+      }
+    }
+    .dateOption {
+      font-size: 25px;
+      margin-left: 10px;
+    }
+    .selectOption {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      appearance: none;
+      &:hover {
+        color: #5b2fbd;
+      }
+      option {
+        background: none;
+        color: black;
+      }
+    }
+    .roomIndex {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+    .adultIndex {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+    .childIndex {
+      font-size: 20px;
+      margin-left: 10px;
+    }
   }
 }
 
-&.slidesActive .facilities{
-  .ani{
-    opacity: 1;
+#facilities {
+  .facilities {
+    padding-top: 150px;
+    position: relative;
+    p {
+      font-size: 150px;
+      font-weight: bold;
+      line-height: 150px;
+      white-space: pre-line;
+      color: white;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+    .title_right {
+      margin-top: 100px;
+      text-align: right;
+    }
+    .link {
+      position: absolute;
+      right: 0;
+      bottom: -80px;
+      width: 300px;
+      height: 80px;
+      font-size: 50px;
+      font-weight: bold;
+      -webkit-mask: url(../img/faicilities/mask.png) no-repeat;
+      mask-size: 100%;
+      background: white;
+      opacity: 0;
+      transition: opacity 0.8s;
+    }
   }
-}
+
+  &.slidesActive .facilities {
+    .ani {
+      opacity: 1;
+    }
+  }
 }
