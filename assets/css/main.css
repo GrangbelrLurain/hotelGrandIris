@@ -196,14 +196,14 @@ main section .container .raw {
   position: relative;
   align-items: flex-end;
   border: 5px solid white;
-  padding: 8px 10px 12px 10px;
+  padding: 7px 13px 11px 10px;
   border-radius: 5px;
   line-height: 30px;
   color: white;
   margin-right: 25px;
 }
 
-#offer .offer .selectWrap .roomSelectBtn {
+#offer .offer .selectWrap .roomSelectWrap .roomSelectBtn {
   background: none;
   border: none;
   color: white;
@@ -213,44 +213,52 @@ main section .container .raw {
   appearance: none;
 }
 
-#offer .offer .selectWrap .roomSelectBtn:hover {
+#offer .offer .selectWrap .roomSelectWrap .roomSelectBtn:hover {
   color: #5b2fbd;
 }
 
-#offer .offer .selectWrap .roomSelectBtn .roomSelect {
+#offer .offer .selectWrap .roomSelectWrap .roomSelect {
   position: absolute;
   overflow: hidden;
   height: 0;
   top: 50px;
-  left: 0;
+  left: 10px;
   transition: height 0.4s;
+  cursor: pointer;
 }
 
-#offer .offer .selectWrap .roomSelectBtn .roomSelect ul {
+#offer .offer .selectWrap .roomSelectWrap .roomSelect ul {
   background: white;
   padding: 5px;
   border-radius: 5px;
 }
 
-#offer .offer .selectWrap .roomSelectBtn .roomSelect ul li {
+#offer .offer .selectWrap .roomSelectWrap .roomSelect ul li {
   padding: 5px 15px;
   font-size: 20px;
+  font-weight: bold;
   text-align: center;
   color: #282828;
-  transition: transform 0.4s;
+  transition: all 0.4s;
 }
 
-#offer .offer .selectWrap .roomSelectBtn .roomSelect ul li:hover {
+#offer .offer .selectWrap .roomSelectWrap .roomSelect ul li:hover {
   color: #5b2fbd;
   transform: scale(1.1);
 }
 
-#offer .offer .selectWrap .roomSelectBtn .roomSelect ul li:active {
+#offer .offer .selectWrap .roomSelectWrap .roomSelect ul li:active {
   color: #5b2fbd;
   transform: scale(0.99);
 }
 
-#offer .offer .selectWrap .roomSelectBtn:hover .roomSelect {
+#offer .offer .selectWrap .roomSelectWrap .roomSelect ul li.active {
+  background: #5b2fbd;
+  color: white;
+  border-radius: 5px;
+}
+
+#offer .offer .selectWrap .roomSelectWrap:hover .roomSelect {
   height: 180px;
   display: block;
 }
@@ -370,6 +378,11 @@ main section .container .raw {
   transform: scale(0.99);
 }
 
+#offer .offer .selectWrap .etcSelectWrap .etcOption ul li.active {
+  background: #5b2fbd;
+  color: white;
+}
+
 #offer .offer .selectWrap .etcSelectWrap:hover .etcOption {
   height: 310px;
 }
@@ -377,7 +390,7 @@ main section .container .raw {
 #offer .offer .selectWrap .search {
   position: absolute;
   top: -5px;
-  right: -73px;
+  right: -71px;
   height: 50px;
   width: 50px;
   background: white;
@@ -385,6 +398,7 @@ main section .container .raw {
   border-radius: 5px;
   box-sizing: content-box;
   -webkit-mask: url(../img/offer/ico_mask.png) no-repeat;
+  mask-size: 100%;
   transition: all 0.4s;
 }
 
