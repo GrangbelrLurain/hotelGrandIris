@@ -10,3 +10,5 @@ function loadingToday(){
 
   document.querySelector(".dateSelect").innerHTML = dates[0] + " ~ " + dates[1];
 }
+
+document.querySelector("")

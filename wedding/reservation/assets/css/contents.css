@@ -1,0 +1,233 @@
+@charset="UTF-8";
+
+
+
+main{}
+#banner{}
+#contents{}
+
+
+/*banner*/
+.banner{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+.banner ul{}
+.banner ul li{position: absolute;}
+.banner ul li a{}
+.banner ul li img{
+    height: 100vh;
+}
+.b_text{}
+.b_text div{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+}
+.b_text div p{
+    font-size: 140px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/*container*/
+.container{
+	width: 1280px;
+	height: inherit;
+	margin: 0 auto;
+	/*background: rgba(255,255,255,0.5);*/
+}
+.container .row {
+    padding: 0 28px;
+    
+}
+/*contents*/
+#contents{}
+#r_top{}
+#r_top .r_top h3{
+    font-family: 'Italianno', cursive;
+    font-size: 80px;
+    text-align: center;
+    padding: 20px;
+}
+#reservation{
+    background: #fbe4d3;
+}
+.reservation .r_text{
+    padding-top: 70px;
+    text-align: center;
+}
+.reservation .r_text h3{font-size: 35px;}
+.reservation .r_text h3 span{font-weight: bold;}
+.reservation .r_text p{font-size: 20px;}
+.r_box{
+    overflow: hidden;
+    padding: 70px 30px 30px 30px;
+    width: 60%;
+    margin: 0 auto;
+}
+.r_box .b_top{height: 270px;
+}
+/*박스왼쪽*/
+.r_box .b_left{
+    margin: 0 auto;
+    width: 50%;
+    float: left;
+}
+.r_box .b_left>div{
+    text-align: center;
+     padding-top: 15px;
+}
+.r_box .b_left p{
+    padding: 5px 23px;
+    font-size: 18px;
+    text-align: left;
+}
+.r_date input{
+    width: 40%;
+    height: 28px;
+    border: 1px solid #000;
+    font-size: 12px;
+}
+#b_time{
+    width: 40%;
+    height: 30px;
+    border: 1px solid #000;
+    margin-left: 5%;
+    font-size: 13px;
+}
+.r_name input{
+    width: 85%;
+    height: 30px;
+    border: 1px solid #000;
+    font-size: 13px;
+}
+.r_phone input{
+    width: 28%;
+    height: 30px;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+.r_phone input.first{
+    width: 24%;
+}
+
+/*박스오른쪽*/
+.r_box .b_right{
+    width: 50%;
+    float: right;
+}
+.r_box .b_right>div{
+    text-align: center;
+    padding-top: 15px;
+}
+.r_box .b_right p{
+    padding: 5px 33px;
+    font-size: 18px;
+    text-align: left;
+}
+.b_right .r_people select{
+    width: 81%;
+    height: 30px;
+    border: 1px solid #000;
+    font-size: 13px;
+}
+.b_right .r_email input{
+    font-size: 13px;
+    width: 80%;
+    height: 30px;
+    border: 1px solid #000;
+}
+.b_right .r_select input{
+    border: 1px solid #000;
+}
+.b_right .r_select p.select_tit{
+    font-size: 18px;
+    display: block;
+}
+.b_right .r_select em{
+    font-size: 17px;
+    display: inline-block;
+    margin: 7px;
+}
+/*박스 하단*/
+.r_box .b_bottom{
+    width: 100%;
+}
+.r_box .b_bottom>div{
+    text-align: center; 
+}
+
+.r_service p{}
+.r_box .b_bottom p{
+    padding: 5px 23px;
+    font-size: 18px;
+    text-align: left;
+}
+.r_box .b_bottom input.s_text{
+    width: 93%;
+    height: 200px;
+     border: 1px solid #000;
+}
+.r_box .b_bottom .r_check{
+    width: 90%;
+    padding: 30px;
+    text-align: center;
+}
+.r_box .b_bottom .r_check span{
+    font-size: 18px;
+}
+
+.r_button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.r_button a{
+    background: #282828;
+    display: inline-block;
+    padding: 13px 80px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.r_button a i{
+    color: #fff;
+    font-size: 22px;
+}
+.r_button a span{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.r_button a:hover span{
+    color: #282828;
+    font-weight: bold;
+}
+.r_button a:hover{
+    background: #fff;
+}
+.r_button a:hover i{
+    color: #282828;
+    font-weight: 500;
+}
+/*하단공백*/
+#r_bottom{height: 200px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
