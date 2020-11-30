@@ -151,6 +151,95 @@ main {
   background-size: cover;
   background-position: center;
 }
+/* WEDDING_ 손봄*/
+.wedding {
+}
+.wedding .w_text {
+}
+.wedding .w_text h2 {
+  font-size: 150px;
+  font-family: "Italianno", cursive;
+  color: #fff;
+  text-align: center;
+  margin-top: 300px;
+  text-shadow: 5px 5px 5px #111;
+}
+.w_box {
+  overflow: hidden;
+}
+.w_left {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+.w_left div {
+  width: 40%;
+  border: 1px solid #fff;
+  float: right;
+  color: #fff;
+  text-align: center;
+  padding: 35px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.w_left div h3 {
+  font-size: 60px;
+  font-family: "Italianno", cursive;
+  text-shadow: 3px 3px 3px #111;
+}
+.w_left div a {
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  opacity: 0;
+}
+.w_left div:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transition: 1s;
+}
+.w_left div:hover a {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.w_left div a:hover p {
+  text-decoration: underline;
+}
+.w_right {
+  float: left;
+  width: 50%;
+}
+.w_right div {
+  width: 40%;
+  border: 1px solid #fff;
+  margin-left: -1px;
+  color: #fff;
+  text-align: center;
+  padding: 35px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.w_right div h3 {
+  font-size: 60px;
+  font-family: "Italianno", cursive;
+  text-shadow: 3px 3px 3px #111;
+}
+.w_right div a {
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  opacity: 0;
+}
+.w_right div:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transition: 1s;
+}
+.w_right div:hover a {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.w_right div a:hover p {
+  text-decoration: underline;
+}
+/* //WEDDING_ 손봄*/
 
 #dining {
   background: url(../img/dining.jpg) no-repeat;
@@ -217,6 +306,10 @@ main {
             &:hover {
               color: #5b2fbd;
               transform: scale(1.1);
+            }
+            &:active {
+              color: #5b2fbd;
+              transform: scale(0.99);
             }
           }
         }
@@ -315,6 +408,11 @@ main {
               color: white;
               transform: scale(1.1);
             }
+            &:active {
+              background: #5b2fbd;
+              color: white;
+              transform: scale(0.99);
+            }
           }
         }
       }
@@ -337,9 +435,12 @@ main {
       &:hover {
         transform: scale(1.1);
       }
-      &:focus,
+      &:focus {
+        background: #5b2fbd;
+        border: 12px solid #5b2fbd;
+      }
       &:active {
-        transform: scale(1);
+        transform: scale(0.99);
         background: #5b2fbd;
         border: 12px solid #5b2fbd;
       }
