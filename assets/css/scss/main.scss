@@ -185,6 +185,7 @@ main {
     line-height: 30px;
     color: white;
     margin-right: 25px;
+    transition: width 0.4s;
     .roomSelectWrap {
       .roomSelectBtn {
         background: none;
@@ -373,10 +374,6 @@ main {
 
 /* WEDDING_ 손봄*/
 
-.wedding {
-}
-.wedding .w_text {
-}
 .wedding .w_text h2 {
   font-size: 150px;
   font-family: "Italianno", cursive;
@@ -405,7 +402,7 @@ main {
 }
 
 .w_left div h3 {
-  font-size: 60px;
+  font-size: 65px;
   font-family: "Italianno", cursive;
   text-shadow: 3px 3px 3px #111;
 }
@@ -440,7 +437,7 @@ main {
   background: rgba(0, 0, 0, 0.5);
 }
 .w_right div h3 {
-  font-size: 60px;
+  font-size: 65px;
   font-family: "Italianno", cursive;
   text-shadow: 3px 3px 3px #111;
   margin-right: 10px;

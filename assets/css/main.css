@@ -3,6 +3,15 @@ body {
   overflow: hidden;
 }
 
+@-webkit-keyframes opening {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes opening {
   0% {
     opacity: 0;
@@ -18,17 +27,33 @@ body {
   position: fixed;
   z-index: 1000;
   background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
 #opening .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #opening .wrap .logo {
@@ -37,7 +62,8 @@ body {
 }
 
 #opening .wrap .logo.active {
-  animation: opening 1s ease 1;
+  -webkit-animation: opening 1s ease 1;
+          animation: opening 1s ease 1;
   opacity: 1;
 }
 
@@ -51,7 +77,8 @@ body {
 }
 
 #opening .wrap .desc .title_K.active {
-  animation: opening 1s ease 1;
+  -webkit-animation: opening 1s ease 1;
+          animation: opening 1s ease 1;
   opacity: 1;
 }
 
@@ -61,7 +88,8 @@ body {
 }
 
 #opening .wrap .desc .title_E.active {
-  animation: opening 1s ease 1;
+  -webkit-animation: opening 1s ease 1;
+          animation: opening 1s ease 1;
   opacity: 1;
 }
 
@@ -73,7 +101,8 @@ body {
 }
 
 #opening .wrap .desc .hotel_name.active {
-  animation: opening 1s ease 1;
+  -webkit-animation: opening 1s ease 1;
+          animation: opening 1s ease 1;
   opacity: 1;
 }
 
@@ -84,6 +113,7 @@ body {
   border: 2px solid #282828;
   background: none;
   opacity: 0.05;
+  -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   font-size: 20px;
   font-weight: bold;
@@ -99,7 +129,8 @@ body {
   position: fixed;
   top: 50%;
   left: 5vw;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 main {
@@ -125,6 +156,7 @@ main section .container .raw {
   color: white;
   opacity: 0.5;
   position: relative;
+  -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   text-transform: capitalize;
   cursor: pointer;
@@ -144,6 +176,7 @@ main section .container .raw {
 }
 
 .slides {
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   position: absolute;
   bottom: -100vh;
@@ -186,21 +219,33 @@ main section .container .raw {
 /* CONTENTS */
 #offer .offer {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #offer .offer .selectWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   border: 5px solid white;
   padding: 7px 13px 11px 10px;
   border-radius: 5px;
   line-height: 30px;
   color: white;
   margin-right: 25px;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
 }
 
 #offer .offer .selectWrap .roomSelectWrap .roomSelectBtn {
@@ -210,7 +255,9 @@ main section .container .raw {
   font-size: 30px;
   font-weight: bold;
   text-align: right;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 #offer .offer .selectWrap .roomSelectWrap .roomSelectBtn:hover {
@@ -223,6 +270,7 @@ main section .container .raw {
   height: 0;
   top: 50px;
   left: 10px;
+  -webkit-transition: height 0.4s;
   transition: height 0.4s;
   cursor: pointer;
 }
@@ -239,17 +287,20 @@ main section .container .raw {
   font-weight: bold;
   text-align: center;
   color: #282828;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 #offer .offer .selectWrap .roomSelectWrap .roomSelect ul li:hover {
   color: #5b2fbd;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #offer .offer .selectWrap .roomSelectWrap .roomSelect ul li:active {
   color: #5b2fbd;
-  transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 
 #offer .offer .selectWrap .roomSelectWrap .roomSelect ul li.active {
@@ -293,6 +344,7 @@ main section .container .raw {
   width: 484px;
   border-radius: 10px;
   background: white;
+  -webkit-transition: height 0.4s;
   transition: height 0.4s;
 }
 
@@ -301,6 +353,8 @@ main section .container .raw {
 }
 
 #offer .offer .selectWrap .etcSelectWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -310,7 +364,9 @@ main section .container .raw {
   border: none;
   color: white;
   font-size: 30px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 #offer .offer .selectWrap .etcSelectWrap .selectOption:hover {
@@ -339,12 +395,17 @@ main section .container .raw {
 
 #offer .offer .selectWrap .etcSelectWrap .etcOption {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
   left: 35px;
   top: 45px;
   height: 0;
+  -webkit-transition: height 0.4s;
   transition: height 0.4s;
 }
 
@@ -362,6 +423,7 @@ main section .container .raw {
   height: 30px;
   border-radius: 50%;
   text-align: center;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   cursor: pointer;
 }
@@ -369,13 +431,15 @@ main section .container .raw {
 #offer .offer .selectWrap .etcSelectWrap .etcOption ul li:hover {
   background: #5b2fbd;
   color: white;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #offer .offer .selectWrap .etcSelectWrap .etcOption ul li:active {
   background: #5b2fbd;
   color: white;
-  transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 
 #offer .offer .selectWrap .etcSelectWrap .etcOption ul li.active {
@@ -396,14 +460,18 @@ main section .container .raw {
   background: white;
   border: 12px solid white;
   border-radius: 5px;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   -webkit-mask: url(../img/offer/ico_mask.png) no-repeat;
-  mask-size: 100%;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 #offer .offer .selectWrap .search:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #offer .offer .selectWrap .search:focus {
@@ -412,7 +480,8 @@ main section .container .raw {
 }
 
 #offer .offer .selectWrap .search:active {
-  transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
   background: #5b2fbd;
   border: 12px solid #5b2fbd;
 }
@@ -429,7 +498,8 @@ main section .container .raw {
 
 .w_box {
   overflow: hidden;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .w_left {
@@ -449,7 +519,7 @@ main section .container .raw {
 }
 
 .w_left div h3 {
-  font-size: 60px;
+  font-size: 65px;
   font-family: "Italianno", cursive;
   text-shadow: 3px 3px 3px #111;
 }
@@ -463,11 +533,13 @@ main section .container .raw {
 
 .w_left div:hover {
   background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .w_left div:hover a {
   opacity: 1;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -491,7 +563,7 @@ main section .container .raw {
 }
 
 .w_right div h3 {
-  font-size: 60px;
+  font-size: 65px;
   font-family: "Italianno", cursive;
   text-shadow: 3px 3px 3px #111;
   margin-right: 10px;
@@ -506,11 +578,13 @@ main section .container .raw {
 
 .w_right div:hover {
   background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .w_right div:hover a {
   opacity: 1;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -544,6 +618,7 @@ main section .container .raw {
   white-space: pre-line;
   color: white;
   opacity: 0;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -561,9 +636,11 @@ main section .container .raw {
   font-size: 50px;
   font-weight: bold;
   -webkit-mask: url(../img/faicilities/mask.png) no-repeat;
-  mask-size: 100%;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
   background: white;
   opacity: 0;
+  -webkit-transition: opacity 0.8s;
   transition: opacity 0.8s;
 }
 
