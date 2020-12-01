@@ -25,6 +25,8 @@ function includeHTML() {
       return;
     }
   }
+  headerOnLoad();
+  footerOnLoad();
 }
 
 includeHTML();
