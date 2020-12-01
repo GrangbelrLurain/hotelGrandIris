@@ -1,7 +1,8 @@
+*{font-family: "NanumSquare"}
 main {}
 #banner{margin: 0 auto;width: 100%;}
 #contents{
-    background: linear-gradient(-48deg, #3f4b5d 55%, #9ca2ab);
+    background: url(../img/cont2_back.jpg);
 }
 
 /*banner*/
@@ -193,36 +194,33 @@ slick-list{
 .cont2 .image{
     width: 34%;
 }
-.cont2 .last img{
-    width: 80%;
+.cont2 .last img, .cont2 .first img{
+    width: 92%;
     margin-right: 0;
+}
+.cont2 .last{
+    padding-bottom: 20vw;
 }
 .cont2>div{
     width: 100%;
     overflow: hidden;
 }
-.cont2 .last{margin-bottom: 0;}
-.cont2 img{display: block;}
-
 /*con2_1*/
 .cont2 .left1{
-    padding-left: 10vw;
-}
-.cont2 .right1{
-    margin: 20vw 0vw 20vw -5vw;
-}
-.cont2 .left2{
-    margin-bottom: 20vw;
-    padding-left: 10vw;
-    z-index: 1;
+    padding-left: 5vw;
+    margin: 19vw 0 20vw 0;
 }
 .cont2 .left{
     float: left;
 }
+.cont2 .left .image{
+    float: left;
+}
 .left1 .texts1{
+    float: left;
     width: 35%;
-    margin-top: 5vw;
-    padding-left: 2vw;
+    margin-top: 2vw;
+    padding-left: 4vw;
     overflow: hidden;
 }
 .texts1 .menu{
@@ -254,11 +252,12 @@ slick-list{
  /*con2_2*/
 .cont2 .right{
     float: right;
+    padding: 0vw 7vw 0vw 0vw;
 }
 .right1 .texts2{
     width: 35%;
     float: left;
-    padding: 5vw 2vw 0 23vw;
+    padding: 5vw 0vw 0 23vw;
 }
 .texts2 .menu{
     overflow: hidden;
@@ -286,9 +285,16 @@ slick-list{
     color: #fff;
     font-size: 0.8vw;
 }
+.last img{
+    margin-left: 2vw;
+}
 
 /*cont2_3*/
-.left2{position: relative;}
+.left2{
+    position: relative;
+    margin-bottom: 20vw;
+    padding-left: 10vw;
+    z-index: 1;}
 .left2 .texts3{
     width: 35%;
     margin-top: 5vw;
@@ -326,15 +332,10 @@ slick-list{
     bottom: 0%;
     left: 0%;
 }
-.cont2 .content_bottom .bridge_img{
-    width: 80%;
+.cont2 .content_bottom{
+    width: 70%;
 }
-.cont2 .content_bottom .wine_img{
-    position: absolute;
-    width: 60%;
-    bottom: 0;
-    right: 0;
-}
+.cont2 .content_bottom img{display: block;}
 
 /*스크롤애니메이션*/
 .hideme
@@ -390,14 +391,14 @@ slick-list{
 }
 .tab_btn ul li{
     float: left;
-    margin-right: 6vw;
+    margin-right: 4vw;
 }
 .tab_btn ul li:last-child{
     margin-right: 0;
 }
 .tab_btn ul li a{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-weight: 600;
     display: block;
 }
@@ -415,8 +416,18 @@ slick-list{
     flex-direction: column;
     margin-bottom: 2vw;
 }
+#layer .rooftop_m>div strong{
+    text-transform: uppercase;
+    font-size: 1.1vw;
+}
 #layer .rooftop_m>div p{
-    margin-bottom: 2vh;
+    margin-bottom: 2vw;
+    white-space: pre-line;
+    font-size: 0.9vw;
+    text-transform: capitalize;
+}
+#layer .rooftop_m>div p em{
+    font-weight: bold;
 }
 #layer .rooftop_m>div p.last{
     margin-bottom: 0px;
