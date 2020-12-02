@@ -36,9 +36,26 @@ function contentsScroll (events){
     }
   })
 }  
-  //facilitiesAnimation 불러오기
+    // 이벤트 불러오기 사전 설정
     const checkSlide = document.querySelectorAll(".slidesActive")[document.querySelectorAll(".slidesActive").length-1]
     const everySlides = everyElem
+
+    // diningAnimation 불러오기
+
+    if(checkSlide == everySlides[2]){
+      diningAnimation();
+    } else {
+      diningAnimationReset();
+    }
+
+    //casinoAnimation 불러오기
+
+    if(checkSlide == everySlides[3]){
+      casinoAnimation();
+    } else {
+      casinoAnimationReset();
+    }
+    //facilitiesAnimation 불러오기
 
     if(checkSlide == everySlides[4]){
       facilitiesAnimation();
@@ -110,6 +127,24 @@ function asideClickScroll (clickElem, clickIndex, timeSet){
       facilitiesAnimationReset();
     }
   },400)
+  
+  // 다이닝
+  setTimeout(function(){
+   if(scrollPage[scrollPage.length-4] == document.querySelector("#dining")){
+     diningAnimation();
+   } else {
+     diningAnimationReset();
+   }
+ },400)
+   
+ // 카지노
+  setTimeout(function(){
+   if(scrollPage[scrollPage.length-3] == document.querySelector("#casino")){
+     casinoAnimation();
+   } else {
+     casinoAnimationReset();
+   }
+ },400)
 }
 
 // Aside Active Event
@@ -158,4 +193,29 @@ function facilitiesAnimation(){
 function facilitiesAnimationReset(){
   const targets = document.querySelectorAll(".facilities .target");
   targets.forEach((elem) => elem.classList.remove("ani"));
-} 
+}
+
+// CASINO ACTIVE EVENT
+
+
+function casinoAnimation(){
+	const casinoElem = document.querySelector("#casino");
+	const targets = document.querySelector(".slidedown");
+    	
+	$(".slidedown").css("display", "block").animate({"opacity":"1","marginTop":"0px"},600);
+}
+function casinoAnimationReset(){
+	$(".slidedown").css("display", "none").animate({"opacity":"0"}, 600).css("marginTop", "-600px");
+}
+
+//dining event
+
+function diningAnimation(){
+      $('.dining').addClass("active");  
+    
+}
+function diningAnimationReset(){
+     $('.dining').removeClass("active");
+}
+
+
