@@ -1,0 +1,592 @@
+@charset "UTF-8";
+
+#header {
+    width: 100vw;
+    height: 130px;
+    background: #282828;
+}
+
+.header {
+    position: relative;
+}
+
+.header .logo {
+    float: left;
+    width: 260;
+    height: 65px;
+    padding: 25px;
+    margin-left: 35px;
+}
+
+.header .logo a {}
+
+.header .logo a img {}
+
+.header .nav_left {
+    float: left;
+}
+
+.header .nav_left ul {
+    margin: 25px 50px 0 30px;
+}
+
+.header .nav_left ul li {
+    position: relative;
+    padding: 10px 38px;
+    float: left;
+}
+
+.header .nav_left ul li.expand a {
+    color: white;
+}
+
+.header .nav_left ul li a {
+    font-family: "NanumSquare", sans-serif !important;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 26px;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.header .nav_left ul li a:hover {
+    color: white;
+}
+
+.header .nav_left ul li ul.submenu {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    display: none;
+    width: 500px;
+}
+
+.header .nav_left ul li ul.submenu li {}
+
+.header .nav_left ul li ul.submenu li a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header .nav_left ul li ul.submenu li a:hover {
+    color: white;
+}
+
+.header .nav_left ul li ul.submenu li.expand a {
+    color: white;
+}
+
+.header .nav_left ul li ul li {
+    float: left;
+    padding: 10px 20px;
+}
+
+.header .nav_left ul li ul li a {
+    font-family: "NanumSquare", sans-serif !important;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header .nav_right {
+    float: right;
+    margin-right: 60px;
+}
+
+.header .nav_right ul {
+    margin-top: 25px;
+}
+
+.header .nav_right ul li {
+    margin: 15px;
+    float: left;
+    transition: all 0.3s;
+}
+
+.header .nav_right ul li.line {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    margin: 8px;
+}
+
+.header .nav_right ul li a {
+    font-family: "NanumSquare", sans-serif !important;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+}
+
+.header .nav_right ul li:nth-child(3):hover {
+    border: 1px solid white;
+}
+
+.header .nav_right ul li:nth-child(4):hover {
+    border: 1px solid white;
+}
+
+.header .nav_right ul li:hover a {
+    color: white;
+}
+
+
+/*main*/
+main {}
+
+
+
+#contents {}
+
+/*banner*/
+
+/*container*/
+.container {
+    width: 1280px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.container .row {
+    padding: 0 28px;
+}
+
+/*contents*/
+#cont_1 {}
+
+.cont_1 {
+    height: 1800px;
+    position: relative;
+}
+
+.cont_1::before{
+    content: "";
+    position: absolute;
+    top: 140px;
+    right: 0;
+    width: 1020px;
+    height: 10px;
+    background: #fbe4d3;
+}
+.cont_1 h2 {
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.cont_1 p.halltour {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 120px;
+}
+
+.cont_1 h3 {
+    font-size: 80px;
+    font-family: 'Italianno', cursive;
+}
+
+.cont_1 h3 span {
+    font-size: 40px;
+}
+/*그랜드홀 슬릭*/
+.cont_1 .grand_slick {
+    margin: 30px 0 60px 0;
+}
+
+.grand_slick .slick-prev{
+    width: 60px;
+    height: 60px;
+    background: url(../icon/slickbutton.png) no-repeat;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    right: 120px;
+    z-index: 1;
+    text-indent: -999999px;
+}
+.grand_slick .slick-prev:hover{
+    background-position: 0px -60px;
+}
+.grand_slick .slick-next{
+     width: 60px;
+    height: 60px;
+    background: url(../icon/slickbutton.png) no-repeat;
+    background-position: -60px 0;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    z-index: 1;
+    text-indent: -999999px;
+}
+.grand_slick .slick-next:hover{
+    background-position: -60px -60px;
+}
+.grand_slick ul.slick-dots{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -40px;
+    z-index: 1;
+}
+.grand_slick ul.slick-dots li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+.grand_slick ul.slick-dots li button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #282828;
+}
+
+.grand_slick ul.slick-dots li.slick-active button{
+    background: #fbe4d3;
+
+}
+
+
+
+
+.cont_1 p.g {
+    margin-bottom: -20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cont_1 p.h {
+    font-size: 60px;
+    text-align: center;
+}
+
+.cont_1 p.info {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#cont_2 {
+    background: #fbe4d3;
+}
+
+.cont_2 {
+    margin: 0 auto;
+    width: 900px;
+    height: 1050px;
+}
+.cont_2 h2{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+.cont_2 h3{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Italianno', cursive;
+    padding-bottom: 20px;
+}
+.cont_2 .b_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont_2 .b_img div{
+    
+}
+.cont_2 .brideroom{}
+
+
+.cont_2 .brideroom div{
+    margin: 10px;
+}
+
+.brideroom .slick-prev{
+    width: 45px;
+    height: 45px;
+    background: url(../icon/slickbutton.png) no-repeat;
+    border: none;
+    position: absolute;
+    top: 35%;
+    left: -60px;
+    z-index: 1;
+    text-indent: -999999px;
+    background-position:  0 -120px;
+}
+.brideroom .slick-prev:hover{
+    background-position: 0 -165px;
+}
+.brideroom .slick-next{
+     width: 45px;
+    height: 45px;
+    background: url(../icon/slickbutton.png) no-repeat;
+    background-position: -45px -120px;
+    border: none;
+    position: absolute;
+    top: 35%;
+    right: -60px;
+    z-index: 1;
+    text-indent: -999999px;
+}
+.brideroom .slick-next:hover{
+    background-position: -45px -165px;
+}
+.brideroom ul.slick-dots{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+    z-index: 1;
+}
+.brideroom ul.slick-dots li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+.brideroom ul.slick-dots li button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #282828;
+}
+
+.brideroom ul.slick-dots li.slick-active button{
+    background: #fff;
+
+}
+
+.cont_3 {
+    height: 1750px;
+}
+.cont_3 h2{
+    margin: 70px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.cont_3 .room{
+    overflow: hidden;
+    
+}
+.cont_3 .room .image{
+    float: left;
+    width: 704px;
+}
+.cont_3 .room .image img{
+    box-shadow: 7px 7px 7px #282828;
+}
+.cont_3 .room .r_text{
+    width: 440px;
+    float: left;
+    padding: 40px;
+}
+.cont_3 .room .r_text h3{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.cont_3 .room .r_text p{
+    padding-left: 18px;
+    font-size: 20px;
+}
+
+.cont_3 .weddingcar{
+    margin-top: 80px;
+    overflow: hidden;
+}
+.cont_3 .weddingcar .image{
+    float: left;
+    width: 704px;
+}
+.cont_3 .weddingcar .image img{
+    box-shadow: 7px 7px 7px #282828;
+}
+.cont_3 .weddingcar .w_text{
+    width: 400px;
+    float: left;
+    padding: 40px;
+}
+
+.cont_3 .weddingcar .w_text h3{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.cont_3 .weddingcar .w_text p{
+    padding-left: 18px;
+    font-size: 20px;
+}
+.cont_3 .tasting{
+    margin-top: 80px;
+    overflow: hidden;
+}
+.cont_3 .tasting .image{
+    float: left;
+    width: 704px;
+   
+}
+.cont_3 .tasting .image img{
+     box-shadow: 7px 7px 7px #282828;
+}
+.cont_3 .tasting .t_text{
+    width: 400px;
+    float: left;
+    padding: 40px;
+}
+
+.cont_3 .tasting .t_text h3{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.cont_3 .tasting .t_text p{
+    padding-left: 18px;
+    font-size: 20px;
+}
+
+.cont_3 .reservation{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.cont_3 .reservation a{
+    background: #282828;
+    display: inline-block;
+    padding: 13px 80px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.cont_3 .reservation a:hover{
+    background: #fbe4d3;
+}
+.cont_3 .reservation a:hover span{
+    color: #282828;
+    font-weight: bold;
+}
+
+.cont_3 .reservation a span{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.cont_3 .reservation a i{
+    color: #fff;
+    font-size: 22px;
+}
+.cont_3 .reservation a:hover i{
+    color: #282828;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/*footer*/
+#footer{
+	width: 100%;
+	height: 300px;
+	padding-top: 70px;
+	background: #282828;
+}
+
+/*container*/
+.container{
+	width: 1280px;
+	height: inherit;
+	margin: 0 auto;
+	/*background: rgba(255,255,255,0.5);*/
+}
+.container .row {
+    padding: 0 28px;
+}
+
+/*footer*/
+.footer{
+	overflow: hidden;
+}
+/*f_left*/
+.footer .f_left{
+	float: left;
+	width: 185px;
+	height: 300px;
+}
+.footer .f_left .f_logo{
+	
+}
+/*f_center*/
+.footer .f_center{
+	float: left;
+	width: 838px;
+	height: 300px;
+	color: #fff;
+}
+.footer .f_center .f_nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer .f_center .f_nav ul{
+	overflow: hidden;
+}
+.footer .f_center .f_nav ul li{
+	padding: 5px 20px;
+	float: left;
+	position: relative;
+}
+.footer .f_center .f_nav ul li::after{
+	content: "";
+	width: 1px;
+	height: 14px;
+	background: #fff;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+.footer .f_center .f_nav ul li.last::after{
+	width: 0;
+	height: 0;
+}
+.footer .f_center .f_nav ul li a{
+	color: #fff;
+	font-size: 16px;
+}
+.footer .f_center .f_copy{
+	margin-top: 50px;
+	text-align: center;
+}
+.footer .f_center .f_copy p{
+	padding-top: 5px;
+	font-size: 14px;
+}
+/*f_right*/
+.footer .f_right{
+	float: right;
+	width: 200px;
+	height: 300px;
+}
+.footer .f_right .family #family{
+	width: 200px;
+	height: 40px;
+	font-size: 16px;
+}
+
+.footer .f_right .f_sns{
+	margin-top: 60px;
+}
+.footer .f_right .f_sns ul{
+	overflow: hidden;
+}
+.footer .f_right .f_sns ul li{
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: 24px;
+}
+.footer .f_right .f_sns ul li.last{
+	margin-right: 0;
+}
