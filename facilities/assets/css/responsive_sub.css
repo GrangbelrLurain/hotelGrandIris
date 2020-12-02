@@ -6,6 +6,10 @@
   main .container {
     width: 100%;
   }
+  main .container .row {
+    box-sizing: border-box;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1180px) {

@@ -7,6 +7,10 @@
   }
   main .container {
     width: 100%;
+    .row {
+      box-sizing: border-box;
+      width: 100%;
+    }
   }
 }
 
