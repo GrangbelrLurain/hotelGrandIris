@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@media (max-width: 1300px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  main .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1180px) {
+  #banner {
+    h1 {
+      font-size: 200px;
+      line-height: 200px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+  #contents {
+    .cont1,
+    .cont2,
+    .cont3,
+    .cont4 {
+      .guid,
+      .rule {
+        h3 {
+          font-size: 28px;
+        }
+      }
+    }
+    .rule {
+      h3,
+      h2 {
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  #contents {
+    .cont1,
+    .cont2,
+    .cont3,
+    .cont4 {
+      .guid,
+      .rule {
+        h3,
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    .container {
+      .row {
+        padding: 0;
+      }
+    }
+  }
+  #banner {
+    h1 {
+      font-size: 150px;
+      line-height: 150px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  #contents {
+    .cont1,
+    .cont2,
+    .cont3,
+    .cont4 {
+      .guid {
+        width: 50%;
+      }
+      .guid,
+      .rule {
+        padding: 0 10px;
+        box-sizing: border-box;
+        h3,
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 15px;
+        }
+        .text {
+          font-size: 15px;
+        }
+      }
+      .gallery {
+        figure {
+          width: 33.3%;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

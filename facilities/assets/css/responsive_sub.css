@@ -1,0 +1,138 @@
+@media (max-width: 1300px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  main .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1180px) {
+  #banner h1 {
+    font-size: 200px;
+    line-height: 200px;
+  }
+  #banner p {
+    font-size: 30px;
+  }
+  #contents .cont1 .guid h3,
+  #contents .cont1 .rule h3,
+  #contents .cont2 .guid h3,
+  #contents .cont2 .rule h3,
+  #contents .cont3 .guid h3,
+  #contents .cont3 .rule h3,
+  #contents .cont4 .guid h3,
+  #contents .cont4 .rule h3 {
+    font-size: 28px;
+  }
+  #contents .rule p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 980px) {
+  #contents .cont1 .guid h3,
+  #contents .cont1 .guid h2,
+  #contents .cont1 .rule h3,
+  #contents .cont1 .rule h2,
+  #contents .cont2 .guid h3,
+  #contents .cont2 .guid h2,
+  #contents .cont2 .rule h3,
+  #contents .cont2 .rule h2,
+  #contents .cont3 .guid h3,
+  #contents .cont3 .guid h2,
+  #contents .cont3 .rule h3,
+  #contents .cont3 .rule h2,
+  #contents .cont4 .guid h3,
+  #contents .cont4 .guid h2,
+  #contents .cont4 .rule h3,
+  #contents .cont4 .rule h2 {
+    font-size: 20px;
+  }
+  #contents .cont1 .guid p,
+  #contents .cont1 .rule p,
+  #contents .cont2 .guid p,
+  #contents .cont2 .rule p,
+  #contents .cont3 .guid p,
+  #contents .cont3 .rule p,
+  #contents .cont4 .guid p,
+  #contents .cont4 .rule p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  main .container .row {
+    padding: 0;
+  }
+  #banner h1 {
+    font-size: 150px;
+    line-height: 150px;
+  }
+  #banner p {
+    font-size: 20px;
+  }
+  #contents .cont1 .guid,
+  #contents .cont2 .guid,
+  #contents .cont3 .guid,
+  #contents .cont4 .guid {
+    width: 50%;
+  }
+  #contents .cont1 .guid,
+  #contents .cont1 .rule,
+  #contents .cont2 .guid,
+  #contents .cont2 .rule,
+  #contents .cont3 .guid,
+  #contents .cont3 .rule,
+  #contents .cont4 .guid,
+  #contents .cont4 .rule {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  #contents .cont1 .guid h3,
+  #contents .cont1 .guid h2,
+  #contents .cont1 .rule h3,
+  #contents .cont1 .rule h2,
+  #contents .cont2 .guid h3,
+  #contents .cont2 .guid h2,
+  #contents .cont2 .rule h3,
+  #contents .cont2 .rule h2,
+  #contents .cont3 .guid h3,
+  #contents .cont3 .guid h2,
+  #contents .cont3 .rule h3,
+  #contents .cont3 .rule h2,
+  #contents .cont4 .guid h3,
+  #contents .cont4 .guid h2,
+  #contents .cont4 .rule h3,
+  #contents .cont4 .rule h2 {
+    font-size: 20px;
+  }
+  #contents .cont1 .guid p,
+  #contents .cont1 .rule p,
+  #contents .cont2 .guid p,
+  #contents .cont2 .rule p,
+  #contents .cont3 .guid p,
+  #contents .cont3 .rule p,
+  #contents .cont4 .guid p,
+  #contents .cont4 .rule p {
+    font-size: 15px;
+  }
+  #contents .cont1 .guid .text,
+  #contents .cont1 .rule .text,
+  #contents .cont2 .guid .text,
+  #contents .cont2 .rule .text,
+  #contents .cont3 .guid .text,
+  #contents .cont3 .rule .text,
+  #contents .cont4 .guid .text,
+  #contents .cont4 .rule .text {
+    font-size: 15px;
+  }
+  #contents .cont1 .gallery figure,
+  #contents .cont2 .gallery figure,
+  #contents .cont3 .gallery figure,
+  #contents .cont4 .gallery figure {
+    width: 33.3%;
+    overflow: hidden;
+  }
+}
