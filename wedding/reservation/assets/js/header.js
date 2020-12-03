@@ -18,3 +18,15 @@ $(".menu li>a").mouseover(function() {
     }
 });
 });
+
+  //햄버거메뉴
+        $(".header .ham_menu").click(function(){
+            var hamMenu = $(".header .ham_menu");
+            var rightMenu = $(".header .nav_right");
+            var leftMenu = $(".header .nav_left");
+            
+            hamMenu.toggleClass("active");
+            rightMenu.toggleClass("active");
+            leftMenu.toggleClass("active");
+            
+        });

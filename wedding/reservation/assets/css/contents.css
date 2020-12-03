@@ -17,20 +17,20 @@ main{}
 .banner ul li{position: absolute;}
 .banner ul li a{}
 .banner ul li img{
-    height: 100vh;
+    height: auto;
 }
 .b_text{}
 .b_text div{
     position: absolute;
     left: 50%;
-    top: 55%;
+    top: 50vh;
     transform: translate(-50%,-50%);
     text-align: center;
     box-sizing: border-box;
     padding-bottom: 100px;
 }
 .b_text div p{
-    font-size: 140px;
+    font-size: 8vw;
     font-weight: bold;
     color: #fff;
 }
@@ -185,8 +185,8 @@ main{}
 }
 
 .r_button{
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 70px;
     text-align: center;
 }
 .r_button a{
@@ -217,9 +217,57 @@ main{}
     font-weight: 500;
 }
 /*하단공백*/
-#r_bottom{height: 200px;}
+/*#r_bottom{height: 200px;}*/
 
+/*미디어쿼리*/
+@media(max-width:1290px){
+    .container{width: 100%;}
+    .banner{height: 670px;}
+/*    .b_text div{top: 35%;}*/
+    .r_box{width: 65%;}
+    .b_right .r_select em{font-size: 15px;}
+    
+}
+@media(max-width:960px){
+    .banner{height: 470px;}
+    .b_text div{top: 27%;}
+    .r_box{width: 75%;}
+    #r_top .r_top h3{font-size: 60px; padding: 0;}
+    .reservation .r_text h3{font-size: 28px;}
+    .reservation .r_text p{font-size: 16px;}
+    .b_right .r_select em{font-size: 13px;}
+    .r_button a{padding: 13px 50px;}
 
+}
+@media(max-width:768px){
+    .banner{height: 400px;}
+    .b_text div{top: 22%;}
+    .r_box{width: 90%;}
+}
+@media(max-width:480px){
+    .banner{height: 250px;}
+    .b_text div{top: 15%;}
+    #r_top .r_top h3{font-size: 40px;padding: 0;}
+    .r_box .b_left{float: none; width: 100%;}
+    .r_box .b_left p{font-size: 15px;}
+    
+    
+    .r_box .b_right{float: none; width: 100%;}
+    .r_box .b_right p{font-size: 15px; padding: 5px 23px;}
+    .r_box .b_right p.select_tit{font-size: 15px;}
+    .r_box .b_bottom{float: none;margin-top: 220px;}
+    .r_box .b_right .r_people select{width: 88%;}
+    .r_box .b_right .r_email input{width: 88%;}
+    .r_box .b_bottom p{font-size: 15px; padding: 5px 23px;}
+    .r_box .b_bottom .r_check span{font-size: 13px;}    
+    .reservation .r_text h3{font-size: 18px;}
+    .reservation .r_text p{font-size: 13px;}
+    .reservation .r_text p span{display: block;}
+    .r_button a{padding: 13px 30px;}
+    .r_button a i{font-size: 13px;}
+    .r_button a span{font-size: 13px;}
+    
+}
 
 
 
