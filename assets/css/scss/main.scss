@@ -562,9 +562,14 @@ main {
 /*//casino 은주*/
 
 #facilities {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .facilities {
-    padding-top: 150px;
     position: relative;
+    margin-bottom: 80px;
     p {
       font-size: 150px;
       font-weight: bold;

@@ -633,9 +633,15 @@ main .m_casino a {
 }
 
 /*//casino 은주*/
+#facilities .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #facilities .facilities {
-  padding-top: 150px;
   position: relative;
+  margin-bottom: 80px;
 }
 
 #facilities .facilities p {

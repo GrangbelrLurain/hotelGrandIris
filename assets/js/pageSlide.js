@@ -196,7 +196,7 @@ function facilitiesAnimation(){
     } else {
       clearInterval(faciitiesAnimate);
     }
-  }, 500)
+  }, 400)
 }
 
 function facilitiesAnimationReset(){
