@@ -15,6 +15,7 @@ body {
 #opening {
   width: 100vw;
   height: 100vh;
+  width: 100%;
   position: fixed;
   z-index: 1000;
   background: white;
@@ -400,6 +401,7 @@ main section .container .raw {
   box-sizing: content-box;
   -webkit-mask: url(../img/offer/ico_mask.png) no-repeat;
   mask-size: 100%;
+  font-size: 0;
   transition: all 0.4s;
 }
 
@@ -533,8 +535,18 @@ main section .container .raw {
 }
 
 /* //WEDDING_ 손봄*/
+#dining .raw {
+  display: flex;
+  justify-content: center;
+}
+
 /*dining 정희*/
-.dining {
+main {
+  /*//dining 정희*/
+  /*casino 은주*/
+}
+
+main .dining {
   width: 65vw;
   height: 33vw;
   background: rgba(0, 0, 0, 0.55);
@@ -548,22 +560,22 @@ main section .container .raw {
   opacity: 0;
 }
 
-.dining.active {
+main .dining.active {
   opacity: 1;
   margin-top: 18vh;
 }
 
-.dining strong {
+main .dining strong {
   font-size: 7vw;
   font-weight: bold;
   padding-top: 3vw;
 }
 
-.dining p {
+main .dining p {
   font-size: 1.7vw;
 }
 
-.dining a {
+main .dining a {
   margin-top: 3vw;
   display: block;
   background: rgba(255, 255, 255, 0.6);
@@ -577,43 +589,41 @@ main section .container .raw {
   transition: all 0.2s;
 }
 
-.dining a:hover {
+main .dining a:hover {
   color: #000;
   transform: scale(0.9);
 }
 
-/*//dining 정희*/
-/*casino 은주*/
-.slidedown {
+main .slidedown {
   z-index: -1;
   margin-top: -600px;
   opacity: 0;
 }
 
-.casino_back {
+main .casino_back {
   width: 100%;
   height: 600px;
   background: rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
 }
 
-.m_casino {
+main .m_casino {
   color: #fff;
   text-align: center;
   padding-top: 180px;
 }
 
-.m_casino span {
+main .m_casino span {
   font-size: 3vw;
   font-weight: bold;
 }
 
-.m_casino p {
+main .m_casino p {
   font-size: 1.5vw;
   padding-top: 10px;
 }
 
-.m_casino a {
+main .m_casino a {
   border: 1px solid #fff;
   font-size: 1vw;
   padding: 15px 20px;
@@ -660,4 +670,239 @@ main section .container .raw {
 
 #facilities.slidesActive .facilities .ani {
   opacity: 1;
+}
+
+@media (max-width: 1550px) {
+  .nav > ul {
+    display: flex;
+    width: 100%;
+  }
+  .nav > ul > li {
+    float: none;
+    width: 20%;
+  }
+  .nav > ul > li > .submenu ul li {
+    float: none;
+    display: block;
+    width: auto;
+  }
+  .nav > ul > li > .submenu ul li a {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  body {
+    overflow: visible;
+  }
+  #header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  #header .header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  main section {
+    width: 100%;
+  }
+  main section .container {
+    padding-top: 10px;
+    width: 100%;
+  }
+  main section .container .raw {
+    box-sizing: border-box;
+  }
+  .slides {
+    position: static;
+  }
+  .wedding .w_text h2 {
+    font-size: 120px;
+  }
+  .w_left div h3 {
+    font-size: 40px;
+  }
+  .w_right div h3 {
+    font-size: 40px;
+  }
+  #facilities .facilities p {
+    font-size: 120px;
+    line-height: 120px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav > ul > li > .submenu > a {
+    font-size: 25px;
+  }
+  .nav > ul > li > .submenu ul li a {
+    font-size: 20px;
+  }
+  #offer .offer .selectWrap {
+    width: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 100px;
+    border: 0;
+  }
+  #offer .offer .selectWrap .roomSelectWrap {
+    position: relative;
+    margin-bottom: 12px;
+  }
+  #offer .offer .selectWrap .roomSelectWrap .roomSelect {
+    z-index: 10;
+    width: 150px;
+    left: 0;
+  }
+  #offer .offer .selectWrap .dateSelectWrap {
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+  #offer .offer .selectWrap .dateSelectWrap .dateSelect {
+    margin-left: 0;
+  }
+  #offer .offer .selectWrap .dateSelectWrap .dateOption {
+    z-index: 10;
+  }
+  #offer .offer .selectWrap .etcSelectWrap {
+    margin-left: auto;
+  }
+  #offer .offer .selectWrap .etcSelectWrap .etcOption {
+    z-index: 10;
+  }
+  #offer .offer .selectWrap .search {
+    -webkit-mask: none;
+    width: 400px;
+    padding: 0;
+    top: auto;
+    bottom: -75px;
+    right: auto;
+    left: 0;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  #facilities .facilities p {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header .logo {
+    top: 20px;
+    left: auto;
+    right: 30px;
+    width: 80px;
+  }
+  .header .logo a {
+    width: 100%;
+  }
+  .header .logo a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 64px;
+  }
+  .header .login {
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+  .header.active .login {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    width: 100vw;
+  }
+  .header.active .login ul {
+    display: flex;
+    padding: 0;
+  }
+  .header.active .login ul li {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid white;
+  }
+  .header.active .login ul li a {
+    height: 100%;
+    line-height: 45px;
+  }
+  .header.active .login ul li a:hover {
+    border: 0;
+    background: white;
+    color: #5b30b2;
+    font-weight: bold;
+  }
+  .nav {
+    height: 100vh;
+    width: 100vw;
+  }
+  .nav > ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav > ul > li {
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .nav > ul > li > .submenu {
+    height: auto;
+  }
+  .nav > ul > li > .submenu > a {
+    line-height: 0;
+    font-size: 25px;
+    width: 100%;
+    height: 0;
+  }
+  .nav > ul > li > .submenu ul {
+    display: flex;
+    justify-content: center;
+  }
+  .nav > ul > li > .submenu ul li {
+    float: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+    margin-right: 20px;
+    padding: 1px;
+  }
+  .nav > ul > li > .submenu ul li a {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+  .nav > ul > li > .submenu ul li:last-child {
+    margin: 0;
+  }
+  #aside {
+    display: none;
+  }
+  .wedding .w_text h2 {
+    font-size: 80px;
+  }
+  .w_left div h3 {
+    font-size: 25px;
+  }
+  .w_right div h3 {
+    font-size: 25px;
+  }
+  .w_main a {
+    font-size: 20px;
+  }
 }

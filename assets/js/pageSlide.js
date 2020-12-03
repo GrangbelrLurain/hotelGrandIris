@@ -1,9 +1,13 @@
 // Mouse Wheel Event
 // 마우스 휠 이벤트 관리
 const contentsScrollHandler = function(events){
+  if(document.body.offsetWidth <= 1280){
+    scrollResponsive()
+  }else{
   contentsScroll(events);
   asideActive();
   window.scrollTo(0, 0);
+}
 }
 
 // 마우스 휠 이벤트 추가
@@ -77,8 +81,13 @@ document.querySelectorAll("aside > ul > li").forEach(
     const timeSet = 30;
 
     elem.addEventListener("click", function(){
-      asideClickScroll(elem, index, timeSet)
-    }, false);
+      
+      if(document.body.offsetWidth <= 1280){
+        
+      }else{
+        asideClickScroll(elem, index, timeSet)
+      }}, false);
+    
   })
 
   
@@ -171,12 +180,12 @@ function asideActive (){
 
 function facilitiesAnimation(){
   const facilitiesElem = document.querySelector("#facilities");
-
   let i = 0;
   const faciitiesAnimate = setInterval(function(){
     const targets = document.querySelectorAll(".facilities .target");
     const slides = document.querySelectorAll(".slidesActive");
     const lastActiveElem = slides[slides.length-1];
+
     if(facilitiesElem != lastActiveElem){
       clearInterval(faciitiesAnimate);
       facilitiesAnimationReset();
@@ -187,7 +196,7 @@ function facilitiesAnimation(){
     } else {
       clearInterval(faciitiesAnimate);
     }
-  }, 800)
+  }, 500)
 }
 
 function facilitiesAnimationReset(){
@@ -219,3 +228,10 @@ function diningAnimationReset(){
 }
 
 
+// 반응형 - 1280 이하일때 작동할 함수
+function scrollResponsive(){
+  diningAnimation();
+  casinoAnimation();
+  document.querySelector("#facilities").classList.add("slidesActive");
+  const targets = document.querySelectorAll(".facilities .target").forEach((elem)=>{elem.classList.add("ani")});
+}
