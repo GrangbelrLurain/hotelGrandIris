@@ -40,3 +40,21 @@ document.querySelectorAll(".offer .etcOption ul").forEach((elem, index) => {
     })
   })
 })
+
+// 달력 추가 및 선택 이벤트
+monthMaker();
+
+function monthMaker(){
+  const today = new Date(Date.now());
+  const thisMonth = today.getMonth() + 1;
+  const nextMonth = thisMonth+1 <= 12 ? thisMonth+1 : 1;
+
+  document.querySelector(".offer .selectWrap .dateOption .now .title").innerHTML = thisMonth + "월"
+  document.querySelector(".offer .selectWrap .dateOption .next .title").innerHTML = nextMonth + "월"
+}
+
+function calenderMaker(){
+  const today = new Date(Date.now());
+  const fistDay = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  const lastDay = new Date(today.getFullYear(), today.getMonth()+1, 0);
+}

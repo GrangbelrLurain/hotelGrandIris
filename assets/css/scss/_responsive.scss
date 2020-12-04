@@ -136,6 +136,22 @@
     }
   }
 }
+@media (max-width: 960px) {
+  #header {
+    .header {
+      .login {
+        ul {
+          li {
+            a {
+              font-size: 10px;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 900px) {
   #facilities {
     .facilities {

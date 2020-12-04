@@ -1,5 +1,13 @@
 // Mouse Wheel Event
+// 윈도우 스크롤 이벤트 추가 (1280 이하에서만 작동)
+window.addEventListener("scroll", function(){
+    if(document.body.offsetWidth <= 1280){
+    asideActive1280()
+  }
+})
+
 // 마우스 휠 이벤트 관리
+let lastScroll = window.scrollY;
 const contentsScrollHandler = function(events){
   if(document.body.offsetWidth <= 1280){
     scrollResponsive()
@@ -83,7 +91,7 @@ document.querySelectorAll("aside > ul > li").forEach(
     elem.addEventListener("click", function(){
       
       if(document.body.offsetWidth <= 1280){
-        
+        asideClickScroll1280(index);
       }else{
         asideClickScroll(elem, index, timeSet)
       }}, false);
@@ -91,6 +99,16 @@ document.querySelectorAll("aside > ul > li").forEach(
   })
 
   
+//1280 이하일 때 작동
+function asideClickScroll1280 (clickIndex) { 
+  const scrollPage = document.querySelectorAll(".slides");
+  const asideIndex = clickIndex;
+
+  const scrollWhere = scrollPage[asideIndex].getBoundingClientRect().top + window.scrollY;
+
+  $('body, html').animate({scrollTop:scrollWhere}, 400);
+}
+
 // 클릭시 스크롤 작동 함수
 function asideClickScroll (clickElem, clickIndex, timeSet){
   const scrollPage = document.querySelectorAll(".slides");
@@ -174,6 +192,22 @@ function asideActive (){
   if(asideList[slidesActiveIndex-1]){
     asideList[slidesActiveIndex-1].classList.add("active");
   }
+}
+// 1280이하일 때 작동
+function asideActive1280(){
+  const scrollPage = document.querySelectorAll(".slides");
+  const asideList = document.querySelectorAll("aside > ul > li");
+
+  const wScroll = window.scrollY;
+  
+  scrollPage.forEach( (elem, index) => {
+    const scrollPageLocation = elem.getBoundingClientRect().top + window.scrollY - (elem.clientHeight/2);
+    if(wScroll >= scrollPageLocation){
+      asideList.forEach( (elem) => {elem.classList.remove("active")});
+      asideList[index].classList.add("active");
+    }
+  })
+
 }
 
 // FACILITY ACTIVE EVENT

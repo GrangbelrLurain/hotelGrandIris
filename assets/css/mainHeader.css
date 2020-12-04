@@ -26,7 +26,6 @@
   left: 35px;
   top: 45px;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -38,7 +37,6 @@
   width: 42px;
   height: 7px;
   background: #fff;
-  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
 
@@ -50,7 +48,6 @@
   width: 42px;
   height: 7px;
   background: #fff;
-  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
 
@@ -62,8 +59,7 @@
   left: 35px;
   top: 45px;
   cursor: pointer;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .header .ham.active::after {
@@ -101,7 +97,6 @@
   color: #fff;
   line-height: 36px;
   font-size: 20px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -111,12 +106,10 @@
   position: absolute;
   top: 12%;
   left: 47.5%;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .header .iris_logo1 {
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -131,7 +124,6 @@
   top: 0%;
   left: 0%;
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -140,15 +132,9 @@
 }
 
 .header .logo a {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header .login {
@@ -175,7 +161,6 @@
 .header .login ul li a {
   display: block;
   color: #fff;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -190,23 +175,6 @@
   color: #5b30b2;
   background: #fff;
   font-weight: 900;
-}
-
-@-webkit-keyframes rooms {
-  0% {
-    width: 0;
-    height: 1000px;
-    background-position: -15vw 0;
-    background-image: cover;
-    left: 15vw;
-  }
-  100% {
-    width: 100vw;
-    height: 1000px;
-    background-position: 0 0;
-    background-image: cover;
-    left: 0;
-  }
 }
 
 @keyframes rooms {
@@ -226,21 +194,6 @@
   }
 }
 
-@-webkit-keyframes wedding {
-  0% {
-    width: 0;
-    height: 1000px;
-    background-position: -32.5vw 0;
-    left: 32.5vw;
-  }
-  100% {
-    width: 100vw;
-    height: 1000px;
-    background-position: 0 0;
-    left: 0;
-  }
-}
-
 @keyframes wedding {
   0% {
     width: 0;
@@ -253,21 +206,6 @@
     height: 1000px;
     background-position: 0 0;
     left: 0;
-  }
-}
-
-@-webkit-keyframes casino {
-  0% {
-    left: 50vw;
-    width: 0;
-    height: 1000px;
-    background-position: -50vw 0;
-  }
-  100% {
-    left: 0;
-    width: 100vw;
-    height: 1000px;
-    background-position: 0 0;
   }
 }
 
@@ -286,42 +224,12 @@
   }
 }
 
-@-webkit-keyframes dining {
-  0% {
-    width: 0;
-    height: 1000px;
-    background-position: -67.5vw 0;
-    left: 67.5vw;
-  }
-  100% {
-    width: 100vw;
-    height: 1000px;
-    background-position: 0 0;
-    left: 0;
-  }
-}
-
 @keyframes dining {
   0% {
     width: 0;
     height: 1000px;
     background-position: -67.5vw 0;
     left: 67.5vw;
-  }
-  100% {
-    width: 100vw;
-    height: 1000px;
-    background-position: 0 0;
-    left: 0;
-  }
-}
-
-@-webkit-keyframes facilities {
-  0% {
-    width: 0;
-    height: 1000px;
-    background-position: -85vw 0;
-    left: 85vw;
   }
   100% {
     width: 100vw;
@@ -349,32 +257,23 @@
 /*nav*/
 .nav {
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 85.6vh;
   padding-top: 40px;
   color: #fff;
   background: #282828;
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
   overflow: hidden;
 }
 
 .nav.ready {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 0;
 }
 
 .nav.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   position: relative;
   z-index: 99;
@@ -390,7 +289,6 @@
   width: 100vw;
   height: 1000px;
   opacity: 0;
-  -webkit-transition: opacity 1s;
   transition: opacity 1s;
   pointer-events: none;
   background-size: 100vw;
@@ -399,8 +297,7 @@
 .nav.active.rooms::before {
   background: url(../img/header/offer.png) no-repeat;
   background-size: cover;
-  -webkit-animation: rooms 1s ease-in 1;
-          animation: rooms 1s ease-in 1;
+  animation: rooms 1s ease-in 1;
   opacity: 0.2;
   z-index: 98;
 }
@@ -418,8 +315,7 @@
 .nav.active.wedding::before {
   background: url(../img/header/wedding.png) no-repeat;
   background-size: cover;
-  -webkit-animation: wedding 1s ease-out 1;
-          animation: wedding 1s ease-out 1;
+  animation: wedding 1s ease-out 1;
   opacity: 0.2;
   z-index: 98;
 }
@@ -437,8 +333,7 @@
 .nav.active.casino::before {
   background: url(../img/header/casino.png) no-repeat;
   background-size: cover;
-  -webkit-animation: casino 1s ease-out 1;
-          animation: casino 1s ease-out 1;
+  animation: casino 1s ease-out 1;
   opacity: 0.2;
   z-index: 98;
 }
@@ -456,8 +351,7 @@
 .nav.active.dining::before {
   background: url(../img/header/dining.png) no-repeat;
   background-size: cover;
-  -webkit-animation: dining 1s ease-out 1;
-          animation: dining 1s ease-out 1;
+  animation: dining 1s ease-out 1;
   opacity: 0.2;
   z-index: 98;
 }
@@ -475,8 +369,7 @@
 .nav.active.facilities::before {
   background: url(../img/header/facilities.png) no-repeat;
   background-size: cover;
-  -webkit-animation: facilities 1s ease-out 1;
-          animation: facilities 1s ease-out 1;
+  animation: facilities 1s ease-out 1;
   opacity: 0.2;
   z-index: 98;
 }
@@ -496,7 +389,6 @@
   width: 307px;
   text-align: center;
   border-right: 1px solid #fff;
-  -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 
@@ -535,6 +427,5 @@
   font-size: 25px;
   color: #fff;
   padding: 20px 0;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
