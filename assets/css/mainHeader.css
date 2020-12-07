@@ -5,11 +5,15 @@
 
 #header {
   margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .header {
   height: 100px;
+  width: 100%;
   position: relative;
+  width: 100vw;
   z-index: 100;
   background: rgba(40, 40, 40, 0);
 }

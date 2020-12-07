@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   overflow: hidden;
+  width: 100vw;
 }
 
 @keyframes opening {
@@ -14,7 +15,7 @@ body {
 
 #opening {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -714,7 +715,7 @@ main .m_casino a {
 
 @media (max-width: 1280px) {
   body {
-    overflow: visible;
+    overflow-y: visible;
   }
   #header {
     position: fixed;
@@ -826,6 +827,15 @@ main .m_casino a {
 }
 
 @media (max-width: 800px) {
+  main section .container {
+    width: 100%;
+  }
+  main section .container .raw {
+    box-sizing: border-box;
+  }
+  .header {
+    width: 100vw;
+  }
   .header .logo {
     top: 20px;
     left: auto;
@@ -930,5 +940,39 @@ main .m_casino a {
   }
   .w_main a {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #offer .offer .selectWrap {
+    width: 280px;
+  }
+  #offer .offer .selectWrap .roomSelectWrap {
+    position: relative;
+    margin-bottom: 12px;
+  }
+  #offer .offer .selectWrap .roomSelectWrap .roomSelect {
+    z-index: 10;
+    width: 150px;
+    left: 0;
+  }
+  #offer .offer .selectWrap .dateSelectWrap {
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+  #offer .offer .selectWrap .dateSelectWrap .dateSelect {
+    margin-left: 0;
+  }
+  #offer .offer .selectWrap .dateSelectWrap .dateOption {
+    z-index: 10;
+  }
+  #offer .offer .selectWrap .etcSelectWrap {
+    margin-left: auto;
+  }
+  #offer .offer .selectWrap .etcSelectWrap .etcOption {
+    z-index: 10;
+  }
+  #offer .offer .selectWrap .search {
+    width: 280px;
   }
 }

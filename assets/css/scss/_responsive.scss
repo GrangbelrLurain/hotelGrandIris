@@ -25,7 +25,7 @@
 }
 @media (max-width: 1280px) {
   body {
-    overflow: visible;
+    overflow-y: visible;
   }
   #header {
     position: fixed;
@@ -163,7 +163,14 @@
   }
 }
 @media (max-width: 800px) {
+  main section .container {
+    width: 100%;
+    .raw {
+      box-sizing: border-box;
+    }
+  }
   .header {
+    width: 100vw;
     .logo {
       top: 20px;
       left: auto;
@@ -269,5 +276,39 @@
   }
   .w_main a {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #offer .offer .selectWrap {
+    width: 280px;
+    .roomSelectWrap {
+      position: relative;
+      margin-bottom: 12px;
+      .roomSelect {
+        z-index: 10;
+        width: 150px;
+        left: 0;
+      }
+    }
+    .dateSelectWrap {
+      margin: 0 auto;
+      margin-bottom: 0;
+      .dateSelect {
+        margin-left: 0;
+      }
+      .dateOption {
+        z-index: 10;
+      }
+    }
+    .etcSelectWrap {
+      margin-left: auto;
+      .etcOption {
+        z-index: 10;
+      }
+    }
+    .search {
+      width: 280px;
+    }
   }
 }

@@ -2,6 +2,7 @@
 
 body {
   overflow: hidden;
+  width: 100vw;
 }
 
 @keyframes opening {
@@ -15,7 +16,7 @@ body {
 }
 #opening {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   z-index: 1000;
