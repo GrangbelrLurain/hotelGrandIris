@@ -17,7 +17,15 @@
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: -100px;
+  transition: top 0.4s;
+}
+
+.header.active {
+  top: 0;
 }
 
 .header .logo {

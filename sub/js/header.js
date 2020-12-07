@@ -31,5 +31,20 @@ function headerOnLoad(){
         
         leftMenu.toggleClass("active");
     });
-    console.log("header");
+
+// 추가 이벤트 (On/Off Event)
+let beforeScroll = window.scrollY
+
+window.addEventListener("scroll", headerOnOff);
+function headerOnOff (){
+    const scrollDirection = beforeScroll - window.scrollY;
+    
+    const header = document.querySelector("#header .header");
+    if(scrollDirection > 0){
+        header.classList.add("active");
+    } else {
+        header.classList.remove("active");
+    }
+    beforeScroll = window.scrollY;
+}
 }
