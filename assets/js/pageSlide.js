@@ -126,11 +126,9 @@ function asideClickScroll (clickElem, clickIndex, timeSet){
   
   if(slidesActiveIndex > clickIndex){
     let i = slidesActiveIndex;
-    console.log(i)
     const interval = setInterval(function(){
       if(i-- > clickIndex){
         scrollPage[i+1].classList.remove("slidesActive");
-        console.log(i);
       }else{
         clearInterval(interval);
         asideActive()
@@ -138,46 +136,42 @@ function asideClickScroll (clickElem, clickIndex, timeSet){
     }, timeSet)
   }else if(slidesActiveIndex <= clickIndex){
     let i = 0;
-    console.log(i)
     const interval = setInterval(function(){
       if(i++ < clickIndex){
         scrollPage[i].classList.add("slidesActive");
-        console.log(i);
       }else{
         clearInterval(interval);
         asideActive()
       }
     }, timeSet)
   }
-  //facilitiesAnimation 불러오기
-
+   
+  
+  // 다이닝
   setTimeout(function(){
-    if(scrollPage[scrollPage.length-2] == document.querySelector("#facilities")){
+    if(scrollPage[clickIndex] == document.querySelector("#dining")){
+      diningAnimation();
+    } else {
+      diningAnimationReset();
+    }
+  },400)
+
+  // 카지노
+   setTimeout(function(){
+    if(scrollPage[clickIndex] == document.querySelector("#casino")){
+      casinoAnimation();
+    } else {
+      casinoAnimationReset();
+    }
+  },400)
+ 
+  //facilitiesAnimation 불러오기
+    if(scrollPage[clickIndex] == document.querySelector("#facilities")){
       facilitiesAnimation();
     } else {
       facilitiesAnimationReset();
     }
-  },400)
-  
-  // 다이닝
-  setTimeout(function(){
-   if(scrollPage[scrollPage.length-4] == document.querySelector("#dining")){
-     diningAnimation();
-   } else {
-     diningAnimationReset();
-   }
- },400)
-   
- // 카지노
-  setTimeout(function(){
-   if(scrollPage[scrollPage.length-3] == document.querySelector("#casino")){
-     casinoAnimation();
-   } else {
-     casinoAnimationReset();
-   }
- },400)
 }
-
 // Aside Active Event
 // 클릭&마우스 휠 작동 시 어사이드 Active 관리
 function asideActive (){
