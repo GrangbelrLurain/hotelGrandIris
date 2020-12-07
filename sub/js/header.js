@@ -40,10 +40,18 @@ function headerOnOff (){
     const scrollDirection = beforeScroll - window.scrollY;
     
     const header = document.querySelector("#header .header");
+    const activeMenuL = header.querySelector(".nav_left");
+    const activeMenuR = header.querySelector(".nav_right");
+    const activeHam = header.querySelector(".ham_menu");
     if(scrollDirection > 0){
         header.classList.add("active");
     } else {
         header.classList.remove("active");
+        if(activeHam.classList.contains("active")){
+            activeHam.classList.remove("active");
+            activeMenuL.classList.remove("active");
+            activeMenuR.classList.remove("active");
+        }
     }
     beforeScroll = window.scrollY;
 }
