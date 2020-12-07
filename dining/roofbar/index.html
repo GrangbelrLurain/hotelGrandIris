@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="assets/css/swiper.css">
     <!--슬릭-->
     <link rel="stylesheet" href="assets/css/slick.css">
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 
 </head>
@@ -32,6 +34,14 @@
         <div class="header clearfix">
             <div class="logo">
                 <a href="#"><img src="assets/img/sublogofff.PNG" alt="서브로고"></a>
+            </div>
+            <div class="s_logo">
+                <a href="#"><img src="assets/img/H_logo_W.png" alt="반응형로고"></a>
+            </div>
+            <div class="ham_menu">
+                <div>
+                    
+                </div>
             </div>
             <div class="nav_left">
                 <ul class="clearfix menu">
@@ -108,29 +118,35 @@
             </div>
         </div>
         <div id="contents">
-            <div class="cont1">
-                <div class="ban">
-                    <div><a href="#"><img src="assets/img/bar_slik1.jpg" alt="슬릭1"></a></div>
-                    <div><a href="#"><img src="assets/img/bar_slik2.jpg" alt="슬릭2"></a></div>
-                    <div><a href="#"><img src="assets/img/bar_slik3.jpg" alt="슬릭3"></a></div>
-                </div>
-                <div class="cont1_texts">
-                    <h2>IRIS ROOFTOP</h2>
-                    <p>루프탑에서 펼쳐지는 황홀한 야경과 함께 셰프들의 스페셜 만찬을 즐겨보세요</p>
-                    <div class="text">
-                        <div class="infor">
-                           <ul>
-                               <li><em>위치</em> <strong>본관 42 층</strong></li>
-                               <li><em>좌석</em> <strong>64 석</strong></li>
-                               <li><em>문의</em> <strong>010 1125 1563</strong></li>
-                               <li><em>영업시간</em> <strong>17:00 ~ 02:00</strong></li>
-                           </ul>
-                        </div>
-                        <div class="box">
-                            <ul>
-                                <li class="last"><a href="#">RESERBATION</a></li>
-                                <li class="top_menu">MENU</li>
-                            </ul>
+            <div class="contents">
+                <div class="container">
+                    <div class="row">
+                        <div class="cont1">
+                            <div class="ban">
+                                <div><a href="#"><img src="assets/img/bar_slik1.jpg" alt="슬릭1"></a></div>
+                                <div><a href="#"><img src="assets/img/bar_slik2.jpg" alt="슬릭2"></a></div>
+                                <div><a href="#"><img src="assets/img/bar_slik3.jpg" alt="슬릭3"></a></div>
+                            </div>
+                            <div class="cont1_texts">
+                                <h2>IRIS ROOFTOP</h2>
+                                <p>루프탑에서 펼쳐지는 황홀한 야경과 함께 셰프들의 스페셜 만찬을 즐겨보세요</p>
+                                <div class="text">
+                                    <div class="infor">
+                                       <ul>
+                                           <li><em>위치</em> <strong>본관 42 층</strong></li>
+                                           <li><em>좌석</em> <strong>64 석</strong></li>
+                                           <li><em>문의</em> <strong>010 1125 1563</strong></li>
+                                           <li><em>영업시간</em> <strong>17:00 ~ 02:00</strong></li>
+                                       </ul>
+                                    </div>
+                                    <div class="box">
+                                        <ul>
+                                            <li class="last"><a href="#">예약하기</a></li>
+                                            <li class="top_menu">메뉴</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,8 +168,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="right1 fadeinright">
-                    <div class="texts2 fadeinright">
+                <div class="right1">
+                    <div class="texts2">
                         <div class="menu">
                             <h3>플레이크꽃등심스테이크</h3>
                             <p>75,000 &#92;</p>
@@ -239,7 +255,7 @@
 				</div>
 			</div>
 		</div>
-    </footer>
+	</footer>
     <!--메뉴레이어팝업-->
     <div id="layer">
         <h2 class="ir_pm">IRIS ROOFTOP</h2>
@@ -347,6 +363,7 @@
     <script src="assets/js/footer.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         var current=0;
         $(".sliderlist").children("div:gt(0)").hide();
@@ -368,7 +385,6 @@
               slidesToScroll: 1,
               autoplay:true,
               autoplaySpeed:3500,
-              dots:true,
         });
         
         //레이어팝업
@@ -430,13 +446,13 @@
         //scroll fadeinright
         $(document).ready(function() {
     $(window).scroll( function(){
-        $('.fadeinright').each( function(i){
+        $('.cont2 .right1').each( function(i){
             
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','margin-right':'0px'},600);
+                $(this).animate({'opacity':'1',"margin": "20vw 0vw 20vw -5vw"},600);
             }
             
         }); 
@@ -452,13 +468,50 @@
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','margin-bottom':'0px'},600);
+                $(this).animate({'opacity':'1','margin-bottom':'0px'},400);
             }
             
         }); 
     });
 });
 
+        
+        
+        
+        
+        //헤더
+        $(function() {
+            $(document).mouseup(function(e) {
+                if ($(e.target).parents('.menu').length == 0) {
+                    $('.menu li').removeClass('expand');
+                    $('.menu ul').hide();
+                }
+            });
+
+
+            $(".menu li>a").mouseover(function() {
+                var li = $(this).parent();
+                var ul = li.parent()
+                ul.find('li').removeClass('expand');
+                ul.find('ul').not(li.find('ul')).hide();
+                li.children('ul').toggle();
+                if (li.children('ul').is(':visible') || li.has('ul')) {
+                    li.addClass('expand');
+                }
+            });
+        });
+            
+        //햄버거메뉴
+        $(".header .ham_menu").click(function(){
+            var hamMenu = $(".header .ham_menu");
+            var rightMenu = $(".header .nav_right");
+            var leftMenu = $(".header .nav_left");
+            
+            hamMenu.toggleClass("active");
+            rightMenu.toggleClass("active");
+            leftMenu.toggleClass("active");
+            
+        });
 
         
     </script>

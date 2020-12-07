@@ -3,14 +3,13 @@
 
 #footer{
 	width: 100%;
-	height: 300px;
 	padding-top: 70px;
 	background: #282828;
 }
 
 /*container*/
 .container{
-    width: 1280px;
+	width: 1280px;
 	height: inherit;
 	margin: 0 auto;
 	/*background: rgba(255,255,255,0.5);*/
@@ -76,7 +75,6 @@
 .footer .f_center .f_copy p{
 	padding-top: 5px;
 	font-size: 14px;
-    color: #fff;
 }
 /*f_right*/
 .footer .f_right{
@@ -108,6 +106,51 @@
 
 
 
+/*미디어쿼리*/
+@media(max-width:1024px){
+    #footer .container{width: 100%;}
+    .footer .f_left{width: 15%;}
+    .footer .f_center{width: 65%;}
+    .footer .f_center .f_nav{}
+    .footer .f_center .f_copy p{font-size: 12px;}
+    .footer .f_center .f_nav ul{}
+    .footer .f_center .f_nav ul li{padding: 5px 5px;}
+    .footer .f_center .f_nav ul li a{font-size: 13px;}
+    .footer .f_right{width: 20%;}
+    .footer .f_right .f_sns ul li{margin-right: 12px; width: 40px; height: 40px;}
+    
+    .footer .f_right .family #family{width: 140px;}
+}
+@media(max-width:800px){
+    #footer{padding-top: 30px; box-sizing: border-box;}
+    .footer{}
+    .footer .f_left{height: 100px; width: 25%;}
+    .footer .f_center{height: 150px; width: 75%;}
+    .footer .f_center .f_copy{margin-top: 20px;}
+    .footer .f_right{float: none; overflow: hidden; width: 100%; height: 70px;
+    display: flex; justify-content: center;}
+    .footer .f_right .f_sns ul li{width: 50px; height: 50px;}
+    .footer .f_right .family{display: none;}
+    .footer .f_right .f_sns{float: left; padding-left: 200px; margin-top: 0;}
+    
+}
+
+@media(max-width:480px){
+    #footer{}
+    .footer .f_left{float: none; width: 100%; height: 150px; display: flex; justify-content: center;}
+    .footer .f_left .f_logo{width: 152px;}
+    
+    .footer .f_center{float: none; width: 100%;}
+    .footer .f_center .f_nav {width: 100%;}
+    .footer .f_center .f_nav ul{display: flex; justify-content: center;}
+    .footer .f_center .f_nav ul li{}
+    .footer .f_center .f_nav ul li a{font-size: 1vw;}
+    .footer .f_center .f_copy p{font-size: 1vw;}
+    .footer .f_right .f_sns{padding: 0;}
+    .footer .f_right .f_sns ul li{width: 30px; height: 30px;}
+    
+    
+}
 
 
 
