@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
-#header {
+/*
+header {
     width: 100vw;
-    height: 150px;
+    height: 130px;
     background: #282828;
 }
 
@@ -126,13 +127,11 @@
 .header .nav_right ul li:hover a {
     color: white;
 }
+*/
 
 
 /*main*/
 main {}
-
-
-
 #contents {}
 
 /*banner*/
@@ -152,30 +151,25 @@ main {}
 #cont_1 {}
 
 .cont_1 {
+
     height: 1800px;
-    position: relative;
+    
 }
 
-.cont_1::before{
-    content: "";
-    position: absolute;
-    top: 240px;
-    right: 0;
-    width: 1020px;
-    height: 10px;
-    background: #fbe4d3;
-}
+
 .cont_1 h2 {
     font-weight: 600;
     font-size: 60px;
     margin-top: 100px;
-    margin-bottom: 140px;
+    margin-bottom: 40px;
 }
 
 .cont_1 p.halltour {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 120px;
+    position: relative;
+    border-bottom: 7px solid #fbe4d3;
 }
 
 .cont_1 h3 {
@@ -360,7 +354,7 @@ main {}
 }
 
 .cont_3 {
-    height: 1800px;
+    height: 1750px;
 }
 .cont_3 h2{
     margin: 70px 0;
@@ -369,16 +363,17 @@ main {}
     font-weight: 700;
 }
 .cont_3 .room{
-    overflow: hidden;
+    overflow: hidden;    
 }
 .cont_3 .room .image{
     float: left;
     width: 704px;
-    height: 400px;
-    background: #ccc;
+}
+.cont_3 .room .image img{
+    box-shadow: 7px 7px 7px #282828;
 }
 .cont_3 .room .r_text{
-    width: 440px;
+    width: 400px;
     float: left;
     padding: 40px;
 }
@@ -398,8 +393,9 @@ main {}
 .cont_3 .weddingcar .image{
     float: left;
     width: 704px;
-    height: 400px;
-    background: #ccc;
+}
+.cont_3 .weddingcar .image img{
+    box-shadow: 7px 7px 7px #282828;
 }
 .cont_3 .weddingcar .w_text{
     width: 400px;
@@ -422,8 +418,10 @@ main {}
 .cont_3 .tasting .image{
     float: left;
     width: 704px;
-    height: 400px;
-    background: #ccc;
+   
+}
+.cont_3 .tasting .image img{
+     box-shadow: 7px 7px 7px #282828;
 }
 .cont_3 .tasting .t_text{
     width: 400px;
@@ -474,6 +472,190 @@ main {}
     font-weight: 500;
 }
 
+/*미디어쿼리*/
+@media(max-width:1290px){
+    #cont_1 .container{width: 100%;}
+    #cont_2 .container{width: 100%;}
+    #cont_3 .container{width: 100%;}
+    
+    .cont_1{height: 1400px;}
+    .cont_1 h2{font-size: 50px; margin-top: 50px; margin-left: 30px;}
+    .cont_1 p.halltour{font-size: 18px; margin-bottom: 80px; margin-left: 30px;}
+    .cont_1 h3 {font-size: 60px; margin-left: 30px;}
+    .cont_1 h3 span{font-size: 40px;}
+    .cont_1 p.g{font-size: 20px;}
+    .cont_1 p.h {font-size: 45px;}
+    .cont_1 p.info{font-size: 20px;}
+
+    .grand_slick{}
+    .grand_slick div{width: 1000px; margin: 0 auto;}
+    .grand_slick div img{width: 1000px;}
+    .grand_slick .slick-prev{right: 220px;}
+    .grand_slick .slick-next{right: 150px;}
+    .grand_slick ul.slick-dots{bottom: 20px;}
+    
+    .cont_3{height: 1350px;}
+    .cont_3 h2{font-size: 30px;}
+    
+    .cont_3 .room{display: flex; justify-content: center;}
+    .cont_3 .room .image{width: 500px;}
+    .cont_3 .room .image img{}
+    .cont_3 .room .r_text{}
+    .cont_3 .room .r_text h3{font-size: 30px;}
+    .cont_3 .room .r_text p{font-size: 18px;}
+    
+    .cont_3 .weddingcar{display: flex; justify-content: center;}
+    .cont_3 .weddingcar .image{width: 500px;}
+    .cont_3 .weddingcar .image img{}
+    .cont_3 .weddingcar .w_text{}
+    .cont_3 .weddingcar .w_text h3{font-size: 30px;}
+    .cont_3 .weddingcar .w_text p{font-size: 18px;}
+    
+    .cont_3 .tasting{display: flex; justify-content: center;}
+    .cont_3 .tasting .image{width: 500px;}
+    .cont_3 .tasting .image img{}
+    .cont_3 .tasting .t_text{}
+    .cont_3 .tasting .t_text h3{font-size: 30px;}
+    .cont_3 .tasting .t_text p{font-size: 18px;}
+    
+}
+@media(max-width:1024px){
+    
+    .cont_1{height: 1200px;}
+    .cont_1 h2{font-size: 40px; margin-top: 40px; margin-left: 30px;}
+    .cont_1 p.halltour{font-size: 18px; margin-bottom: 80px; margin-left: 30px;}
+    .cont_1 h3 {font-size: 45px; margin-left: 30px;}
+    .cont_1 h3 span{font-size: 20px;}
+    .cont_1 p.g{font-size: 20px;}
+    .cont_1 p.h {font-size: 45px;}
+    .cont_1 p.info{font-size: 20px;}
+    
+    .grand_slick{}
+    .grand_slick div{width: 700px; margin: 0 auto;}
+    .grand_slick div img{width: 700px;}
+    .grand_slick .slick-prev{right: 220px; }
+    .grand_slick .slick-next{right: 150px;}
+    .grand_slick ul.slick-dots{bottom: 20px;}
+    .grand_slick ul.slick-dots li {width: 10px; height: 10px;margin: 3px;}
+    .grand_slick ul.slick-dots li button{width: 10px; height: 10px;}
+    
+    .cont_2{width: 600px; height: 750px;}    
+    .cont_2 h2{font-size: 30px;}
+    .cont_2 h3{font-size: 40px;}
+    .brideroom ul.slick-dots li{width: 10px; height: 10px; margin: 3px;}
+    .brideroom ul.slick-dots li button{width: 10px; height: 10px;}
+    
+    .cont_3{height: 1100px;}
+    .cont_3 h2{font-size: 25px;}
+    
+    .cont_3 .room .image{width: 350px;}
+    .cont_3 .room .image img{}
+    .cont_3 .room .r_text{padding: 20px;}
+    .cont_3 .room .r_text h3{font-size: 20px;}
+    .cont_3 .room .r_text p{font-size: 15px;}
+    
+    .cont_3 .weddingcar .image{width: 350px;}
+    .cont_3 .weddingcar .image img{}
+    .cont_3 .weddingcar .w_text{padding: 20px;}
+    .cont_3 .weddingcar .w_text h3{font-size:20px;}
+    .cont_3 .weddingcar .w_text p{font-size: 15px;}
+    
+    .cont_3 .tasting .image{width: 350px;}
+    .cont_3 .tasting .image img{}
+    .cont_3 .tasting .t_text{padding: 20px;}
+    .cont_3 .tasting .t_text h3{font-size: 20px;}
+    .cont_3 .tasting .t_text p{font-size: 15px;}
+    
+    .cont_3 .reservation a{padding: 10px 40px;}
+    .cont_3 .reservation a span{font-size: 15px;}
+    .cont_3 .reservation a i{font-size: 15px;}
+}
+@media(max-width:768px){
+    .cont_1{height: 850px;}
+    .cont_1 h2{font-size: 25px; margin-top: 20px; margin-left: 30px;}
+    .cont_1 p.halltour{font-size: 18px; margin-bottom: 40px; margin-left: 30px;}
+    .cont_1 h3 {font-size: 40px; margin-left: 30px;}
+    .cont_1 h3 span{font-size: 20px;}
+    .cont_1 p.g{font-size: 20px;}
+    .cont_1 p.h {font-size: 30px;}
+    .cont_1 p.info{font-size: 14px;}
+    
+    .grand_slick{}
+    .grand_slick div{width: 500px; margin: 0 auto;}
+    .grand_slick div img{width: 500px;}
+    .grand_slick .slick-prev{width: 0;height: 0;}
+    .grand_slick .slick-next{width: 0;height: 0;}
+    
+    .cont_2{width: 500px; height: 650px;}    
+    .cont_2 h2{font-size: 25px;}
+    .cont_2 h3{font-size: 35px;}
+    
+    .cont_3{height: 900px;}
+    .cont_3 h2{font-size: 20px;}
+    .cont_3 .room .image{width: 320px;}
+    .cont_3 .room .image img{}
+    .cont_3 .room .r_text{padding: 15px;}
+    .cont_3 .room .r_text h3{font-size: 18px; padding-bottom: 15px;}
+    .cont_3 .room .r_text p{font-size: 13px;}
+    
+    .cont_3 .weddingcar .image{width: 320px;}
+    .cont_3 .weddingcar .image img{}
+    .cont_3 .weddingcar .w_text{padding: 15px;}
+    .cont_3 .weddingcar .w_text h3{font-size:18px; padding-bottom: 15px;}
+    .cont_3 .weddingcar .w_text p{font-size: 13px;}
+    
+    .cont_3 .tasting .image{width: 320px;}
+    .cont_3 .tasting .image img{}
+    .cont_3 .tasting .t_text{padding: 15px;}
+    .cont_3 .tasting .t_text h3{font-size: 18px; padding-bottom: 15px;}
+    .cont_3 .tasting .t_text p{font-size: 13px;}
+
+}
+@media(max-width:480px){
+    .cont_1{height: 700px;}
+    .cont_1 h2{font-size: 20px; margin-top: 20px; margin-left: 30px;}
+    .cont_1 p.halltour{font-size: 15px; margin-bottom: 25px; margin-left: 30px;}
+    .cont_1 h3 {font-size: 25px; margin-left: 30px;}
+    .cont_1 h3 span{font-size: 17px;}
+    .cont_1 p.g{font-size: 17px;}
+    .cont_1 p.h {font-size: 20px;}
+    .cont_1 p.info{font-size: 13px;}
+    
+    .grand_slick{}
+    .grand_slick div{width: 300px; margin: 0 auto;}
+    .grand_slick div img{width: 300px;}
+    .grand_slick ul.slick-dots{bottom: 5px;}
+    
+    .cont_2{width: 300px; height: 470px;}    
+    .cont_2 h2{font-size: 20px;}
+    .cont_2 h3{font-size: 25px;}
+    .brideroom .slick-prev{width: 0; height: 0;}
+    .brideroom .slick-next{width: 0; height: 0;}
+    
+    .cont_3{height: 1600px;}
+    .cont_3 h2{font-size: 20px;}
+    .cont_3 .room{display: block;}
+    .cont_3 .room .image{width: 98%; float: none;}
+    .cont_3 .room .image img{}
+    .cont_3 .room .r_text{box-sizing: border-box; width: 98%; padding: 20px; float: none;}
+    .cont_3 .room .r_text h3{font-size: 20px; padding-bottom: 15px;}
+    .cont_3 .room .r_text p{font-size: 15px;}
+    
+    .cont_3 .weddingcar{display: block;}
+    .cont_3 .weddingcar .image{width: 98%; float: none;}
+    .cont_3 .weddingcar .image img{}
+    .cont_3 .weddingcar .w_text{box-sizing: border-box; width: 98%; padding: 20px; float: none;}
+    .cont_3 .weddingcar .w_text h3{font-size: 20px; padding-bottom: 15px;}
+    .cont_3 .weddingcar .w_text p{font-size: 15px;}
+    
+    .cont_3 .tasting{display: block;}
+    .cont_3 .tasting .image{width: 98%; float: none;}
+    .cont_3 .tasting .image img{}
+    .cont_3 .tasting .t_text{box-sizing: border-box; width: 98%; padding: 20px; float: none;}
+    .cont_3 .tasting .t_text h3{font-size: 20px; padding-bottom: 15px;}
+    .cont_3 .tasting .t_text p{font-size: 15px;}
+
+}
 
 
 
@@ -481,107 +663,3 @@ main {}
 
 
 
-/*footer*/
-#footer{
-	width: 100%;
-	height: 300px;
-	padding-top: 70px;
-	background: #282828;
-}
-
-/*container*/
-.container{
-	width: 1280px;
-	height: inherit;
-	margin: 0 auto;
-	/*background: rgba(255,255,255,0.5);*/
-}
-.container .row {
-    padding: 0 28px;
-}
-
-/*footer*/
-.footer{
-	overflow: hidden;
-}
-/*f_left*/
-.footer .f_left{
-	float: left;
-	width: 185px;
-	height: 300px;
-}
-.footer .f_left .f_logo{
-	
-}
-/*f_center*/
-.footer .f_center{
-	float: left;
-	width: 838px;
-	height: 300px;
-	color: #fff;
-}
-.footer .f_center .f_nav{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.footer .f_center .f_nav ul{
-	overflow: hidden;
-}
-.footer .f_center .f_nav ul li{
-	padding: 5px 20px;
-	float: left;
-	position: relative;
-}
-.footer .f_center .f_nav ul li::after{
-	content: "";
-	width: 1px;
-	height: 14px;
-	background: #fff;
-	position: absolute;
-	top: 10px;
-	right: 0;
-}
-.footer .f_center .f_nav ul li.last::after{
-	width: 0;
-	height: 0;
-}
-.footer .f_center .f_nav ul li a{
-	color: #fff;
-	font-size: 16px;
-}
-.footer .f_center .f_copy{
-	margin-top: 50px;
-	text-align: center;
-}
-.footer .f_center .f_copy p{
-	padding-top: 5px;
-	font-size: 14px;
-}
-/*f_right*/
-.footer .f_right{
-	float: right;
-	width: 200px;
-	height: 300px;
-}
-.footer .f_right .family #family{
-	width: 200px;
-	height: 40px;
-	font-size: 16px;
-}
-
-.footer .f_right .f_sns{
-	margin-top: 60px;
-}
-.footer .f_right .f_sns ul{
-	overflow: hidden;
-}
-.footer .f_right .f_sns ul li{
-	float: left;
-	width: 50px;
-	height: 50px;
-	margin-right: 24px;
-}
-.footer .f_right .f_sns ul li.last{
-	margin-right: 0;
-}

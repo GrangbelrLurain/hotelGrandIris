@@ -7,7 +7,7 @@ $(document).mouseup(function(e) {
 });
 
 
-$(".menu li>a").click(function() {
+$(".menu li>a").mouseover(function() {
     var li = $(this).parent();
     var ul = li.parent()
     ul.find('li').removeClass('expand');
@@ -18,3 +18,16 @@ $(".menu li>a").click(function() {
     }
 });
 });
+
+//햄버거메뉴
+        $(".header .ham_menu").click(function(){
+            var hamMenu = $(".header .ham_menu");
+            var rightMenu = $(".header .nav_right");
+            var leftMenu = $(".header .nav_left");
+            
+            hamMenu.toggleClass("active");
+            rightMenu.toggleClass("active");
+            leftMenu.toggleClass("active");
+            
+        });
+        
