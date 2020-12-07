@@ -1,4 +1,24 @@
 *{font-family: "NanumSquare"}
+
+/*스킵네비게이션*/
+#skip{
+    position: relative;
+    z-index: 9999;
+}
+#skip a{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 160px;
+    background: #282828;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+}
+#skip a:active,
+#skip a:focus{top: 0;}
+
 main {}
 #banner{margin: 0 auto;width: 100%;}
 #contents{

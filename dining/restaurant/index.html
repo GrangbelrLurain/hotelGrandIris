@@ -27,7 +27,13 @@
     
 
 </head>
-<body style="overflow-x:hidden; overflow-y:auto;">
+<body>
+    <div id="skip">
+        <a href="#header">헤더 바로가기</a>
+        <a href="#banner">배너 바로가기</a>
+        <a href="#contents">컨텐츠 바로가기</a>
+        <a href="#footer">푸터 바로가기</a>
+    </div>
     <header include-html="/sub/html/header_w.html">
     </header>
     <main>
@@ -611,48 +617,6 @@
     });
 });
 
-        
-        
-        
-        
-
-        //헤더
-        $(function() {
-            $(document).mouseup(function(e) {
-                if ($(e.target).parents('.menu').length == 0) {
-                    $('.menu li').removeClass('expand');
-                    $('.menu ul').hide();
-                }
-            });
-
-
-            $(".menu li>a").mouseover(function() {
-                var li = $(this).parent();
-                var ul = li.parent()
-                ul.find('li').removeClass('expand');
-                ul.find('ul').not(li.find('ul')).hide();
-                li.children('ul').toggle();
-                if (li.children('ul').is(':visible') || li.has('ul')) {
-                    li.addClass('expand');
-                }
-            });
-        });
-            
-        //햄버거메뉴
-        $(".header .ham_menu").click(function(){
-            var hamMenu = $(".header .ham_menu");
-            var rightMenu = $(".header .nav_right");
-            var leftMenu = $(".header .nav_left");
-            
-            hamMenu.toggleClass("active");
-            rightMenu.toggleClass("active");
-            leftMenu.toggleClass("active");
-            
-        });
-        
-
-
-        
     </script>
 </body></html>
 
