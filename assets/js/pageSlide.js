@@ -1,9 +1,12 @@
 // Mouse Wheel Event
 // 윈도우 스크롤 이벤트 추가 (1280 이하에서만 작동)
+if(document.body.offsetWidth <= 1280){
+  scrollResponsive()
+}
+
 window.addEventListener("scroll", function(){
     if(document.body.offsetWidth <= 1280){
     asideActive1280()
-    scrollResponsive()
   }
 })
 
