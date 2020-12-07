@@ -23,7 +23,7 @@ main .container .row {
 .banner{}
 .banner span{
     color: #fff;
-    font-size: 70px; 
+    font-size: 6vw; 
     text-transform: uppercase;
     line-height: 650px;
     font-family: 'Italianno', cursive;
@@ -51,7 +51,6 @@ main .container .row {
     margin-top: 80px;
 }
 .cont1 .con2 p{
-    font-weight: 500;
     font-size: 16px;
     font-weight: 400;
 }
@@ -317,6 +316,95 @@ main .container .row {
 
 
 
+/*미디어 쿼리*/
+
+@media (max-width:1024px){
+    main .container{width: 100%}
+}
+@media (max-width:960px){
+    main .container{width: 100%;}
+    .m_cont .m_cont2 .card ul li{
+    margin-right: 80px;
+    margin-top: 60px;}
+    .m_cont .m_cont2 .card ul li img{width: 210px; height: 140px;}
+    
+}
+@media (max-width:768px){
+    main {height: 2000px;}
+    main .container{
+	width: 100%;
+}
+    main .container .row {padding: 0 20px;}
+    
+   .m_btn ul li{
+    padding: 10px 50px;
+    font-size: 16px;
+}
+    .m_cont .m_cont1 .left img{width: 60px; height: 58px;}
+    .m_cont .m_cont1 .right strong{font-size: 18px;}
+    .m_cont .m_cont1 .right p{font-size: 14px;}
+    
+    .m_cont .m_cont2 h3{font-size: 20px;}
+    
+    .m_cont .m_cont2 .card{height: 200px;}
+    .m_cont .m_cont2 .card ul li{margin-right: 40px; margin-top: 20px;}
+    .m_cont .m_cont2 .card ul li img{width: 180px; height: 110px;}
+    .m_cont .m_cont2 .card ul li p{margin-top: 10px; font-size: 16px;
+}
+    .m_cont .m_cont4 .left_4 img{width: 70px; height: 54px;} 
+    .m_cont .m_cont4 .right_4{margin-left: 15px; margin-top: 0;}
+    .m_cont .m_cont4 .right_4 p{font-size: 12px; padding-top: 5px;}
+    .m_cont .m_cont5 .right_5 p{font-size: 10px;}
+    .m_cont .m_cont7 table tr th{padding: 10px 15px; width: 15%;
+}
+    
+}
+
+
+@media (max-width:480px){
+    main {height: 2100px;}
+    main .container{width: 100%;}
+    main .container .row {padding: 0 10px;}
+    
+    .cont1 .con1 h2{font-size: 30px;}
+    .cont1 .con2 p{font-size: 14px;}
+    .cont1 .con3 span{font-size: 14px;}
+    .m_btn ul li{padding: 10px 50px; font-size: 16px;}
+    .m_cont .m_cont1 .right{margin-left: 10px;}
+    .m_cont .m_cont1 .left img{display: none;}
+     /*카드수정하기*/
+    .m_cont .m_cont2 .card{height: 460px;}
+    .m_cont .m_cont2 .card ul{
+        display: block;
+        padding-left: 60px;
+}
+    .m_cont .m_cont2 .card ul li{margin-right: 0px; margin-top: 20px;}
+    .m_cont .m_cont2 .card ul li img{}
+    .m_cont .m_cont2 .card ul li p{
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+    
+    .m_cont .m_cont3 table th{font-size: 16px; text-align: left; padding-left: 10px;}
+    .m_cont .m_cont3 table tr{font-size: 14px;}
+    .m_cont .m_cont4 .left_4 img{display: none;} 
+    .m_cont .m_cont5 .left_5 img{display: none;}
+    .m_cont .m_cont5 .right_5{margin-left: 3px;}
+    .m_cont .m_cont6 p{
+    font-size: 14px;
+    margin-top: 5px;
+    padding-left: 3px;}
+    .m_cont .m_cont7 p{
+        font-size: 14px;}
+    .m_cont .m_cont7 table tr{font-size: 14px;}
+    .m_cont .m_cont7 table tr th{padding: 5px 10px; width: 20%;}
+    
+    .m_cont .m_cont8 p{
+    font-size: 14px;
+}
+    
+}
 
 
 
