@@ -3,6 +3,7 @@
 window.addEventListener("scroll", function(){
     if(document.body.offsetWidth <= 1280){
     asideActive1280()
+    scrollResponsive()
   }
 })
 
