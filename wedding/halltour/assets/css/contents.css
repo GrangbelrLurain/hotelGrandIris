@@ -129,537 +129,854 @@ header {
 }
 */
 
-
 /*main*/
-main {}
-#contents {}
+main {
+}
+#contents {
+  padding-top: 120px;
+}
 
 /*banner*/
 
 /*container*/
 .container {
-    width: 1280px;
-    height: inherit;
-    margin: 0 auto;
+  width: 1280px;
+  height: inherit;
+  margin: 0 auto;
 }
 
 .container .row {
-    padding: 0 28px;
+  padding: 0 28px;
 }
 
 /*contents*/
-#cont_1 {}
-
-.cont_1 {
-
-    height: 1800px;
-    
+#cont_1 {
 }
 
+.cont_1 {
+  height: 1800px;
+}
 
 .cont_1 h2 {
-    font-weight: 600;
-    font-size: 60px;
-    margin-top: 100px;
-    margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 60px;
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
 
 .cont_1 p.halltour {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 120px;
-    position: relative;
-    border-bottom: 7px solid #fbe4d3;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 120px;
+  position: relative;
+  border-bottom: 7px solid #fbe4d3;
 }
 
 .cont_1 h3 {
-    font-size: 80px;
-    font-family: 'Italianno', cursive;
+  font-size: 80px;
+  font-family: "Italianno", cursive;
 }
 
 .cont_1 h3 span {
-    font-size: 40px;
+  font-size: 40px;
 }
 /*그랜드홀 슬릭*/
 .cont_1 .grand_slick {
-    margin: 30px 0 60px 0;
+  margin: 30px 0 60px 0;
 }
 
-.grand_slick .slick-prev{
-    width: 60px;
-    height: 60px;
-    background: url(../icon/slickbutton.png) no-repeat;
-    border: none;
-    position: absolute;
-    bottom: 20px;
-    right: 120px;
-    z-index: 1;
-    text-indent: -999999px;
+.grand_slick .slick-prev {
+  width: 60px;
+  height: 60px;
+  background: url(../icon/slickbutton.png) no-repeat;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  right: 120px;
+  z-index: 1;
+  text-indent: -999999px;
 }
-.grand_slick .slick-prev:hover{
-    background-position: 0px -60px;
+.grand_slick .slick-prev:hover {
+  background-position: 0px -60px;
 }
-.grand_slick .slick-next{
-     width: 60px;
-    height: 60px;
-    background: url(../icon/slickbutton.png) no-repeat;
-    background-position: -60px 0;
-    border: none;
-    position: absolute;
-    bottom: 20px;
-    right: 50px;
-    z-index: 1;
-    text-indent: -999999px;
+.grand_slick .slick-next {
+  width: 60px;
+  height: 60px;
+  background: url(../icon/slickbutton.png) no-repeat;
+  background-position: -60px 0;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  z-index: 1;
+  text-indent: -999999px;
 }
-.grand_slick .slick-next:hover{
-    background-position: -60px -60px;
+.grand_slick .slick-next:hover {
+  background-position: -60px -60px;
 }
-.grand_slick ul.slick-dots{
-    position: absolute;
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: -40px;
-    z-index: 1;
+.grand_slick ul.slick-dots {
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: -40px;
+  z-index: 1;
 }
-.grand_slick ul.slick-dots li{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin: 5px;
+.grand_slick ul.slick-dots li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
 }
-.grand_slick ul.slick-dots li button{
-    font-size: 0;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #282828;
-}
-
-.grand_slick ul.slick-dots li.slick-active button{
-    background: #fbe4d3;
-
+.grand_slick ul.slick-dots li button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #282828;
 }
 
-
-
+.grand_slick ul.slick-dots li.slick-active button {
+  background: #fbe4d3;
+}
 
 .cont_1 p.g {
-    margin-bottom: -20px;
-    font-size: 30px;
-    text-align: center;
+  margin-bottom: -20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .cont_1 p.h {
-    font-size: 60px;
-    text-align: center;
+  font-size: 60px;
+  text-align: center;
 }
 
 .cont_1 p.info {
-    font-size: 25px;
-    text-align: center;
-    margin-top: 50px;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 #cont_2 {
-    background: #fbe4d3;
+  background: #fbe4d3;
 }
 
 .cont_2 {
-    margin: 0 auto;
-    width: 900px;
-    height: 1050px;
+  margin: 0 auto;
+  width: 900px;
+  height: 1050px;
 }
-.cont_2 h2{
-    padding-top: 40px;
-    text-align: center;
-    font-size: 30px;
+.cont_2 h2 {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 30px;
 }
-.cont_2 h3{
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Italianno', cursive;
-    padding-bottom: 20px;
+.cont_2 h3 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Italianno", cursive;
+  padding-bottom: 20px;
 }
-.cont_2 .b_img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.cont_2 .b_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.cont_2 .b_img div{
-    
+.cont_2 .b_img div {
 }
-.cont_2 .brideroom{}
-
-
-.cont_2 .brideroom div{
-    margin: 10px;
+.cont_2 .brideroom {
 }
 
-.brideroom .slick-prev{
-    width: 45px;
-    height: 45px;
-    background: url(../icon/slickbutton.png) no-repeat;
-    border: none;
-    position: absolute;
-    top: 35%;
-    left: -60px;
-    z-index: 1;
-    text-indent: -999999px;
-    background-position:  0 -120px;
-}
-.brideroom .slick-prev:hover{
-    background-position: 0 -165px;
-}
-.brideroom .slick-next{
-     width: 45px;
-    height: 45px;
-    background: url(../icon/slickbutton.png) no-repeat;
-    background-position: -45px -120px;
-    border: none;
-    position: absolute;
-    top: 35%;
-    right: -60px;
-    z-index: 1;
-    text-indent: -999999px;
-}
-.brideroom .slick-next:hover{
-    background-position: -45px -165px;
-}
-.brideroom ul.slick-dots{
-    position: absolute;
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: -10px;
-    z-index: 1;
-}
-.brideroom ul.slick-dots li{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin: 5px;
-}
-.brideroom ul.slick-dots li button{
-    font-size: 0;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #282828;
+.cont_2 .brideroom div {
+  margin: 10px;
 }
 
-.brideroom ul.slick-dots li.slick-active button{
-    background: #fff;
+.brideroom .slick-prev {
+  width: 45px;
+  height: 45px;
+  background: url(../icon/slickbutton.png) no-repeat;
+  border: none;
+  position: absolute;
+  top: 35%;
+  left: -60px;
+  z-index: 1;
+  text-indent: -999999px;
+  background-position: 0 -120px;
+}
+.brideroom .slick-prev:hover {
+  background-position: 0 -165px;
+}
+.brideroom .slick-next {
+  width: 45px;
+  height: 45px;
+  background: url(../icon/slickbutton.png) no-repeat;
+  background-position: -45px -120px;
+  border: none;
+  position: absolute;
+  top: 35%;
+  right: -60px;
+  z-index: 1;
+  text-indent: -999999px;
+}
+.brideroom .slick-next:hover {
+  background-position: -45px -165px;
+}
+.brideroom ul.slick-dots {
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: -10px;
+  z-index: 1;
+}
+.brideroom ul.slick-dots li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+.brideroom ul.slick-dots li button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #282828;
+}
 
+.brideroom ul.slick-dots li.slick-active button {
+  background: #fff;
 }
 
 .cont_3 {
-    height: 1750px;
+  height: 1750px;
 }
-.cont_3 h2{
-    margin: 70px 0;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
+.cont_3 h2 {
+  margin: 70px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
 }
-.cont_3 .room{
-    overflow: hidden;    
+.cont_3 .room {
+  overflow: hidden;
 }
-.cont_3 .room .image{
-    float: left;
-    width: 704px;
+.cont_3 .room .image {
+  float: left;
+  width: 704px;
 }
-.cont_3 .room .image img{
-    box-shadow: 7px 7px 7px #282828;
+.cont_3 .room .image img {
+  box-shadow: 7px 7px 7px #282828;
 }
-.cont_3 .room .r_text{
-    width: 400px;
-    float: left;
-    padding: 40px;
+.cont_3 .room .r_text {
+  width: 400px;
+  float: left;
+  padding: 40px;
 }
-.cont_3 .room .r_text h3{
-    font-size: 40px;
-    padding-bottom: 30px;
+.cont_3 .room .r_text h3 {
+  font-size: 40px;
+  padding-bottom: 30px;
 }
-.cont_3 .room .r_text p{
-    padding-left: 18px;
-    font-size: 20px;
-}
-
-.cont_3 .weddingcar{
-    margin-top: 80px;
-    overflow: hidden;
-}
-.cont_3 .weddingcar .image{
-    float: left;
-    width: 704px;
-}
-.cont_3 .weddingcar .image img{
-    box-shadow: 7px 7px 7px #282828;
-}
-.cont_3 .weddingcar .w_text{
-    width: 400px;
-    float: left;
-    padding: 40px;
+.cont_3 .room .r_text p {
+  padding-left: 18px;
+  font-size: 20px;
 }
 
-.cont_3 .weddingcar .w_text h3{
-    font-size: 40px;
-    padding-bottom: 30px;
+.cont_3 .weddingcar {
+  margin-top: 80px;
+  overflow: hidden;
 }
-.cont_3 .weddingcar .w_text p{
-    padding-left: 18px;
-    font-size: 20px;
+.cont_3 .weddingcar .image {
+  float: left;
+  width: 704px;
 }
-.cont_3 .tasting{
-    margin-top: 80px;
-    overflow: hidden;
+.cont_3 .weddingcar .image img {
+  box-shadow: 7px 7px 7px #282828;
 }
-.cont_3 .tasting .image{
-    float: left;
-    width: 704px;
-   
-}
-.cont_3 .tasting .image img{
-     box-shadow: 7px 7px 7px #282828;
-}
-.cont_3 .tasting .t_text{
-    width: 400px;
-    float: left;
-    padding: 40px;
+.cont_3 .weddingcar .w_text {
+  width: 400px;
+  float: left;
+  padding: 40px;
 }
 
-.cont_3 .tasting .t_text h3{
-    font-size: 40px;
-    padding-bottom: 30px;
+.cont_3 .weddingcar .w_text h3 {
+  font-size: 40px;
+  padding-bottom: 30px;
 }
-.cont_3 .tasting .t_text p{
-    padding-left: 18px;
-    font-size: 20px;
+.cont_3 .weddingcar .w_text p {
+  padding-left: 18px;
+  font-size: 20px;
 }
-
-.cont_3 .reservation{
-    margin-top: 80px;
-    text-align: center;
+.cont_3 .tasting {
+  margin-top: 80px;
+  overflow: hidden;
 }
-
-.cont_3 .reservation a{
-    background: #282828;
-    display: inline-block;
-    padding: 13px 80px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
+.cont_3 .tasting .image {
+  float: left;
+  width: 704px;
 }
-.cont_3 .reservation a:hover{
-    background: #fbe4d3;
+.cont_3 .tasting .image img {
+  box-shadow: 7px 7px 7px #282828;
 }
-.cont_3 .reservation a:hover span{
-    color: #282828;
-    font-weight: bold;
+.cont_3 .tasting .t_text {
+  width: 400px;
+  float: left;
+  padding: 40px;
 }
 
-.cont_3 .reservation a span{
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
+.cont_3 .tasting .t_text h3 {
+  font-size: 40px;
+  padding-bottom: 30px;
 }
-.cont_3 .reservation a i{
-    color: #fff;
-    font-size: 22px;
+.cont_3 .tasting .t_text p {
+  padding-left: 18px;
+  font-size: 20px;
 }
-.cont_3 .reservation a:hover i{
-    color: #282828;
-    font-weight: 500;
+
+.cont_3 .reservation {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.cont_3 .reservation a {
+  background: #282828;
+  display: inline-block;
+  padding: 13px 80px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.cont_3 .reservation a:hover {
+  background: #fbe4d3;
+}
+.cont_3 .reservation a:hover span {
+  color: #282828;
+  font-weight: bold;
+}
+
+.cont_3 .reservation a span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.cont_3 .reservation a i {
+  color: #fff;
+  font-size: 22px;
+}
+.cont_3 .reservation a:hover i {
+  color: #282828;
+  font-weight: 500;
 }
 
 /*미디어쿼리*/
-@media(max-width:1290px){
-    #cont_1 .container{width: 100%;}
-    #cont_2 .container{width: 100%;}
-    #cont_3 .container{width: 100%;}
-    
-    .cont_1{height: 1400px;}
-    .cont_1 h2{font-size: 50px; margin-top: 50px; margin-left: 30px;}
-    .cont_1 p.halltour{font-size: 18px; margin-bottom: 80px; margin-left: 30px;}
-    .cont_1 h3 {font-size: 60px; margin-left: 30px;}
-    .cont_1 h3 span{font-size: 40px;}
-    .cont_1 p.g{font-size: 20px;}
-    .cont_1 p.h {font-size: 45px;}
-    .cont_1 p.info{font-size: 20px;}
+@media (max-width: 1290px) {
+  #cont_1 .container {
+    width: 100%;
+  }
+  #cont_2 .container {
+    width: 100%;
+  }
+  #cont_3 .container {
+    width: 100%;
+  }
 
-    .grand_slick{}
-    .grand_slick div{width: 1000px; margin: 0 auto;}
-    .grand_slick div img{width: 1000px;}
-    .grand_slick .slick-prev{right: 220px;}
-    .grand_slick .slick-next{right: 150px;}
-    .grand_slick ul.slick-dots{bottom: 20px;}
-    
-    .cont_3{height: 1350px;}
-    .cont_3 h2{font-size: 30px;}
-    
-    .cont_3 .room{display: flex; justify-content: center;}
-    .cont_3 .room .image{width: 500px;}
-    .cont_3 .room .image img{}
-    .cont_3 .room .r_text{}
-    .cont_3 .room .r_text h3{font-size: 30px;}
-    .cont_3 .room .r_text p{font-size: 18px;}
-    
-    .cont_3 .weddingcar{display: flex; justify-content: center;}
-    .cont_3 .weddingcar .image{width: 500px;}
-    .cont_3 .weddingcar .image img{}
-    .cont_3 .weddingcar .w_text{}
-    .cont_3 .weddingcar .w_text h3{font-size: 30px;}
-    .cont_3 .weddingcar .w_text p{font-size: 18px;}
-    
-    .cont_3 .tasting{display: flex; justify-content: center;}
-    .cont_3 .tasting .image{width: 500px;}
-    .cont_3 .tasting .image img{}
-    .cont_3 .tasting .t_text{}
-    .cont_3 .tasting .t_text h3{font-size: 30px;}
-    .cont_3 .tasting .t_text p{font-size: 18px;}
-    
+  .cont_1 {
+    height: 1400px;
+  }
+  .cont_1 h2 {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  .cont_1 p.halltour {
+    font-size: 18px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+  }
+  .cont_1 h3 {
+    font-size: 60px;
+    margin-left: 30px;
+  }
+  .cont_1 h3 span {
+    font-size: 40px;
+  }
+  .cont_1 p.g {
+    font-size: 20px;
+  }
+  .cont_1 p.h {
+    font-size: 45px;
+  }
+  .cont_1 p.info {
+    font-size: 20px;
+  }
+
+  .grand_slick {
+  }
+  .grand_slick div {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .grand_slick div img {
+    width: 1000px;
+  }
+  .grand_slick .slick-prev {
+    right: 220px;
+  }
+  .grand_slick .slick-next {
+    right: 150px;
+  }
+  .grand_slick ul.slick-dots {
+    bottom: 20px;
+  }
+
+  .cont_3 {
+    height: 1350px;
+  }
+  .cont_3 h2 {
+    font-size: 30px;
+  }
+
+  .cont_3 .room {
+    display: flex;
+    justify-content: center;
+  }
+  .cont_3 .room .image {
+    width: 500px;
+  }
+  .cont_3 .room .image img {
+  }
+  .cont_3 .room .r_text {
+  }
+  .cont_3 .room .r_text h3 {
+    font-size: 30px;
+  }
+  .cont_3 .room .r_text p {
+    font-size: 18px;
+  }
+
+  .cont_3 .weddingcar {
+    display: flex;
+    justify-content: center;
+  }
+  .cont_3 .weddingcar .image {
+    width: 500px;
+  }
+  .cont_3 .weddingcar .image img {
+  }
+  .cont_3 .weddingcar .w_text {
+  }
+  .cont_3 .weddingcar .w_text h3 {
+    font-size: 30px;
+  }
+  .cont_3 .weddingcar .w_text p {
+    font-size: 18px;
+  }
+
+  .cont_3 .tasting {
+    display: flex;
+    justify-content: center;
+  }
+  .cont_3 .tasting .image {
+    width: 500px;
+  }
+  .cont_3 .tasting .image img {
+  }
+  .cont_3 .tasting .t_text {
+  }
+  .cont_3 .tasting .t_text h3 {
+    font-size: 30px;
+  }
+  .cont_3 .tasting .t_text p {
+    font-size: 18px;
+  }
 }
-@media(max-width:1024px){
-    
-    .cont_1{height: 1200px;}
-    .cont_1 h2{font-size: 40px; margin-top: 40px; margin-left: 30px;}
-    .cont_1 p.halltour{font-size: 18px; margin-bottom: 80px; margin-left: 30px;}
-    .cont_1 h3 {font-size: 45px; margin-left: 30px;}
-    .cont_1 h3 span{font-size: 20px;}
-    .cont_1 p.g{font-size: 20px;}
-    .cont_1 p.h {font-size: 45px;}
-    .cont_1 p.info{font-size: 20px;}
-    
-    .grand_slick{}
-    .grand_slick div{width: 700px; margin: 0 auto;}
-    .grand_slick div img{width: 700px;}
-    .grand_slick .slick-prev{right: 220px; }
-    .grand_slick .slick-next{right: 150px;}
-    .grand_slick ul.slick-dots{bottom: 20px;}
-    .grand_slick ul.slick-dots li {width: 10px; height: 10px;margin: 3px;}
-    .grand_slick ul.slick-dots li button{width: 10px; height: 10px;}
-    
-    .cont_2{width: 600px; height: 750px;}    
-    .cont_2 h2{font-size: 30px;}
-    .cont_2 h3{font-size: 40px;}
-    .brideroom ul.slick-dots li{width: 10px; height: 10px; margin: 3px;}
-    .brideroom ul.slick-dots li button{width: 10px; height: 10px;}
-    
-    .cont_3{height: 1100px;}
-    .cont_3 h2{font-size: 25px;}
-    
-    .cont_3 .room .image{width: 350px;}
-    .cont_3 .room .image img{}
-    .cont_3 .room .r_text{padding: 20px;}
-    .cont_3 .room .r_text h3{font-size: 20px;}
-    .cont_3 .room .r_text p{font-size: 15px;}
-    
-    .cont_3 .weddingcar .image{width: 350px;}
-    .cont_3 .weddingcar .image img{}
-    .cont_3 .weddingcar .w_text{padding: 20px;}
-    .cont_3 .weddingcar .w_text h3{font-size:20px;}
-    .cont_3 .weddingcar .w_text p{font-size: 15px;}
-    
-    .cont_3 .tasting .image{width: 350px;}
-    .cont_3 .tasting .image img{}
-    .cont_3 .tasting .t_text{padding: 20px;}
-    .cont_3 .tasting .t_text h3{font-size: 20px;}
-    .cont_3 .tasting .t_text p{font-size: 15px;}
-    
-    .cont_3 .reservation a{padding: 10px 40px;}
-    .cont_3 .reservation a span{font-size: 15px;}
-    .cont_3 .reservation a i{font-size: 15px;}
+@media (max-width: 1024px) {
+  .cont_1 {
+    height: 1200px;
+  }
+  .cont_1 h2 {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  .cont_1 p.halltour {
+    font-size: 18px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+  }
+  .cont_1 h3 {
+    font-size: 45px;
+    margin-left: 30px;
+  }
+  .cont_1 h3 span {
+    font-size: 20px;
+  }
+  .cont_1 p.g {
+    font-size: 20px;
+  }
+  .cont_1 p.h {
+    font-size: 45px;
+  }
+  .cont_1 p.info {
+    font-size: 20px;
+  }
+
+  .grand_slick {
+  }
+  .grand_slick div {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .grand_slick div img {
+    width: 700px;
+  }
+  .grand_slick .slick-prev {
+    right: 220px;
+  }
+  .grand_slick .slick-next {
+    right: 150px;
+  }
+  .grand_slick ul.slick-dots {
+    bottom: 20px;
+  }
+  .grand_slick ul.slick-dots li {
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+  }
+  .grand_slick ul.slick-dots li button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .cont_2 {
+    width: 600px;
+    height: 750px;
+  }
+  .cont_2 h2 {
+    font-size: 30px;
+  }
+  .cont_2 h3 {
+    font-size: 40px;
+  }
+  .brideroom ul.slick-dots li {
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+  }
+  .brideroom ul.slick-dots li button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .cont_3 {
+    height: 1100px;
+  }
+  .cont_3 h2 {
+    font-size: 25px;
+  }
+
+  .cont_3 .room .image {
+    width: 350px;
+  }
+  .cont_3 .room .image img {
+  }
+  .cont_3 .room .r_text {
+    padding: 20px;
+  }
+  .cont_3 .room .r_text h3 {
+    font-size: 20px;
+  }
+  .cont_3 .room .r_text p {
+    font-size: 15px;
+  }
+
+  .cont_3 .weddingcar .image {
+    width: 350px;
+  }
+  .cont_3 .weddingcar .image img {
+  }
+  .cont_3 .weddingcar .w_text {
+    padding: 20px;
+  }
+  .cont_3 .weddingcar .w_text h3 {
+    font-size: 20px;
+  }
+  .cont_3 .weddingcar .w_text p {
+    font-size: 15px;
+  }
+
+  .cont_3 .tasting .image {
+    width: 350px;
+  }
+  .cont_3 .tasting .image img {
+  }
+  .cont_3 .tasting .t_text {
+    padding: 20px;
+  }
+  .cont_3 .tasting .t_text h3 {
+    font-size: 20px;
+  }
+  .cont_3 .tasting .t_text p {
+    font-size: 15px;
+  }
+
+  .cont_3 .reservation a {
+    padding: 10px 40px;
+  }
+  .cont_3 .reservation a span {
+    font-size: 15px;
+  }
+  .cont_3 .reservation a i {
+    font-size: 15px;
+  }
 }
-@media(max-width:768px){
-    .cont_1{height: 850px;}
-    .cont_1 h2{font-size: 25px; margin-top: 20px; margin-left: 30px;}
-    .cont_1 p.halltour{font-size: 18px; margin-bottom: 40px; margin-left: 30px;}
-    .cont_1 h3 {font-size: 40px; margin-left: 30px;}
-    .cont_1 h3 span{font-size: 20px;}
-    .cont_1 p.g{font-size: 20px;}
-    .cont_1 p.h {font-size: 30px;}
-    .cont_1 p.info{font-size: 14px;}
-    
-    .grand_slick{}
-    .grand_slick div{width: 500px; margin: 0 auto;}
-    .grand_slick div img{width: 500px;}
-    .grand_slick .slick-prev{width: 0;height: 0;}
-    .grand_slick .slick-next{width: 0;height: 0;}
-    
-    .cont_2{width: 500px; height: 650px;}    
-    .cont_2 h2{font-size: 25px;}
-    .cont_2 h3{font-size: 35px;}
-    
-    .cont_3{height: 900px;}
-    .cont_3 h2{font-size: 20px;}
-    .cont_3 .room .image{width: 320px;}
-    .cont_3 .room .image img{}
-    .cont_3 .room .r_text{padding: 15px;}
-    .cont_3 .room .r_text h3{font-size: 18px; padding-bottom: 15px;}
-    .cont_3 .room .r_text p{font-size: 13px;}
-    
-    .cont_3 .weddingcar .image{width: 320px;}
-    .cont_3 .weddingcar .image img{}
-    .cont_3 .weddingcar .w_text{padding: 15px;}
-    .cont_3 .weddingcar .w_text h3{font-size:18px; padding-bottom: 15px;}
-    .cont_3 .weddingcar .w_text p{font-size: 13px;}
-    
-    .cont_3 .tasting .image{width: 320px;}
-    .cont_3 .tasting .image img{}
-    .cont_3 .tasting .t_text{padding: 15px;}
-    .cont_3 .tasting .t_text h3{font-size: 18px; padding-bottom: 15px;}
-    .cont_3 .tasting .t_text p{font-size: 13px;}
+@media (max-width: 768px) {
+  .cont_1 {
+    height: 850px;
+  }
+  .cont_1 h2 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .cont_1 p.halltour {
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+  .cont_1 h3 {
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  .cont_1 h3 span {
+    font-size: 20px;
+  }
+  .cont_1 p.g {
+    font-size: 20px;
+  }
+  .cont_1 p.h {
+    font-size: 30px;
+  }
+  .cont_1 p.info {
+    font-size: 14px;
+  }
 
+  .grand_slick {
+  }
+  .grand_slick div {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .grand_slick div img {
+    width: 500px;
+  }
+  .grand_slick .slick-prev {
+    width: 0;
+    height: 0;
+  }
+  .grand_slick .slick-next {
+    width: 0;
+    height: 0;
+  }
+
+  .cont_2 {
+    width: 500px;
+    height: 650px;
+  }
+  .cont_2 h2 {
+    font-size: 25px;
+  }
+  .cont_2 h3 {
+    font-size: 35px;
+  }
+
+  .cont_3 {
+    height: 900px;
+  }
+  .cont_3 h2 {
+    font-size: 20px;
+  }
+  .cont_3 .room .image {
+    width: 320px;
+  }
+  .cont_3 .room .image img {
+  }
+  .cont_3 .room .r_text {
+    padding: 15px;
+  }
+  .cont_3 .room .r_text h3 {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .cont_3 .room .r_text p {
+    font-size: 13px;
+  }
+
+  .cont_3 .weddingcar .image {
+    width: 320px;
+  }
+  .cont_3 .weddingcar .image img {
+  }
+  .cont_3 .weddingcar .w_text {
+    padding: 15px;
+  }
+  .cont_3 .weddingcar .w_text h3 {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .cont_3 .weddingcar .w_text p {
+    font-size: 13px;
+  }
+
+  .cont_3 .tasting .image {
+    width: 320px;
+  }
+  .cont_3 .tasting .image img {
+  }
+  .cont_3 .tasting .t_text {
+    padding: 15px;
+  }
+  .cont_3 .tasting .t_text h3 {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .cont_3 .tasting .t_text p {
+    font-size: 13px;
+  }
 }
-@media(max-width:480px){
-    .cont_1{height: 700px;}
-    .cont_1 h2{font-size: 20px; margin-top: 20px; margin-left: 30px;}
-    .cont_1 p.halltour{font-size: 15px; margin-bottom: 25px; margin-left: 30px;}
-    .cont_1 h3 {font-size: 25px; margin-left: 30px;}
-    .cont_1 h3 span{font-size: 17px;}
-    .cont_1 p.g{font-size: 17px;}
-    .cont_1 p.h {font-size: 20px;}
-    .cont_1 p.info{font-size: 13px;}
-    
-    .grand_slick{}
-    .grand_slick div{width: 300px; margin: 0 auto;}
-    .grand_slick div img{width: 300px;}
-    .grand_slick ul.slick-dots{bottom: 5px;}
-    
-    .cont_2{width: 300px; height: 470px;}    
-    .cont_2 h2{font-size: 20px;}
-    .cont_2 h3{font-size: 25px;}
-    .brideroom .slick-prev{width: 0; height: 0;}
-    .brideroom .slick-next{width: 0; height: 0;}
-    
-    .cont_3{height: 1600px;}
-    .cont_3 h2{font-size: 20px;}
-    .cont_3 .room{display: block;}
-    .cont_3 .room .image{width: 98%; float: none;}
-    .cont_3 .room .image img{}
-    .cont_3 .room .r_text{box-sizing: border-box; width: 98%; padding: 20px; float: none;}
-    .cont_3 .room .r_text h3{font-size: 20px; padding-bottom: 15px;}
-    .cont_3 .room .r_text p{font-size: 15px;}
-    
-    .cont_3 .weddingcar{display: block;}
-    .cont_3 .weddingcar .image{width: 98%; float: none;}
-    .cont_3 .weddingcar .image img{}
-    .cont_3 .weddingcar .w_text{box-sizing: border-box; width: 98%; padding: 20px; float: none;}
-    .cont_3 .weddingcar .w_text h3{font-size: 20px; padding-bottom: 15px;}
-    .cont_3 .weddingcar .w_text p{font-size: 15px;}
-    
-    .cont_3 .tasting{display: block;}
-    .cont_3 .tasting .image{width: 98%; float: none;}
-    .cont_3 .tasting .image img{}
-    .cont_3 .tasting .t_text{box-sizing: border-box; width: 98%; padding: 20px; float: none;}
-    .cont_3 .tasting .t_text h3{font-size: 20px; padding-bottom: 15px;}
-    .cont_3 .tasting .t_text p{font-size: 15px;}
+@media (max-width: 480px) {
+  .cont_1 {
+    height: 700px;
+  }
+  .cont_1 h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .cont_1 p.halltour {
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+  }
+  .cont_1 h3 {
+    font-size: 25px;
+    margin-left: 30px;
+  }
+  .cont_1 h3 span {
+    font-size: 17px;
+  }
+  .cont_1 p.g {
+    font-size: 17px;
+  }
+  .cont_1 p.h {
+    font-size: 20px;
+  }
+  .cont_1 p.info {
+    font-size: 13px;
+  }
 
+  .grand_slick {
+  }
+  .grand_slick div {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .grand_slick div img {
+    width: 300px;
+  }
+  .grand_slick ul.slick-dots {
+    bottom: 5px;
+  }
+
+  .cont_2 {
+    width: 300px;
+    height: 470px;
+  }
+  .cont_2 h2 {
+    font-size: 20px;
+  }
+  .cont_2 h3 {
+    font-size: 25px;
+  }
+  .brideroom .slick-prev {
+    width: 0;
+    height: 0;
+  }
+  .brideroom .slick-next {
+    width: 0;
+    height: 0;
+  }
+
+  .cont_3 {
+    height: 1600px;
+  }
+  .cont_3 h2 {
+    font-size: 20px;
+  }
+  .cont_3 .room {
+    display: block;
+  }
+  .cont_3 .room .image {
+    width: 98%;
+    float: none;
+  }
+  .cont_3 .room .image img {
+  }
+  .cont_3 .room .r_text {
+    box-sizing: border-box;
+    width: 98%;
+    padding: 20px;
+    float: none;
+  }
+  .cont_3 .room .r_text h3 {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .cont_3 .room .r_text p {
+    font-size: 15px;
+  }
+
+  .cont_3 .weddingcar {
+    display: block;
+  }
+  .cont_3 .weddingcar .image {
+    width: 98%;
+    float: none;
+  }
+  .cont_3 .weddingcar .image img {
+  }
+  .cont_3 .weddingcar .w_text {
+    box-sizing: border-box;
+    width: 98%;
+    padding: 20px;
+    float: none;
+  }
+  .cont_3 .weddingcar .w_text h3 {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .cont_3 .weddingcar .w_text p {
+    font-size: 15px;
+  }
+
+  .cont_3 .tasting {
+    display: block;
+  }
+  .cont_3 .tasting .image {
+    width: 98%;
+    float: none;
+  }
+  .cont_3 .tasting .image img {
+  }
+  .cont_3 .tasting .t_text {
+    box-sizing: border-box;
+    width: 98%;
+    padding: 20px;
+    float: none;
+  }
+  .cont_3 .tasting .t_text h3 {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .cont_3 .tasting .t_text p {
+    font-size: 15px;
+  }
 }
-
-
-
-
-
-
-
