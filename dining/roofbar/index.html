@@ -30,72 +30,7 @@
 
 </head>
 <body style="overflow-x:hidden; overflow-y:auto;">
-    <header id="header">
-        <div class="header clearfix">
-            <div class="logo">
-                <a href="#"><img src="assets/img/sublogofff.PNG" alt="서브로고"></a>
-            </div>
-            <div class="s_logo">
-                <a href="#"><img src="assets/img/H_logo_W.png" alt="반응형로고"></a>
-            </div>
-            <div class="ham_menu">
-                <div>
-                    
-                </div>
-            </div>
-            <div class="nav_left">
-                <ul class="clearfix menu">
-                    <li>
-                        <a href="#">OFFERS</a>
-                        <ul class="submenu">
-                            <li><a href="#">수페리어</a></li>
-                            <li><a href="#">디럭스</a></li>
-                            <li><a href="#">그랜드</a></li>
-                            <li><a href="#">스위트</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">WEDDING</a>
-                        <ul class="submenu">
-                            <li><a href="#">홀투어</a></li>
-                            <li><a href="#">연회장</a></li>
-                            <li><a href="#">가이드</a></li>
-                            <li><a href="#">예약및상담</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">CASINO</a>
-                        <ul class="submenu">
-                            <li><a href="#">카지노안내</a></li>
-                            <li><a href="#">잭팟스토리</a></li>
-                            <li><a href="#">멤버십</a></li>
-                            <li><a href="#">이벤트</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">DINING</a>
-                        <ul class="submenu">
-                            <li><a href="#">레스토랑</a></li>
-                            <li><a href="#">루프탑</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">FACILITIES</a>
-                        <ul class="submenu">
-                            <li><a href="#">수영장</a></li>
-                            <li><a href="#">사우나</a></li>
-                            <li><a href="#">피트니스</a></li>
-                            <li><a href="#">물품대여</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav_right">
-                <ul class="clearfix">
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li class="line"><a href="#">language</a></li>
-                    <li class="line"><a href="#">예약확인</a></li>
-                </ul>
-            </div>
-        </div>
-        <!--//header-->
+    <header include-html="/sub/html/header_w.html">
     </header>
     <main>
         <div id="banner">
@@ -209,53 +144,6 @@
             </div>
         </div>
     </main>
-    <footer id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="footer">
-					<div class="f_left">
-						<div class="f_logo">
-							<a href="#"><img src="assets/img/F_logo.png" alt="하단로고"></a>
-						</div>
-					</div>
-					<div class="f_center">
-						<div class="f_nav">
-							<ul>
-								<li><a href="#">오시는길</a></li>
-								<li><a href="#">사이트맵</a></li>
-								<li><a href="#">개인정보처리방침</a></li>
-								<li><a href="#">영상정보처리기기운영,관리방침</a></li>
-								<li class="last"><a href="#">이용약관</a></li>
-							</ul>
-						</div>
-						<div class="f_copy">
-							<p>인천시 부평구 부평1동 534-48</p>
-							<p>사업자 등록번호 104-81-27386 통신판매신고번호 부평구0623호</p>
-							<p>© 2020 GRAND IRIS HOTEL Co. All rights reserved.</p>
-						</div>
-					</div>
-					<div class="f_right">
-						<div class="family">
-							<select id="family" onchange="if(this.value) window.open(this.value);">
-								<option value="">패밀리사이트
-								<option value="https://www.josunhotel.com/intro.do">조선호텔
-								<option value="https://hotel-hongdan.com/html/00_main/">호텔홍단
-								<option value="https://www.lescapehotel.com/dining#tab3"> 레스케이프호텔
-								<option value="https://kangwonland.high1.com/casino/index.do">강원랜드
-							</select>
-						</div>
-						<div class="f_sns">
-							<ul>
-								<li><a href="#"><img src="assets/img/f_sns1.png" alt="페이스북"></a></li>
-								<li><a href="#"><img src="assets/img/f_sns2.png" alt="트위터"></a></li>
-								<li class="last"><a href="#"><img src="assets/img/f_sns3.png" alt="인스타"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
     <!--메뉴레이어팝업-->
     <div id="layer">
         <h2 class="ir_pm">IRIS ROOFTOP</h2>
@@ -358,9 +246,12 @@
        </div>
        <div class="close">close</div>
     </div>
+    <footer include-html="/sub/html/footer.html">
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/footer.js"></script>
+    <script src="/sub/js/includeHTML.js"></script>
+    <script src="/sub/js/header.js"></script>
+    <script src="/sub/js/footer.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
