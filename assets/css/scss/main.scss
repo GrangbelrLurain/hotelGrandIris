@@ -182,7 +182,7 @@ main {
     position: relative;
     align-items: flex-end;
     border: 5px solid white;
-    padding: 7px 13px 11px 10px;
+    padding: 13px 13px 14px 10px;
     border-radius: 5px;
     line-height: 30px;
     color: white;
@@ -193,6 +193,7 @@ main {
         background: none;
         border: none;
         color: white;
+        line-height: 0;
         font-size: 30px;
         font-weight: bold;
         text-align: right;
@@ -219,6 +220,7 @@ main {
             font-weight: bold;
             text-align: center;
             color: #282828;
+            line-height: 30px;
             transition: all 0.4s;
             &:hover {
               color: #5b2fbd;
@@ -242,6 +244,7 @@ main {
       }
     }
     .check {
+      line-height: 36px;
       font-size: 25px;
       margin-left: 10px;
     }
@@ -292,6 +295,7 @@ main {
         background: none;
         border: none;
         color: white;
+        line-height: 36px;
         font-size: 30px;
         appearance: none;
         &:hover {

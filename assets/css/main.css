@@ -198,7 +198,7 @@ main section .container .raw {
   position: relative;
   align-items: flex-end;
   border: 5px solid white;
-  padding: 7px 13px 11px 10px;
+  padding: 13px 13px 14px 10px;
   border-radius: 5px;
   line-height: 30px;
   color: white;
@@ -210,6 +210,7 @@ main section .container .raw {
   background: none;
   border: none;
   color: white;
+  line-height: 0;
   font-size: 30px;
   font-weight: bold;
   text-align: right;
@@ -242,6 +243,7 @@ main section .container .raw {
   font-weight: bold;
   text-align: center;
   color: #282828;
+  line-height: 30px;
   transition: all 0.4s;
 }
 
@@ -267,6 +269,7 @@ main section .container .raw {
 }
 
 #offer .offer .selectWrap .check {
+  line-height: 36px;
   font-size: 25px;
   margin-left: 10px;
 }
@@ -325,6 +328,7 @@ main section .container .raw {
   background: none;
   border: none;
   color: white;
+  line-height: 36px;
   font-size: 30px;
   appearance: none;
 }
@@ -814,9 +818,15 @@ main .m_casino a {
 }
 
 @media (max-width: 960px) {
+  #header .header .login ul li {
+    margin: 0;
+    padding-right: 15px;
+  }
+  #header .header .login ul li:last-child {
+    padding: 0;
+  }
   #header .header .login ul li a {
-    font-size: 10px;
-    border: 1px solid white;
+    font-size: 20px;
   }
 }
 
