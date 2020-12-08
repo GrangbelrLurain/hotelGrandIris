@@ -35,6 +35,17 @@ main {}
     outline: none;
 }
 
+.cont2 .center{
+    margin-top: 5px;
+}
+.cont2 .center input{
+    width: 271px;
+    height: 50px;
+    box-sizing: border-box;
+}
+.cont2 .center .end{
+    margin-left: 5px;
+}
 .cont2 .last{
     margin-top: 5px;
 }
@@ -55,29 +66,18 @@ main {}
     cursor: pointer;
 }
 
-.cont4{overflow: hidden;margin-bottom: 100px;margin-top: 5px;}
-.cont4 .login_append{
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+/*cont4*/
+
+.cont4{
+    border-top: 1px solid #282828; 
+    padding-top: 10px;
+    margin: 100px 0;
 }
-.cont4 .login_append .inp_chk{
-    float: left;
-    margin-right: 30px;
-    
-}
-.cont4 .login_append .inp_chk input{}
-.cont4 .login_append .inp_chk label{}
-.cont4 .login_append .inp_chk label span{
-    font-size: 14px;
-    cursor: pointer;
-}
-.cont4 .login_append .txt_find{
-    float: left;
-}
-.cont4 .login_append .txt_find a{
-    display: inline-block;
-    font-size: 14px;
+.cont4 p{
+    color: #282828;
+    font-size: 17px;
+    margin-top: 3px;
+    font-weight: bold;
 }
 
 
@@ -94,6 +94,7 @@ main {}
     .cont2 .center input{width: 400px;}
     .cont2 .center .end{margin-left: 0px; margin-top: 5px;}
     .cont3 input{width: 400px;}
+    .cont4 p{font-size: 16px; font-weight: 500;}
 }
 
 
