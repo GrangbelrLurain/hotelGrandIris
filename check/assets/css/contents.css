@@ -1,0 +1,103 @@
+main {}
+.container{
+    width: 1280px;
+    height: inherit;
+    margin: 0 auto;
+    /*background: rgba(0,0,0,0.8);*/
+}
+
+/*cont1*/
+
+.cont1{
+    width: 100%;
+    text-align: center;
+}
+.cont1 a img{
+    width: 500px;
+    height: 180px;
+}
+
+
+/*cont2*/
+
+.cont2{
+    text-align: center;
+}
+.cont2 input{
+    width: 550px;
+    height: 50px;
+    background: #ededed;
+    color: #282828;
+    font-size: 22px;
+    padding-left:10px;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+}
+
+.cont2 .last{
+    margin-top: 5px;
+}
+
+/*cont3*/
+
+.cont3{
+    text-align: center;
+    margin-top: 13px;
+}
+.cont3 input{
+    width: 550px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    background: #282828;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cont4{overflow: hidden;margin-bottom: 100px;margin-top: 5px;}
+.cont4 .login_append{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.cont4 .login_append .inp_chk{
+    float: left;
+    margin-right: 30px;
+    
+}
+.cont4 .login_append .inp_chk input{}
+.cont4 .login_append .inp_chk label{}
+.cont4 .login_append .inp_chk label span{
+    font-size: 14px;
+    cursor: pointer;
+}
+.cont4 .login_append .txt_find{
+    float: left;
+}
+.cont4 .login_append .txt_find a{
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+
+/*미디어 쿼리*/
+@media (max-width:768px){
+    .container{width: 100%;}
+}
+
+@media (max-width:480px){
+    .container{width: 100%;}
+    .cont1 a img{width: 370px; height: 150px;}
+    .cont2 input{width: 400px;}
+    .cont2 .center input{width: 400px;}
+    .cont2 .center .end{margin-left: 0px; margin-top: 5px;}
+    .cont3 input{width: 400px;}
+}
+
+
+
+
+
+
