@@ -1,4 +1,4 @@
-document.querySelectorAll("#booking .booking .dateOption .calender td").forEach( (elem, index) => {
+document.querySelectorAll(".dateOption .calender td").forEach( (elem, index) => {
   elem.addEventListener("click", function(){
     daySelect(elem, index);
   })
@@ -24,11 +24,11 @@ function daySelect(elem, index){
 
 function dayMiddlePaint(){
   const find = document.querySelectorAll(".click");
-  const allElem = document.querySelectorAll("#booking .booking .dateOption .calender td");
+  const allElem = document.querySelectorAll(".dateOption .calender td");
+  const dateSelectBtn = document.querySelector(".dateSelectWrap .dateSelect");
 
   let firstSwitch = 0;
   let lastSwitch = 0;
-  console.log(find);
   if(find[0] != null && find[1] == null){
   } else if (find[0] != null && find[1] != null){
     allElem.forEach((all) => {
@@ -50,4 +50,21 @@ function dayMiddlePaint(){
       }
     })
   }
+  if(dateSelectBtn != null){
+    dateSelectBtnChange(dateSelectBtn, find[0], find[1])
+  }
+}
+
+function dateSelectBtnChange(dateSelectBtn, firstSwitch, lastSwitch){
+  const year = new Date().getFullYear();
+  const firstMonth = firstSwitch.parentNode.parentNode.parentNode.parentNode.querySelector(".title");;
+  const lastMonth = lastSwitch.parentNode.parentNode.parentNode.parentNode.querySelector(".title");
+
+  if(firstMonth.innerHTML != "12월"){
+  dateSelectBtn.innerHTML = (year + 1 + "년 ") + (firstMonth.innerHTML + " ") + (firstSwitch.innerHTML + "일 ~ ") + (year + 1 + "년") + (lastMonth.innerHTML + " ") + (lastSwitch.innerHTML + "일");
+} else if(lastMonth.innerHTML != "12월") {
+  dateSelectBtn.innerHTML = (year + "년 ") + (firstMonth.innerHTML + " ") + (firstSwitch.innerHTML + "일 ~ ") + (year + 1 + "년") + (lastMonth.innerHTML + " ") + (lastSwitch.innerHTML + "일");
+} else {
+  dateSelectBtn.innerHTML = (year + "년 ") + (firstMonth.innerHTML + " ") + (firstSwitch.innerHTML + "일 ~ ") + (year + "년") + (lastMonth.innerHTML + " ") + (lastSwitch.innerHTML + "일");
+}
 }
