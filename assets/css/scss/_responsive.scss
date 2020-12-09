@@ -229,6 +229,7 @@
     width: 100vw;
     > ul {
       width: 100%;
+      height: auto;
       flex-direction: column;
       > li {
         width: auto;
@@ -244,7 +245,9 @@
           }
           ul {
             display: flex;
+            height: auto;
             justify-content: center;
+            padding-right: 15px;
             li {
               float: none;
               width: auto;
@@ -298,11 +301,23 @@
     .dateSelectWrap {
       margin: 0 auto;
       margin-bottom: 0;
+      &:hover .dateOption {
+        height: 440px;
+      }
       .dateSelect {
         margin-left: 0;
       }
       .dateOption {
         z-index: 10;
+        width: 250px;
+        padding: 0;
+        flex-direction: column;
+        > div {
+          width: 100%;
+          .calender {
+            width: 90%;
+          }
+        }
       }
     }
     .etcSelectWrap {

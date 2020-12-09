@@ -389,12 +389,10 @@
   }
 }
 .nav ul li .submenu ul {
+  height: 700px;
 }
 .nav ul li .submenu ul li {
   border-right: 0;
-}
-.nav ul li .submenu ul li:last-child {
-  margin-bottom: 400px;
 }
 .nav ul li .submenu ul li a {
   display: block;

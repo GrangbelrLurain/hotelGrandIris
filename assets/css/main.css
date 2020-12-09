@@ -987,6 +987,7 @@ main .m_casino a {
   }
   .nav > ul {
     width: 100%;
+    height: auto;
     flex-direction: column;
   }
   .nav > ul > li {
@@ -1005,7 +1006,9 @@ main .m_casino a {
   }
   .nav > ul > li > .submenu ul {
     display: flex;
+    height: auto;
     justify-content: center;
+    padding-right: 15px;
   }
   .nav > ul > li > .submenu ul li {
     float: none;
@@ -1057,11 +1060,23 @@ main .m_casino a {
     margin: 0 auto;
     margin-bottom: 0;
   }
+  #offer .offer .selectWrap .dateSelectWrap:hover .dateOption {
+    height: 440px;
+  }
   #offer .offer .selectWrap .dateSelectWrap .dateSelect {
     margin-left: 0;
   }
   #offer .offer .selectWrap .dateSelectWrap .dateOption {
     z-index: 10;
+    width: 250px;
+    padding: 0;
+    flex-direction: column;
+  }
+  #offer .offer .selectWrap .dateSelectWrap .dateOption > div {
+    width: 100%;
+  }
+  #offer .offer .selectWrap .dateSelectWrap .dateOption > div .calender {
+    width: 90%;
   }
   #offer .offer .selectWrap .etcSelectWrap {
     margin-left: auto;
