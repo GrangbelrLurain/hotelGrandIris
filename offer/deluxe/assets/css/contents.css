@@ -196,7 +196,21 @@ margin-top: 100px;
     width: 33.33%;
     font-size: 1vw;
 }
-
+.button{text-align: center;}
+.button a{
+    display: block;
+    padding: 20px;
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    font-size: 1vw;
+    border: 1px solid #000;
+    transition: all 0.3s;
+}
+.button a:hover{
+    background: #282828;
+    color: #fff;
+}
 
 /*미디어쿼리*/
 @media(max-width:1290px){
