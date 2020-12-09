@@ -74,7 +74,16 @@ main {
           color: rgba(40, 40, 40, 0.5);
         }
         &.firstClick {
-          border-radius: 50%;
+          border-radius: 20px 0 0 20px;
+          background: #55176d;
+          color: white;
+        }
+        &.click {
+          background: #55176d;
+          color: white;
+        }
+        &.lastClick {
+          border-radius: 0 20px 20px 0;
           background: #55176d;
           color: white;
         }

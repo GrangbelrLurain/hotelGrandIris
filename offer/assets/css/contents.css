@@ -85,7 +85,18 @@ main .container .row {
 }
 
 .booking .dateOption .calender td.firstClick {
-  border-radius: 50%;
+  border-radius: 20px 0 0 20px;
+  background: #55176d;
+  color: white;
+}
+
+.booking .dateOption .calender td.click {
+  background: #55176d;
+  color: white;
+}
+
+.booking .dateOption .calender td.lastClick {
+  border-radius: 0 20px 20px 0;
   background: #55176d;
   color: white;
 }
