@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 main section {
   border-bottom: 1px solid #282828;
   padding-bottom: 30px;
@@ -304,4 +308,227 @@ main .container .row {
 
 .selectRoom .offerBtn:active {
   transform: scale(0.95);
+}
+
+@media (max-width: 1300px) {
+  main section h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  main section h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  main section h3 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  main section .text {
+    font-size: 12px;
+    white-space: pre-line;
+  }
+  main .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .container .row {
+    box-sizing: border-box;
+  }
+  .selectNumb .selectNumbHeader {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .selectNumb .selectNumbHeader .plus {
+    display: flex;
+    background: none;
+    height: 45px;
+    border: 2px solid #282828;
+    padding: 0 20px 0 5px;
+    margin-left: 20px;
+    font-size: 30px;
+    transition: transform 0.4s;
+    cursor: pointer;
+  }
+  .selectNumb .selectNumbHeader .plus:hover {
+    transform: scale(1.05);
+  }
+  .selectNumb .selectNumbHeader .plus:active {
+    transform: scale(0.95);
+  }
+  .selectNumb .selectNumbHeader .plus img {
+    width: 40px;
+    height: 40px;
+  }
+  .selectNumb .roomWrap {
+    justify-content: space-between;
+  }
+  .selectNumb .roomWrap .room {
+    width: 48%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .selectNumb .roomWrap .room:nth-child(3n) {
+    margin-right: 0;
+  }
+  .selectNumb .roomWrap .room h3 {
+    font-size: 20px;
+  }
+  .selectNumb .roomWrap .room > div .name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .booking .dateOption {
+    flex-direction: column;
+    align-items: center;
+  }
+  .booking .dateOption > div {
+    width: 70%;
+  }
+  .booking .dateOption .calender {
+    width: 100%;
+  }
+  .booking .dateOption .calender th {
+    font-size: 20px;
+  }
+  .booking .dateOption .calender th:first-child {
+    color: rgba(40, 40, 40, 0.5);
+  }
+  .booking .dateOption .calender th:last-child {
+    color: rgba(40, 40, 40, 0.5);
+  }
+  .booking .dateOption .calender td {
+    font-size: 20px;
+  }
+  .selectNumb .roomWrap {
+    justify-content: center;
+  }
+  .selectNumb .roomWrap .room {
+    width: 80%;
+  }
+  .selectRoom .room {
+    position: relative;
+    padding: 25px 20px;
+    padding-top: 255px;
+    height: 205px;
+    text-align: left;
+    cursor: pointer;
+  }
+  .selectRoom .room h3 {
+    margin-bottom: 5px;
+  }
+  .selectRoom .room img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    box-sizing: border-box;
+  }
+  .selectRoom .room .more {
+    margin-top: auto;
+    background: none;
+    width: 230px;
+    color: #282828;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid #282828;
+    transition: transform 0.4s;
+  }
+  .selectRoom .room .more:hover {
+    transform: scale(1.05);
+  }
+  .selectRoom .room .more:active {
+    transform: scale(0.95);
+  }
+  .selectRoom .offerBtn {
+    display: inline-block;
+    padding: 10px 40px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background: #282828;
+    transition: transform 0.4s;
+  }
+  .selectRoom .offerBtn:hover {
+    transform: scale(1.05);
+  }
+  .selectRoom .offerBtn:active {
+    transform: scale(0.95);
+  }
+}
+
+@media (max-width: 500px) {
+  main section h1 {
+    font-size: 25px;
+  }
+  main section h2 {
+    font-size: 20px;
+  }
+  main section h3 {
+    font-size: 25px;
+  }
+  main section .text {
+    display: none;
+  }
+  main .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .container .row {
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+  .booking .dateOption {
+    flex-direction: column;
+    align-items: center;
+  }
+  .booking .dateOption > div {
+    width: 100%;
+    margin: 10px;
+  }
+  .booking .dateOption .calender th {
+    font-size: 15px;
+  }
+  .booking .dateOption .calender td {
+    font-size: 15px;
+  }
+  .selectNumb .selectNumbHeader {
+    flex-direction: column;
+  }
+  .selectNumb .selectNumbHeader .plus {
+    border: 0;
+    margin-left: auto;
+    width: auto;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .selectRoom .room {
+    width: 88%;
+    height: auto;
+  }
+  .selectRoom .room h3 {
+    position: absolute;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #282828;
+    left: 30px;
+    top: 30px;
+    z-index: 10;
+    background: white;
+    transition: all 0.4s;
+  }
+  .selectRoom .room .more {
+    margin-left: auto;
+    margin-top: 10px;
+  }
+  .selectRoom .room.select h3 {
+    background: #5b30be;
+    color: white;
+  }
+  .selectRoom .room.select .text {
+    display: block;
+  }
 }
