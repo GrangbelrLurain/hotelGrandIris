@@ -879,6 +879,7 @@ main .m_casino a {
   }
   #offer .offer .selectWrap .dateSelectWrap .dateSelect {
     margin-left: 0;
+    font-size: 24px;
   }
   #offer .offer .selectWrap .dateSelectWrap .dateOption {
     z-index: 10;
