@@ -927,7 +927,7 @@ main .m_casino a {
 
 @media (max-width: 900px) {
   #facilities .facilities p {
-    font-size: 70px;
+    font-size: 10vw;
     line-height: 70px;
   }
 }
@@ -1109,6 +1109,10 @@ main .m_casino a {
   }
   .wedding .w_box .w_right a .irishall h3 {
     white-space: nowrap;
+  }
+  #facilities .facilities p {
+    font-size: 12vw;
+    line-height: 12vw;
   }
 }
 
