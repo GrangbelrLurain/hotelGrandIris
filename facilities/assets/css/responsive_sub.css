@@ -71,11 +71,11 @@
     padding: 0;
   }
   #banner h1 {
-    font-size: 150px;
-    line-height: 150px;
+    font-size: 20vw;
+    line-height: 20vw;
   }
   #banner p {
-    font-size: 20px;
+    font-size: 4vw;
   }
   #contents .cont1 .guid,
   #contents .cont2 .guid,
@@ -110,7 +110,7 @@
   #contents .cont4 .guid h2,
   #contents .cont4 .rule h3,
   #contents .cont4 .rule h2 {
-    font-size: 20px;
+    font-size: 5vw;
   }
   #contents .cont1 .guid p,
   #contents .cont1 .rule p,
@@ -120,7 +120,7 @@
   #contents .cont3 .rule p,
   #contents .cont4 .guid p,
   #contents .cont4 .rule p {
-    font-size: 15px;
+    font-size: 3vw;
   }
   #contents .cont1 .guid .text,
   #contents .cont1 .rule .text,
@@ -130,7 +130,7 @@
   #contents .cont3 .rule .text,
   #contents .cont4 .guid .text,
   #contents .cont4 .rule .text {
-    font-size: 15px;
+    font-size: 2.7vw;
   }
   #contents .cont1 .gallery figure,
   #contents .cont2 .gallery figure,
