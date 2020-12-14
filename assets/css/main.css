@@ -115,10 +115,12 @@ main section {
 }
 
 main section .container {
+  height: 100%;
   width: 1280px;
 }
 
 main section .container .raw {
+  height: 100%;
   padding: 0 28px;
 }
 
@@ -738,7 +740,7 @@ main .m_casino a {
 }
 
 /*//casino 은주*/
-#facilities .container {
+#facilities .container .raw {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -840,6 +842,12 @@ main .m_casino a {
   }
   .w_right div h3 {
     font-size: 40px;
+  }
+  #dining .container .raw {
+    align-items: center;
+  }
+  #dining .container .raw .dining.active {
+    margin-top: 0;
   }
   #facilities .facilities p {
     font-size: 120px;
@@ -1041,6 +1049,66 @@ main .m_casino a {
   }
   .w_main a {
     font-size: 20px;
+  }
+  main .dining {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 35vh;
+  }
+  main .dining strong {
+    padding: 0;
+    font-size: 10vw;
+  }
+  main .dining p {
+    font-size: 3vw;
+  }
+  main .m_casino {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  main .m_casino span {
+    font-size: 10vw;
+  }
+  main .m_casino p {
+    font-size: 2.3vw;
+  }
+  main .m_casino a {
+    width: 80%;
+    font-size: 5vw;
+    padding: 15px 20px;
+    color: #fff;
+    margin-top: 50px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 500px) {
+  main section .container .raw {
+    padding: 10px;
+  }
+  .wedding .w_box .w_left a {
+    width: 100%;
+  }
+  .wedding .w_box .w_left a .grandhall {
+    width: 50%;
+    padding: 20px;
+  }
+  .wedding .w_box .w_left a .grandhall h3 {
+    white-space: nowrap;
+  }
+  .wedding .w_box .w_right a {
+    width: 100%;
+  }
+  .wedding .w_box .w_right a .irishall {
+    width: 50%;
+    padding: 20px;
+  }
+  .wedding .w_box .w_right a .irishall h3 {
+    white-space: nowrap;
   }
 }
 
