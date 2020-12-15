@@ -210,7 +210,8 @@
       bottom: 0;
     }
   }
-  .header.active .login {
+
+  #header .header.active .login {
     display: block;
     position: fixed;
     bottom: 10px;
@@ -223,9 +224,11 @@
         height: 45px;
         text-align: center;
         padding: 0;
+        padding-right: 0;
         border: 1px solid white;
         a {
           height: 100%;
+          width: 100%;
           line-height: 45px;
           &:hover {
             border: 0;
