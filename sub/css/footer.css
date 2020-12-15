@@ -1,9 +1,10 @@
-@charset= "UTF-8";
+@charset "UTF-8";
 
 #footer {
   width: 100%;
   padding-top: 70px;
   background: #282828;
+  position: relative;
 }
 
 /*container*/
@@ -101,6 +102,17 @@
 }
 .footer .f_right .f_sns ul li.last {
   margin-right: 0;
+}
+
+.footer .portfolio {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.footer .portfolio p {
+  color: white;
+  font-size: 1vw;
 }
 
 /*미디어쿼리*/
