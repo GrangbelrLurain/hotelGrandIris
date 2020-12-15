@@ -36,7 +36,7 @@ main {}
 }
 .banner img{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 .banner .ban_text{
     position: absolute;
@@ -61,6 +61,7 @@ main {}
     position: relative;
 }
 .banner .sliderlist .sliderimg{
+    width: 100%;
     position: absolute;
 }
 
